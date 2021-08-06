@@ -1,37 +1,67 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>RED Production</title>
+</head>
 
-You can use the [editor on GitHub](https://github.com/redmanss/frontend/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<body>
+	
+<header>
+</header>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<section>
+<div>
+SOW GROW
+<ul>
+<li><a href="https://redmanss.github.io/sowgrow/index.html">Home page</a></li>
+</ul>
+US
+<ul>
+<li><a href="https://redmanss.github.io/web.ukrainian-stone/index.html">Home page</a></li>
+<li><a href="https://redmanss.github.io/web.ukrainian-stone/katalog.html">Katalog</a></li>
+<li><a href="https://redmanss.github.io/web.ukrainian-stone/list-products.html">List-product</a></li>
+<li><a href="https://redmanss.github.io/web.ukrainian-stone/page-product.html">Page product</a></li>
+</ul>
+A.TOM
+<ul>
+<li><a href="https://redmanss.github.io/!web.atom/!stub/index.html">Головна сторінка</a></li>
+<li><a href="https://redmanss.github.io/!web.atom/!stub/production.html">Продукція</a></li>
+<li><a href="https://redmanss.github.io/!web.atom/!stub/category.html">Список товару</a></li>
+<li><a href="https://redmanss.github.io/!web.atom/!stub/product.html">Ст. Товару</a></li>
+<li><a href="https://redmanss.github.io/!web.atom/!stub/contacts.html">Контакти</a></li>
+<li><a href="https://redmanss.github.io/!web.atom/!stub/search.html">Пошук</a></li>
+<li><a href="https://redmanss.github.io/!web.atom/!stub/news.html">Статті</a></li>
+<li><a href="https://redmanss.github.io/!web.atom/!stub/news-page.html">Ст.Новини</a></li>
+<li><a href="https://redmanss.github.io/!web.atom/!stub/media.html">Медіа</a></li>
+<li><a href="https://redmanss.github.io/!web.atom/!stub/page-media.html">ст. Медіа</a></li>
+<li><a href="https://redmanss.github.io/!web.atom/!stub/company.html">Компания</a></li>
+<li><a href="https://redmanss.github.io/!web.atom/!stub/404.html">404</a></li>
+</ul>
+</div>
+Pack-Trade NEW
+<ul>
+<li><a href="https://redmanss.github.io/pack-new/header.html">Home parts</a></li>
+<li><a href="https://redmanss.github.io/pack-new/category-list.html">Category</a></li>
+<li><a href="https://redmanss.github.io/pack-new/product-list.html">Product-list</a></li>
+</ul>
+Panchoha
+<ul>
+<li><a href="https://redmanss.github.io/panchoha/index.html">Home</a></li>
+<li><a href="https://redmanss.github.io/panchoha/product_list.html">Product-list</a></li>
+<li><a href="https://redmanss.github.io/panchoha/product-page.html">Product-page</a></li>
+</ul>
+Witchne
+<ul>
+<li><a href="https://redmanss.github.io/witchne/home.html">Home</a></li>
+<li><a href="https://redmanss.github.io/witchne/category.html">Category</a></li>
+<li><a href="https://redmanss.github.io/witchne/products-list.html">Product-list</a></li>
+<li><a href="https://redmanss.github.io/witchne/products-page.html">Product-page</a></li>
+</ul>
+</section>
+<footer>
+</footer>
 
-### Markdown
+</body>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/redmanss/frontend/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+</html>
