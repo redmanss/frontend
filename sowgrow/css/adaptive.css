@@ -1,0 +1,132 @@
+@media (max-width: 1200px) {
+    .products-item {
+        width: 33%;
+    }
+}
+@media (max-width: 1023px) {
+    .products-item {
+        width: 50%;
+    }
+    .contacts-block, .map {
+        width: 100%;
+        display: block;
+    }
+    .map {
+        margin-top: 30px;
+    }
+    .photo-gallery-slider-item {
+        margin-right: 10px;
+    }
+}
+@media (max-width: 767px) {
+    #products-block {
+        padding: 100px 0 30px;
+    }
+    .main-page-menu a:last-child {
+        margin: 0;
+    }
+    .main-page-menu {
+        margin-top: 49px;
+    }
+    .main-page-menu a {
+        font-size: 16px;
+        margin-right: 30px;
+    }
+    .main-page-h1-block p {
+        font-size: 18px;
+    }
+    .main-page-logo {
+        width: 150px;
+        vertical-align: middle;
+    }
+    .main-page-logo img {
+        width: 100%;
+    }
+    .products-item {
+        width: 50%;
+        padding-bottom: 20px;
+    }
+    .main-page-h1-block h1 {
+        font-size: 30px;
+    }
+    .kkal-block {
+        font-size: 12px;
+        padding: 5px 15px 15px 5px;
+    }
+    .products-main-info div p {
+        font-size: 12px;
+    }
+    .products-main-info {
+        bottom: 5px;
+    }
+    .products-main-info div {
+        margin: 0 5px;
+    }
+    .products-main-info div p:last-child {
+        font-size: 14px;
+        margin: 0;
+    }
+    .products-item h3 {
+        font-size: 16px;
+        margin: 10px 0;
+        padding: 0 10px;
+        text-align: center;
+    }
+    .consist-title {
+        font-size: 14px;
+        margin: 0;
+        float: none;
+        text-align: left;
+        padding-left: 5px;
+    }
+    .products-consist div:last-child {
+        font-size: 14px;
+        margin: 5px 0 0 0;
+        padding: 0 5px;
+    }
+    .products-item-button {
+        font-size: 16px;
+        margin: 20px 20px 0 0;
+    }
+    .main-page-h1-block {
+        position: static;
+        max-width: 352px;
+        transform: none;
+        margin: 35% auto 0;
+    }
+    .h1-block-desc {
+        font-size: 16px;
+    }
+    .main-page-h1-block p {
+        text-align: center;
+    }
+    .footer-block img {
+        width: 200px;
+    }
+    .footer-block {
+        margin: 150px 0 100px;
+    }
+    .footer-menu a:nth-child(2) {
+        margin: 0 20px;
+    }
+    .footer-menu a {
+        font-size: 20px;
+    }
+}
+@media (max-width: 600px) {
+    .main-page-menu a {
+        font-size: 18px;
+        margin: 0 0 15px 0;
+        display: block;
+    }
+    .callback {
+        display: block;
+        margin: 15px 0 0 0;
+    }
+    .main-page-menu{
+        display: inline-block;
+        vertical-align: middle;
+        margin: 10px 0 0 0;
+    }
+}
+

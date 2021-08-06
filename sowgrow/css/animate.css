@@ -1,0 +1,36 @@
+.order-button, .products-item, .instagram, .products-item-button, .photo-gallery-slider-item, .number a, .email, .location, .callback {
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+.products-item:hover {
+    box-shadow: 0 0 27px 3px rgba(0, 0, 0, 0.1);
+}
+.main-page-menu a:hover, .footer-menu a:hover {
+    text-decoration: underline;
+}
+.order-button:hover {
+    background-color: #bedb12;
+}
+.instagram:hover {
+    opacity: .5;
+}
+.number a:hover, .email a:hover, .location:hover {
+    color: #afca0b;
+}
+.callback:hover {
+    color: #bedb12;
+}
+.products-item-button:hover {
+    color: #bedb12;
+    border-color: #bedb12;
+}
+.photo-gallery-slider-item:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<?php get_header() ?>
+
+<body>
+<!--Head-->
+<header>
+    <div class="background"></div>
+    <div class="consultation">
+        <div class="close-pop-up"></div>
+        <div class="consultation-block">
+            <div>
+                <?php
+        echo do_shortcode('[contact-form-7 id="5" title="Обратная связь"]');
+    ?>
+            </div>
+            <div class="consultation-number-block">
+                <span>Наш контактний телефон:</span>
+                <a href="tel:+380968248159">+38 (096) 824-81-59</a>
+            </div>
+        </div>
+    </div>
+    <div class="main-page">
+        <div class="main-page-block">
+            <div class="container">
+                <div class="main-page-logo"><img src="<?php bloginfo('template_directory'); ?>/img/sow-grow-logo.svg" alt="«Sow & Grow» - энергетическая пища и натуральные сладости ручной работы" title="Логотип Sow & Grow"></div>
+                <div class="main-page-menu">
+                    <a href="#products-block" class="products-menu">Продукція</a>
+                    <a href="#contacts-block" class="contacts-menu">Контакти</a>
+                    <a href="#contacts-block" class="company-menu">Компанія</a>
+                </div>
+                <div class="main-page-h1-block">
+                    <h1>Енергетичні батончики</h1>
+                    <p>Цілі горіхи. Сухофрукти</p>
+                    <div class="h1-block-desc">
+                        Кожен батончик наповнений корисними цілими горіхами та якісними сухофруктами
+                    </div>
+                    <div class="order-button">Замовити</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
+<!--END Head-->
+<!--CONTENT-->
+<section>
+    <div id="products-block">
+        <div class="container">
+            <h2>Продукція</h2>
+            <div class="products-block-tabs">
+                <div class="active-tabs">Енергетичні батончики</div>
+            </div>
+            <div class="products-list">
+
+                <?php
+global $post;
+$args = array( 'post_type' => 'product' );
+                $myposts = get_posts( $args );
+                foreach( $myposts as $post ){ setup_postdata($post);
+                ?>
+                <div class="products-item">
+                    <div class="kkal-block">
+                        <p><?php echo the_field('kilokaloriyi'); ?></p>
+                        <p>ккал</p>
+                    </div>
+                    <div class="img-products-block">
+                        <img class="img-product" src="<?php echo the_field('main_photo'); ?>" alt="инжир, финик свежий, курага горная, изюм царский, орех бразильский" title="Батончик с бразильским орехом">
+                        <img class="img-hover" src="<?php echo the_field('hover_photo'); ?>" alt="инжир, финик свежий, курага горная, изюм царский, орех бразильский" title="Батончик с бразильским орехом">
+                        <div class="products-main-info">
+                            <div>
+                                <p>Білки</p>
+                                <p><?php echo the_field('belki'); ?> г</p>
+                            </div>
+                            <div>
+                                <p>Жири</p>
+                                <p><?php echo the_field('zhiry'); ?> г</p>
+                            </div>
+                            <div>
+                                <p>Вуглеводи</p>
+                                <p><?php echo the_field('uglevody'); ?> г</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3><?php the_title(); ?></h3>
+                    <div class="products-consist">
+                        <div class="consist-title">Склад</div>
+                        <div><?php echo the_field('sostav'); ?></div>
+                    </div>
+                    <div class="product-price">
+                        <?php echo the_field('price_product'); ?> грн.
+                    </div>
+                    <button class="products-item-button" data-id="<?php echo the_field('id_product'); ?>" data-title="<?php the_title(); ?>" data-price="<?php echo the_field('price_product'); ?>" data-img="<?php echo the_field('main_photo'); ?>">Додати до кошика</button>
+
+                </div>
+                <?php
+}
+wp_reset_postdata();
+?>
+
+            </div>
+        </div>
+        <div class="photo-gallery-slider">
+            <div class="arrows">
+                <div class="right-arrow"><div></div></div>
+                <div class="left-arrow"><div></div></div>
+            </div>
+            <div class="ph-slider-block">
+                <div class="photo-gallery-slider-item">
+                    <a data-fancybox="gallery" href="<?php bloginfo('template_directory'); ?>/img/photo/photo1.jpg">
+                        <img src="<?php bloginfo('template_directory'); ?>/img/photo/photo1.jpg" alt="«Sow & Grow» - энергетическая пища и натуральные сладости ручной работы." title="Энергетические, протеиновые батончики.">
+                    </a>
+                </div>
+                <div class="photo-gallery-slider-item">
+                    <a data-fancybox="gallery" href="<?php bloginfo('template_directory'); ?>/img/photo/photo2.jpg">
+                        <img src="<?php bloginfo('template_directory'); ?>/img/photo/photo2.jpg" alt="«Sow & Grow» - энергетическая пища и натуральные сладости ручной работы." title="Энергетические, протеиновые батончики.">
+                    </a>
+                </div>
+                <div class="photo-gallery-slider-item">
+                    <a data-fancybox="gallery" href="<?php bloginfo('template_directory'); ?>/img/photo/photo3.jpg">
+                        <img src="<?php bloginfo('template_directory'); ?>/img/photo/photo3.jpg" alt="«Sow & Grow» - энергетическая пища и натуральные сладости ручной работы." title="Энергетические, протеиновые батончики.">
+                    </a>
+                </div>
+                <div class="photo-gallery-slider-item">
+                    <a data-fancybox="gallery" href="<?php bloginfo('template_directory'); ?>/img/photo/photo4.jpg">
+                        <img src="<?php bloginfo('template_directory'); ?>/img/photo/photo4.jpg" alt="«Sow & Grow» - энергетическая пища и натуральные сладости ручной работы." title="Энергетические, протеиновые батончики.">
+                    </a>
+                </div>
+                <div class="photo-gallery-slider-item">
+                    <a data-fancybox="gallery" href="<?php bloginfo('template_directory'); ?>/img/photo/photo5.jpg">
+                        <img src="<?php bloginfo('template_directory'); ?>/img/photo/photo5.jpg" alt="«Sow & Grow» - энергетическая пища и натуральные сладости ручной работы." title="Энергетические, протеиновые батончики.">
+                    </a>
+                </div>
+                <div class="photo-gallery-slider-item">
+                    <a data-fancybox="gallery" href="<?php bloginfo('template_directory'); ?>/img/photo/photo6.jpg">
+                        <img src="<?php bloginfo('template_directory'); ?>/img/photo/photo6.jpg" alt="«Sow & Grow» - энергетическая пища и натуральные сладости ручной работы." title="Энергетические, протеиновые батончики.">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div id="contacts-block">
+            <div class="container">
+                <div class="contacts-block">
+                    <h2>Контакти</h2>
+                    <div class="number"><a href="tel:+380968248159">+38 (096) 824-81-59</a>
+                        <div class="callback">Замовити зворотній дзвінок</div>
+                    </div>
+                    <div class="email"><a href="mailto:dotacsred@gmail.com">Sow8grow@gmail.com</a></div>
+                    <!--<div class="location"><p>г. Киев, ул. Степана Бандеры, 8</p></div>-->
+                    <div class="about-us">
+                        <h2>Компанія</h2>
+                        <p>	"Sow & Grow" - енергетична їжа і натуральні солодощі ручної роботи. Особливості "Sow & Grow" energy food - в кожному продукті є цілісні горіхи, а також сухофрукти натуральної сушки, при якій вони зберігають в собі все корисне для людини. Ми уважно підбираємо кожен компонент продукту. Це продукти, які не містять білого цукру і будь-яких інших добавок.</p>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe title="Офис Sow & Grow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325518.68780316407!2d30.252511957059642!3d50.4016990487754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sde!4v1567368616814!5m2!1sru!2sde" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+            </div>
+
+        </div>
+</section>
+<!--END CONTENT-->
+<?php get_footer() ?>
+
+
+
+
+
+
+
+</body>
+</html>

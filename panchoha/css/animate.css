@@ -1,0 +1,97 @@
+.for-woman, .for-man, .for-child, .other-menu a, .submenulist a, .for-woman span, .border, .login-in, .close-login, .button-basket, .burger-reg, .subscr-button, .mini-slider img {
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+.brand-block, .sale-block, .arrow-next-bl, .arrow-back-bl, .desire-block, .basket-block, .login-block, .product, .product-mini-sllider, .fast-buy-bt, .fast-view-block-show, .product-hover {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.main-menu-icon {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.login-reset-pass:hover, .login-registration:hover, .desire-info-block h4:hover, .burger-login:hover, .burger-menu-block div:hover, .myprofile-sub div:hover, .exit-profile:hover, .product h3:hover, .all-new-products:hover, .slider-popular h3:hover, .all-sale-products:hover, .home-news-button:hover, .footer-menu div:hover, .other-menu-mob div:hover, .bread-crumbs span:hover, .reset-filter:hover, .selected-filter div:hover, .filter-show-all:hover, .filter-hide:hover, .sort-block-price div:hover, .product-fast-view:hover, .product-buy:hover, .sort-popular:hover, .sort-new:hover, .sort-price:hover, .fast-more-info:hover, .table-size-bt:hover, .sort-discount:hover  {
+    text-decoration: underline;
+}
+.other-menu a:hover, .topbar-language a:hover, .submenulist a:hover {
+    color: #009fe3;
+}
+.button-basket:hover, .burger-reg:hover, .login-in:hover, .subscr-button:hover, .fast-buy-bt:hover {
+    background-color: #2cb9f6;
+}
+.change-size li:hover {
+    background-color: #eaf6fe;
+}
+.sale-block:hover, .brand-block:hover {
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.10);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
+    transform: scale(1.02);
+}
+.sb-scrollbar:hover {
+    background-color: #b2b2b2;
+}
+.close-login:hover {
+    opacity: 0.6;
+}
+.header-search:hover {
+    background-position: -11px -21px;
+}
+.header-burger:hover {
+    background-position: -77.8px -21px;
+}
+.submenulist a:hover {
+    font-size: 13px;
+}
+.login-save-inp:checked + .svg-point {
+    background: #009fe3;
+    border-color: #009fe3;
+    animation: wave 0.4s ease;
+}
+.arrow-next-bl:hover, .arrow-back-bl:hover {
+    opacity: 1;
+}
+.footer-social a:nth-child(2):hover {
+    background-position: -212.9px -26px;
+}
+.footer-social a:nth-child(3):hover {
+    background-position: -240.9px -26px;
+}
+.footer-social a:nth-child(4):hover {
+    background-position: -268.9px -26px;
+}
+.footer-delivery a:nth-child(2):hover {
+    background-position: 0 -137px;
+}
+.footer-delivery a:nth-child(3):hover {
+    background-position: -151px -137px;
+}
+.mini-slider img:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/*.sort-price:hover + .sort-block-price {*/
+    /*display: block;*/
+/*}*/
+@media (min-width: 1450px) {
+    .products-list .product:hover {
+        box-shadow: 0px 0px 7.6px 0.4px rgba(0, 0, 0, 0.13);
+    }
+    .products-list .product:hover .product-hover {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,14 @@
+.button, .button2, .share-button, .scr3 .text {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover, .button2:hover {
+    background-color: #ba040a;
+}
+.share-button:hover {
+    background-color: red;
+}

@@ -1,0 +1,3 @@
+.heating-item li:hover, .manu-block a:hover, .sub-menu a:hover, .footer-menu a:hover {
+    text-decoration: underline;
+}

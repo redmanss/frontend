@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="format-detection" content="telephone=no">
+    <!--<link rel="icon" type="image/png" href="img/favicon.png" sizes="96x96">-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <title>SEO title</title>
+    <meta name="description" content="SEO description">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="OG title">
+    <meta property="og:site_name" content="OG sitename">
+    <meta property="og:description" content="OG description">
+    <meta property="og:url" content="https://panchoha-ua.com/">
+    <meta property="og:image" content="https://panchoha-ua.com/img/panchoha.jpg">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:width" content="300">
+</head>
+<body>
+
+<header>
+    <div class="load-svg"></div>
+
+    <div class="n-consultation-block">
+        <div class="ncb-container">
+            <div class="close-ncb"></div>
+            <div class="ncb-info-block">
+                <div class="ncb-img">
+                <img src="img/no-photo-consul.svg" alt="Сергей" title="Сергей"></div>
+                <div class="ncb-right">
+                    <p>Ваш персональный менеджер</p>
+                    <div class="ncb-name">Григорий</div>
+                    <a href="tel:+38 (067) 411-44-10" class="ncb-phone">+38 (067) 411-44-10</a>
+                    <a href="mailto:info@pack-trade.com" class="ncb-mail">info@pack-trade.com</a>
+                </div>
+            </div>
+            <form id="form-p-send-manager">
+                <input type="hidden">
+                <div class="form-group field-contactmanagerform-username required">
+                    <label class="control-label" for="contactmanagerform-username">Иия</label>
+                    <input type="text" id="contactmanagerform-username" class="form-control" placeholder="Ваше имя">
+                    <p class="help-block help-block-error"></p>
+                </div>
+                <div class="form-group field-contactmanagerform-useremail required">
+                <label class="control-label" for="contactmanagerform-useremail">Email</label>
+                <input type="text" id="contactmanagerform-useremail" class="form-control" name="ContactManagerForm[userEmail]" placeholder="Ваш email" aria-required="true"><p class="help-block help-block-error"></p></div><div class="form-group field-contactmanagerform-userphone required">
+                <label class="control-label" for="contactmanagerform-userphone">Телефон</label>
+                <input type="tel" id="contactmanagerform-userphone" class="form-control" name="ContactManagerForm[userPhone]" placeholder="+38(___)___-__-__" aria-required="true"><p class="help-block help-block-error"></p></div><div class="form-group field-contactmanagerform-usermessage required">
+                <label class="control-label" for="contactmanagerform-usermessage">Сообщение</label><textarea id="contactmanagerform-usermessage" class="form-control" name="ContactManagerForm[userMessage]" placeholder="Ваше сообщение менеджеру..." aria-required="true"></textarea><p class="help-block help-block-error"></p></div><div class="form-group field-contactmanagerform-pagemessage required"><input type="hidden" id="contactmanagerform-pagemessage" class="form-control" name="ContactManagerForm[pageMessage]" value="https://pack-trade.com/nproduct/otval_dlya_zerna_s_udlinitelem_a_tom-_/" readonly=""><p class="help-block help-block-error"></p></div>
+                <button type="submit" class="ncb-send">Отправить сообщение</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="call-back">
+        <div class="cback">
+            <div class="cback-circle fn1"></div>
+        </div>
+    </div>
+
+    <div class="n-callback">
+        <div class="n-callback-block">
+            <div class="close-n-callback-block"></div>
+            <div class="n-callback-title">Обратная связь</div>
+            <p>Введите свои данные, и мы Вам перезвоним!</p>
+            <form id="form-p-callback" action="" method="post">
+                <input type="hidden">
+                <div class="form-group field-phoneform-userphone required has-error">
+                <label class="control-label" for="phoneform-userphone">Телефон</label>
+                <input type="tel" id="phoneform-userphone" class="form-control" name="PhoneForm[userPhone]" placeholder="+38(___)___-__-__" aria-required="true" aria-invalid="true">
+                <p class="help-block help-block-error">Необходимо заполнить «Телефон».</p></div><div class="form-group field-phoneform-pagemessage required has-success">
+                <input type="hidden" id="phoneform-pagemessage" class="form-control" name="PhoneForm[pageMessage]" value="https://pack-trade.com/" readonly="" aria-invalid="false"><p class="help-block help-block-error"></p></div>            <button type="submit" class="one-click-send n-callback-button" onclick="collbackForm">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="favorites-modal-block">
+        <div class="favorites-modal">
+            <div class="close-favorites-modal"></div>
+            <div class="favorites-title">Избранные товары</div>
+            <div class="favorites-items-block">
+                <div class="favorites-item">
+                    <div class="favorites-delete"></div>
+                    <a href="#">
+                        <div class="img-product">
+                            <img src="img/test.jpg" alt="SEO" title="SEO">
+                        </div>
+                        <div>
+                            <span class="idproduct">№471</span>
+                        </div>
+                        <h3>Бордюр, Емельяновское месторождение, GP1 (150*300*L)</h3>
+                        <div class="product-price">
+                            <span class="price">Цену уточняйте</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-burger-menu-block">
+        <div class="modal-burger-menu">
+            <div class="close-burger-menu"></div>
+            <img src="img/witchne-black.svg">
+            <div class="mob-menu">
+                <a>Продукция</a>
+                <a>Контакты</a>
+            </div>
+            <div class="change-language">Сменить язык</div>
+            <div class="mob-language">
+                <a href="#">UA</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="home-header">
+        <div class="container">
+            <img class="home-header-logo" src="img/witchne-white.svg" title="Логотип Witchne" alt="Логотип компании Witchne">
+            <div class="home-header-menu">
+                <a href="tel:+380964462631" class="home-header-phone">(096) 446-2631</a>
+                <div class="home-header-menu-item">
+                    <a href="#">Продукция</a>
+                    <a href="#">Контакты</a>
+                </div>
+                <div class="home-header-menu-favorites"><div>0</div></div>
+                <div class="home-header-menu-burger"></div>
+                <div class="home-header-menu-language">
+                    <a href="#">UA</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="home-1screen">
+        <div class="home-1screen-video">
+            <video class="video" autoplay="" loop="" muted="" playsinline="" poster="video/witchne-bg.jpg">
+            <source src="/" type="video/mp4"></video>
+        </div>
+        <div class="home-1screen-consultation">Консультация</div>
+    </div>
+</header>
+
+<main>
+    <section>
+        <div class="container">
+            <div class="home-advantages">
+                <h2>Преимущества работы с нами</h2>
+                <div class="home-advantages-block">
+                    <div class="home-advantages-item">
+                        <img src="img/icon/oput.svg" title="SEO" alt="SEO">
+                        <h3>Опыт</h3>
+                        <p>text2</p>
+                    </div>
+                    <div class="home-advantages-item">
+                        <img src="img/icon/price.svg" title="SEO" alt="SEO">
+                        <h3>Гибкая ценовая политика</h3>
+                        <p>text2</p>
+                    </div>
+                    <div class="home-advantages-item">
+                        <img src="img/icon/podxod.svg" title="SEO" alt="SEO">
+                        <h3>Индивидуальный подход</h3>
+                        <p>text2</p>
+                    </div>
+                    <div class="home-advantages-item">
+                        <img src="img/icon/kachestvo.svg" title="SEO" alt="SEO">
+                        <h3>Гарантия качества</h3>
+                        <p>text2</p>
+                    </div>
+                    <div class="home-advantages-item">
+                        <img src="img/icon/podklych.svg" title="SEO" alt="SEO">
+                        <h3>Полное сопровождение клиента под ключ</h3>
+                        <p>text2</p>
+                    </div>
+                    <div class="home-advantages-item">
+                        <img src="img/icon/potyjn.svg" title="SEO" alt="SEO">
+                        <h3>Собственные мощности производства</h3>
+                        <p>text2</p>
+                    </div>
+                    <div class="home-advantages-item">
+                        <img src="img/icon/mereja.svg" title="SEO" alt="SEO">
+                        <h3>Широкая партнерская сеть</h3>
+                        <p>text2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="home-contact">
+                <h2>Как с нами связаться</h2>
+                <div class="home-contact-block">
+                    <a href="tel:+380977969699"><span>+38 (097) 796-96-99</span></a>
+                    <a href="#"><span>info@witchne.com</span></a>
+                    <a href="https://www.google.com/maps/place/WITCHNE/@50.4619821,28.6560433,712m/data=!3m2!1e3!4b1!4m5!3m4!1s0x472c776d75941529:0x71030cd1c7764686!8m2!3d50.4620962!4d28.6580974"><span>Житомирская область, Черняхов, ул. Мельнична 39а</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3098.784388591427!2d28.656043315731807!3d50.461982079476954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472c776d75941529%3A0x71030cd1c7764686!2sWITCHNE!5e1!3m2!1sru!2sua!4v1625386233194!5m2!1sru!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="seo-text-block-home">
+                <h1>h1 Text</h1>
+                <div class="seo-text">text</div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <img class="footer-logo" src="img/witchne-black.svg" title="Логотип Witchne" alt="Логотип компании Witchne">
+        <div class="footer-menu">
+            <a href="#">Продукция</a>
+            <a href="#">Контакты</a>
+        </div>
+        <div class="footer-social">
+            <a href="#" >
+                <div class="youtube"></div>
+            </a>
+            <a href="#">
+                <div class="instagram"></div>
+            </a>
+            <a href="#">
+                <div class="telegram"></div>
+            </a>
+            <a href="#">
+                <div class="viber"></div>
+            </a>
+            <a href="#">
+                <div class="facebook"></div>
+            </a>
+        </div>
+        <div class="copyright">© WITCHNE. Все права защищены.</div>
+    </div>
+</footer>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

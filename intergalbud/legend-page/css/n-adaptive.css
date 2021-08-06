@@ -1,0 +1,417 @@
+/* @media (max-width: 1900px) {
+    .scr1-block, .scr2-block, .scr3-block, .scr4-block, h2 {
+        max-width: 1600px;
+    }
+    .scr1, .scr2, .scr3, .scr4, .scr5 {
+        position: relative;
+        height: auto;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+        overflow: visible;
+    }
+    .bg-img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+} */
+@media (max-width: 1600px) {
+    .scr1 .button {
+        margin: 0;
+    }
+    .scr1-block, .scr2-block, .scr3-block, .scr4-block, .scr5-block {
+        max-width: 1200px;
+    }
+    .logo-integral {
+        right: 0;
+    }
+    h1, h2 {
+        font-size: 40px;
+        max-width: 500px;
+    }
+    .text {
+        font-size: 18px;
+        line-height: 24px;
+        max-width: 500px;
+        margin-bottom: 40px;
+    }
+    .scr2-block {
+        top: 5%;
+    }
+    .scr3 .catimg {
+        max-width: 500px;
+    }
+    .scr4 .catimg {
+        max-width: 400px;
+        right: 0;
+    }
+    .scr5-block div {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .button2 {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 1200px) {
+    /* h1{
+        max-width: 700px;
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    .scr1-block {
+        top: 21%;
+    }
+    .logo-integral {
+        max-width: 300px;
+    }
+    .text {
+        line-height: 24px;
+        font-size: 17px;
+    }
+    .scr2-block .text {
+        max-width: 500px;
+    } */
+}
+@media (max-width: 1023px) {
+    .logo-integral {
+        max-width: 200px;
+    }
+    .bg-img {
+        display: none;
+    }
+    
+    .scr1 {
+        background: url(../img/scr1.jpg);
+    }
+    .scr2 {
+        background: url(../img/scr2.jpg);
+    }
+    .scr3 {
+        background: url(../img/scr3.jpg);
+    }
+    .scr4 {
+        background: url(../img/scr4.jpg);
+    }
+    .scr5 {
+        background: url(../img/scr5.jpg);
+    }
+    .scr1, .scr2, .scr3, .scr4, .scr5 {
+        height: 100vh;
+        background-size: cover;
+        background-position-x: 60%;
+        overflow: hidden;
+    }
+    .text {
+        font-size: 20px;
+        line-height: 30px;
+        max-width: 600px;
+        margin-bottom: 40px;
+    }
+    .scr1 .catimg {
+        right: auto;
+        top: auto;
+        bottom: 10%;
+        width: 120%;
+    }
+    .scr2 .catimg {
+        right: auto;
+        top: auto;
+        bottom: 10%;
+        width: 120%;
+    }
+    .scr3 .catimg {
+        max-width: 600px;
+        right: 0;
+        top: auto;
+        bottom: 0;
+    }
+    .scr3-block {
+        top: 0;
+    }
+    .scr4-block {
+        bottom: auto;
+        top: 0;
+        max-width: 600px;
+    }
+    h3, input, input::placeholder {
+        color: #fff;
+    }
+    .scr4 .button {
+        margin-top: 40px;
+    }
+    
+    /* .scr5-block div {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .logo-integral {
+        max-width: 300px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .text {
+        max-width: 400px;
+    }
+    .scr2-block .text {
+        max-width: 330px;
+    }
+    form {
+        max-width: 500px;
+    } */
+}
+@media (max-width: 767px) {
+    .button2 {
+    margin-top: 10px;
+    }
+    .scr5-block {
+        top: 10%;
+        bottom:  auto;
+    }
+    .scr5-block div {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .scr4 .catimg {
+        max-width: 100%;
+        width: 70%;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    .scr3 .catimg {
+        bottom: -3%;
+    }
+    .scr3-block {
+        top: 15%;
+    }
+    .scr2 .catimg {
+        bottom: 5%;
+        width: 150%;
+    }
+    .scr2-block {
+        top: 15%;
+    }
+    .scr1 .catimg {
+        bottom: 15%;
+    }
+    .scr1-block {
+        top: 20%;
+    }
+    .logo-integral {
+        max-width: 150px;
+    }
+    .text {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+    h1, h2 {
+        font-size: 24px;
+    }
+    .button, .button2 {
+        padding: 15px 30px;
+        font-size: 14px;
+    }
+    .share-button {
+        font-size: 14px;
+        padding: 15px 20px;
+        margin-left: 10px;
+    }
+    .scr3-block .text {
+        margin-bottom: 100px;
+    }
+    /* .bg-img {
+        display: none;
+    }
+    .scr1, .scr2, .scr3, .scr4, .scr5 {
+        height: 100vh;
+    }
+    .scr1 {
+        background: url(../img/scr1.jpg);
+        background-size: cover;
+        background-position: -250px;
+    }
+    .scr2 {
+        background: url(../img/scr2.jpg);
+        background-size: cover;
+        background-position: 580px;
+    }
+    .scr3 {
+        background: url(../img/scr3.jpg);
+        background-size: cover;
+        background-position: 580px;
+    }
+    .scr4 {
+        background: url(../img/scr4.jpg);
+        background-size: cover;
+        background-position: 580px;
+    }
+    .scr5 {
+        background: url(../img/scr5.jpg);
+        background-size: cover;
+        background-position: 580px;
+    }
+    .scr1-block {
+        top: 15%;
+    }
+    .logo-integral {
+        max-width: 120px;
+        right: 0;
+    }
+    .text {
+        font-size: 12px;
+        line-height: 16px;
+        max-width: 230px;
+        margin-bottom: 15px;
+    }
+    .button, .share-button, .button2 {
+        padding: 12px 30px;
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        max-width: 200px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .scr2-block {
+        top: 20%;
+    }
+    .scr2-block .text, .scr3-block .text {
+        max-width: 100%;
+        text-align: center;
+    }
+    .scr2 .text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .scr3-block {
+        top: 30%;
+        text-align: center;
+    }
+    h3 {
+        font-size: 30px;
+        color: #fff;
+        text-align: center;
+    }
+    input {
+        font-size: 14px;
+        padding: 15px;
+        color: #fff;
+    }
+    .scr4-block {
+        bottom: 10%;
+        color: #fff;
+        padding: 0 30px;
+    }
+    input::placeholder {
+        font-size: 14px;
+        color: #fff;
+    }
+    .scr4 .button {
+        margin-top: 30px;
+        padding: 12px 80px;
+    }
+    .scr3 .text {
+        padding: 10px;
+        
+    } */
+    @keyframes heart-animation {
+        0% {
+            opacity: 0;
+            top: 100%;
+            width: 0;
+        }
+        80% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            top: 0;
+            width: 15px;
+        }
+    }
+    @keyframes heart-animation2 {
+        0% {
+            opacity: 0;
+            top: 80%;
+            width: 0;
+        }
+        80% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            top: 0;
+            width: 22px;
+        }
+    }
+    @keyframes heart-animation3 {
+        0% {
+            opacity: 0;
+            top: 90%;
+            width: 0;
+        }
+        80% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            top: 0;
+            width: 18px;
+        }
+    }
+    @keyframes heart-animation4 {
+        0% {
+            opacity: 0;
+            top: 50%;
+            width: 0;
+        }
+        80% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            top: 0;
+            width: 29px;
+        }
+    }
+    .scr1-block .button {
+        margin-top: 60px;
+    }
+    .scr2-block {
+        top: 10%;
+    }
+    .scr3 .text {
+        padding: 10px;
+    }
+}
+@media (max-width: 450px) {
+    .share-button {
+        position: static;
+    }
+    .share-hide-block {
+        left: 10px;
+        top: auto;
+        bottom: -60px;
+    }
+    .scr3-block p {
+        padding: 30px 35px;
+        line-height: 20px;
+    }
+}
+@media (max-width: 321px) {
+    .scr3-block p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+

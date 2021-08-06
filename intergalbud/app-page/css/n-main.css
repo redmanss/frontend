@@ -1,0 +1,238 @@
+/* roboto-300 - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/roboto-v20-latin_cyrillic-300.eot'); /* IE9 Compat Modes */
+    src: local('Roboto Light'), local('Roboto-Light'),
+    url('../fonts/roboto-v20-latin_cyrillic-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/roboto-v20-latin_cyrillic-300.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/roboto-v20-latin_cyrillic-300.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/roboto-v20-latin_cyrillic-300.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/roboto-v20-latin_cyrillic-300.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v20-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local('Roboto'), local('Roboto-Regular'),
+    url('../fonts/roboto-v20-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/roboto-v20-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/roboto-v20-latin_cyrillic-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-500 - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v20-latin_cyrillic-500.eot'); /* IE9 Compat Modes */
+    src: local('Roboto Medium'), local('Roboto-Medium'),
+    url('../fonts/roboto-v20-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/roboto-v20-latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/roboto-v20-latin_cyrillic-500.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/roboto-v20-latin_cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/roboto-v20-latin_cyrillic-500.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-700 - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v20-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+    url('../fonts/roboto-v20-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/roboto-v20-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/roboto-v20-latin_cyrillic-700.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-900 - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/roboto-v20-latin_cyrillic-900.eot'); /* IE9 Compat Modes */
+    src: local('Roboto Black'), local('Roboto-Black'),
+    url('../fonts/roboto-v20-latin_cyrillic-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/roboto-v20-latin_cyrillic-900.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/roboto-v20-latin_cyrillic-900.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/roboto-v20-latin_cyrillic-900.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/roboto-v20-latin_cyrillic-900.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/*Common style*/
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+    -webkit-appearance: none;
+    border-radius: 0;
+    font: 400 12px "Roboto", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+body {
+    overflow-x: hidden;
+    font: 400 14px "Roboto", sans-serif;
+    color: #333;
+}
+.my-igb, .screen1, .screen2, .screen3, .screen4, .screen5, .screen3 p, .screen4 p {
+    text-align: center;
+}
+.s2b-list {
+    text-align: left;
+}
+.my-igb, h3 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.screen1, .screen2, .screen3, .screen4, .screen5, .screen5 a {
+    display: flex;
+}
+.screen1, .screen2, .screen3, .screen4, .screen5 {
+    flex-wrap: wrap;
+}
+.screen1, .screen2, .screen3, .screen4, .screen5, .screen5 a {
+    justify-content: center;
+}
+.screen1, .screen2, .screen3, .screen4, .screen5, .screen5 a {
+    align-items: center;
+}
+.screen5 a {
+    flex-direction: column;
+}
+/* END Common style */
+.main-img {
+    max-width: 495px;
+    width: 100%;
+}
+.my-igb {
+    width: 60%;
+    padding: 0 4%;
+}
+.my-igb h1 {
+    font: 900 100px "Roboto", sans-serif;
+}
+.my-igb h2 {
+    font: 500 50px "Roboto", sans-serif;
+    margin-top: 50px;
+    color: #595959;
+}
+.screen1, .screen2, .screen3, .screen4, .screen5 {
+    padding: 100px 0;
+}
+.screen2 {
+    padding: 100px;
+}
+.screen2, .screen4 {
+    background-color: #f9f9f9;
+}
+h3 {
+    flex: none;
+    width: 100%;
+    font-size: 40px;
+    margin-bottom: 100px;
+    padding: 0 10px;
+}
+.screen2 h3 {
+    margin-bottom: 50px;
+}
+.s2b-list {
+    flex: 1;
+}
+.s2b-list img {
+    display: block;
+    margin: 0 auto;
+}
+.s2b-list h4 {
+    font: 900 24px "Roboto", sans-serif;
+    color: #535c69;
+    margin-bottom: 10px;
+}
+.s2b-list h4:before {
+    content:"";
+    display: inline-block;
+    margin-right: 5px;
+    width: 23px;
+    height: 18px;
+    background: url("../img/checkmark.svg") no-repeat;
+    background-position: 0 0;
+}
+.s2b-list div {
+    margin-bottom: 40px;
+}
+.s2b-list p {
+    font-size: 18px;
+}
+.screen3 p {
+    font-size: 30px;
+}
+.qr-img {
+    margin-right: 10%;
+    max-width: 300px;
+    width: 100%;
+}
+.app-img img {
+    max-width: 300px;
+    width: 100%;
+}
+.qr-img img{
+    width: 100%;
+}
+.screen4 div {
+    margin: 0 30px 30px;
+}
+.screen4 p {
+    margin-top: 20px;
+    font-size: 26px;
+    color: #808080;
+}
+.screen5 img {
+    max-width: 150px;
+    width: 100%;
+    
+}
+.screen5 img:nth-child(3) {
+    margin: 40px 120px;
+}
+.screen5 a {
+    display: block;
+    text-align: left;
+}
+.screen5 a p:first-child {
+    font: 600 18px "Roboto", sans-serif;
+}
+.screen5 a p:nth-child(2) {
+    margin-top: 5px;
+}
+.s5-send-block {
+    position: relative;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #eee;
+}
+.s5-button {
+    padding: 15px 30px;
+    background-color: #ED1C24;
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    line-height: 22px;
+}
