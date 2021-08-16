@@ -65,7 +65,7 @@
   }
   
   /* Common style */
-.load-svg, .home-header-menu-favorites:after, .home-contact-block a:nth-child(3):before, .home-contact-block a:nth-child(2):before, .home-contact-block a:first-child:before, .youtube, .instagram, .telegram, .viber, .facebook, .home-header-menu-burger:after, .crumbs-home, .add-favorite:after, .im-title:before, .pp-call:before, .econom-price:before, .pragm-price:before, .elit-price:before, .web-app-title:before, .options-title:before, .et-title:before, .call-back:before  {
+.load-svg, .home-header-menu-favorites:after, .home-contact-block a:nth-child(3):before, .home-contact-block a:nth-child(2):before, .home-contact-block a:first-child:before, .youtube, .instagram, .telegram, .viber, .facebook, .home-header-menu-burger:after, .crumbs-home, .add-favorite:after, .im-title:before, .pp-call:before, .econom-price:before, .pragm-price:before, .elit-price:before, .web-app-title:before, .options-title:before, .et-title:before, .call-back:before, .econom-title:before, .pragm-title:before, .elit-title:before  {
     background:url("../img/sprite.svg") no-repeat;
 }
 textarea,
@@ -124,7 +124,7 @@ body {
 .main-header .home-header {
     position: fixed;
 }
-.home-header-menu-item, .home-header-menu-favorites, .home-header-menu-language,  .home-header-menu a, .home-header-menu-favorites:after, .home-1screen-consultation:after, .home-advantages h2:before , .home-contact h2:before, .home-contact-block a:first-child:before, .home-contact-block a:nth-child(2):before, .home-contact-block a:nth-child(3):before, .youtube, .instagram, .telegram, .viber, .facebook, .home-header-menu-burger:after, .ncb-container, .favorites-modal, .sort-block div, .crumbs-home, .mob-language a, .pp-butons-block div, .im-title:before, .pp-call:before, .econom-price div, .pragm-price div, .elit-price div, .econom-price:before, .pragm-price:before, .elit-price:before, .web-app-title:before, .options-title:before, .et-title:before, .pp-price a {
+.home-header-menu-item, .home-header-menu-favorites, .home-header-menu-language,  .home-header-menu a, .home-header-menu-favorites:after, .home-1screen-consultation:after, .home-advantages h2:before , .home-contact h2:before, .home-contact-block a:first-child:before, .home-contact-block a:nth-child(2):before, .home-contact-block a:nth-child(3):before, .youtube, .instagram, .telegram, .viber, .facebook, .home-header-menu-burger:after, .ncb-container, .favorites-modal, .sort-block div, .crumbs-home, .mob-language a, .pp-butons-block div, .im-title:before, .pp-call:before, .econom-price div, .pragm-price div, .elit-price div, .econom-price:before, .pragm-price:before, .elit-price:before, .web-app-title:before, .options-title:before, .et-title:before, .pp-price a, .econom-title:before, .pragm-title:before, .elit-title:before {
     display: inline-block;
 }
 .ncb-phone, .ncb-mail, .mob-menu a, .favorites-item-title, .favorites-item a, .pp-sub-img-block a, .add-favorite:after {
@@ -160,7 +160,7 @@ body {
 .n-consultation-block, .modal-burger-menu-block, .favorites-modal-block, .n-callback {
     z-index: 3;
 }
-.home-header-menu-favorites:after, .home-1screen-consultation:after, .home-advantages h2:before , .home-contact h2:before, .home-contact-block a:first-child:before, .home-contact-block a:nth-child(2):before, .home-contact-block a:nth-child(3):before, .home-header-menu-burger:after, .add-favorite:after, .im-title:before, .pp-call:before, .econom-price:before, .pragm-price:before, .elit-price:before, .web-app-title:before, .options-title:before, .et-title:before, .close-n-callback-block:before, .close-n-callback-block:after {
+.home-header-menu-favorites:after, .home-1screen-consultation:after, .home-advantages h2:before , .home-contact h2:before, .home-contact-block a:first-child:before, .home-contact-block a:nth-child(2):before, .home-contact-block a:nth-child(3):before, .home-header-menu-burger:after, .add-favorite:after, .im-title:before, .pp-call:before, .econom-price:before, .pragm-price:before, .elit-price:before, .web-app-title:before, .options-title:before, .et-title:before, .close-n-callback-block:before, .close-n-callback-block:after, .econom-title:before, .pragm-title:before, .elit-title:before {
     content: "";
 }
 .home-header-menu-favorites div, .home-advantages, .home-contact, footer, .mob-menu, .mob-language, .change-language, .category-item {
@@ -1060,4 +1060,35 @@ footer {
 #form-p-callback .help-block-error {
     margin: 5px;
     font-weight: 700;
+}
+/* Options */
+.options-table {
+    width: 100%;
+}
+.econom-title, .pragm-title, .elit-title {
+    font: 700 14px "Open Sans", sans-serif;
+}
+.econom-title:before, .pragm-title:before, .elit-title:before {
+    margin-right: 10px;
+}
+.econom-title:before {
+    width: 17px;
+    height: 16px;
+    background-position: -160px -46px;
+}
+.pragm-title:before {
+    width: 17px;
+    height: 16px;
+    background-position: -141px -46px;
+}
+.elit-title:before {
+    width: 16px;
+    height: 14px;
+    background-position: -123px -46px;
+}
+.options-table td {
+    padding: 10px;
+}
+.options-item {
+    border-bottom: 1px dashed #b3b3b3;
 }
