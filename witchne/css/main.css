@@ -1092,3 +1092,47 @@ footer {
 .options-item {
     border-bottom: 1px dashed #b3b3b3;
 }
+/* favorites */
+#open-product-favorites {
+    position: relative;
+    border: 2px solid #009fe3;
+    cursor: pointer;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    padding: 0;
+    vertical-align: middle;
+}
+#favorites-number {
+    position: absolute;
+    font-size: 14px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    background-color: #009fe3;
+    z-index: 1;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#open-product-favorites:after {
+    position: absolute;
+    content: "";
+    background-position: -46.6px -61.2px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    left: 10px;
+    top: 10px;
+}
+#favorites-number span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 12px;
+}

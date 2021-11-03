@@ -372,4 +372,17 @@ $(document).ready(function () {
         $(this).toggleClass("active-catalog-main-menu");
     });
     // ----- END MENU     
+
+    $(".login-for-client").click(function() {
+        $(this).addClass("login-active")
+        $(".login-for-manager").removeClass("login-active")
+        $("#login-form-user").show()
+        $("#login-form-manager").hide()
+    })
+    $(".login-for-manager").click(function() {
+        $(this).addClass("login-active")
+        $(".login-for-client").removeClass("login-active")
+        $("#login-form-user").hide()
+        $("#login-form-manager").show()
+    })
 });

@@ -24,6 +24,11 @@
 </head>
 <body>
 <header>
+    <div class="modal-success-message">
+        <div class="close-message-block"></div>
+        <div class="message-text">Вы успешно</div>
+    </div>
+
     <div class="cookie-modal">
         <div class="cm-block">
             <div>Этот сайт использует файлы cookie и сервисы сбора технических данных для обеспечения работоспособности и улучшения качества обслуживания. Продолжая использовать наш сайт, Вы автоматически соглашаетесь с использованием данных.</div>
@@ -280,6 +285,17 @@
         <div class="mob-menu">
             <img class="logo-mob" src="n-img/packlogo.svg" alt="Логотип кмпании Пак-Трейд" title="Пак-Трейд">
             <div class="close-mob-menu"></div>
+            <div class="mobile-account-block">
+                <div >
+                    <img class="mab-image" src="/">
+                    <div>
+                        <div class="mab-name">Сергій Покотило</div>
+                        <div class="mab-phone">+38 (096) 446-26-31</div>
+                    </div>
+                </div>
+                
+                
+            </div>
             <div class="mob-catalog-main-menu">
                 <h4>Направления компании</h4>
                 <div class="mob-catalog-main-menu-item">
@@ -344,215 +360,122 @@
     </div>
 </div>
 <main>
-    <div class="landing-roduct-block">
-        <div class="m-container">
-            <div class="lrb-title">Только на PACK-TRADE</div>
-            <div class="scroll-block">
-                <a href="#" class="lrb-item">
-                    <img src="test.jpg">
-                    <div class="lrb-name">Пальцы на погрузчик</div>
-                </a>
+    
+    <!-- <div class="n-login-block-modal" style="display: flex;">
+        <div class="n-login-block">
+            <div class="close-n-login"></div>
+            <div class="n-login-title">Войти</div>
+            <div class="login-tab-block">
+                <div class="login-for-client login-active">Вход для клентов</div>
+                <div class="login-for-manager">Вход для менеджеров</div>
             </div>
-        </div>
-    </div>
-    <div class="m-container">
-        <div class="link-block">
-            <div class="lb-title">Популярные категории</div>
-                <div class="scroll-block">
-                    <a href="#">Назва категорії</a>
-                    <a href="#">Назва категорії</a>
-                    <a href="#">Назва категорії</a>
-                    <a href="#">Назва категорії</a>
-                    <a href="#">Назва категорії</a>
-                    <a href="#">Назва категорії</a>
-                    <a href="#">Назва категорії</a>
-                    <a href="#">Назва категорії</a>
-                    <a href="#">Назва категорії</a>
-                    <a href="#">Назва категорії</a>
-                    <a href="#">Назва категорії</a>
-                    <a href="#">Назва категорії</a>
-                    <a href="#">Назва категорії</a>
-                    <a href="#">Назва категорії</a>
-                    <a href="#">Назва категорії</a>
-                    <a href="#">Назва категорії</a>
-                    <a href="#">Назва категорії</a>
-                    <a href="#">Назва категорії</a>
+            <form id="login-form-user" action="/ru/../user/login/" method="post">
+                <input type="hidden" name="_csrf-frontend" value="ob4dxAWsIeAEWwwenseT4w2mqFjjG_6P4SR-zPNvNkfvynq-RMRr10AIaSvJkf-sSZKcPIBDir6nCS3-hAlEPw==">
+                <div class="form-group field-loginform-username required">
+                    <label class="control-label" for="loginform-username">Логин</label>
+                    <input type="text" id="loginform-username" class="form-control" name="LoginForm[username]" maxlength="200" aria-required="true">
+                    <p class="help-block help-block-error"></p>
                 </div>
-        </div>
-        <!--  -->
-        <div class="faq-block">
-            <div class="faq-block-title">Тайл FAQ</div>
-            <div class="faq-block-item">
-                <p class="fbi-question">Питання FAQ?</p>
-                <div class="fbi-answer">Відповідь FAQ <a href="#">ссилочка йопта</a></div>
-            </div>
-            <div class="faq-block-item">
-                <p class="fbi-question">Питання FAQ?Питання FAQ?Питання FAQ?Питання FAQ?Питання FAQ?Питання FAQ?</p>
-                <div class="fbi-answer">Відповідь FAQ <a href="#">ссилочка йопта</a></div>
-            </div>
-            <div class="faq-block-item">
-                <p class="fbi-question">Питання FAQ?</p>
-                <div class="fbi-answer">Відповідь FAQ <a href="#">ссилочка йопта</a></div>
-            </div>
-        </div>
-        <!--  -->
-        <div class="product-list-page">
-            <div class="products-list-block">
-                <div class="plb-list">
-                    <a href="https://pack-trade.com/nproduct/telezhka_gidravlicheskaya_cby_as-25_al_gum-_/">
-                        <div class="plb-item">
-                            <div class="status-product-cart">
-                                <div class="pp-new">Новинка</div>
-                                <!-- <div class="pp-exclusive">Эксклюзивный дилер</div> -->
-                                <div class="plb-video">Видео</div>
-                            </div>
-                            <div class="plb-item-img"><img src="https://pack-trade.com/partsimage/parts_products/large/5aa59edb-7105-11e6-940f-4c72b9d1dcb2_20201111124253.JPG" alt="Тележка гидравлическая Niuli CBY АС-25 (колеса резина)" title="Тележка гидравлическая Niuli CBY АС-25 (колеса резина)">
-                            </div>
-                            <div class="product-number">№4855</div>
-                            <h3>Тележка гидравлическая Niuli CBY АС-25 (колеса резина)</h3>
-                            <div class="price-block">
-                                <div>
-                                    <span class="price"> 6599 грн</span>
-                                </div>
-                                <div class="status-product-av">В наличии</div>
-                            </div>
-                        </div>
-                    </a>
+                <div class="form-group field-loginform-password required">
+                    <label class="control-label" for="loginform-password">Пароль</label>
+                    <input type="text" id="loginform-password" class="form-control" name="LoginForm[password]" maxlength="200" aria-required="true"><p class="help-block help-block-error"></p>
                 </div>
-            </div>
-        </div>
-        <!--  -->
-        <div class="main-video-block">
-            <div class="mvb-title">Последнее видео</div>
-            <div class="mvb-content">
-                <div>
-                    <a data-fancybox href="https://www.youtube.com/watch?v=rgnxKVnESl4">
-                        <img src="https://img.youtube.com/vi/rgnxKVnESl4/mqdefault.jpg" alt="seo alt">
-                    </a>
+                <div class="form-group field-loginform-rememberme">
+                    <div class="checkbox">
+                        <label for="loginform-rememberme">
+                        <input type="hidden" name="LoginForm[rememberMe]" value="0"><input type="checkbox" id="loginform-rememberme" name="LoginForm[rememberMe]" value="1" checked="">
+                        Запомнить меня
+                        </label>
+                        <p class="help-block help-block-error"></p>
+                    </div>
                 </div>
-                <div>
-                    <a data-fancybox href="https://www.youtube.com/watch?v=75sOlVa-HUs">
-                        <img src="https://img.youtube.com/vi/75sOlVa-HUs/mqdefault.jpg" alt="seo alt">
-                    </a>
+                <div class="form-group">
+                    <button type="submit" class="login-in">Вход</button>
                 </div>
-                <div>
-                    <a data-fancybox href="https://www.youtube.com/watch?v=YzF36l7dDkw">
-                        <img src="https://img.youtube.com/vi/YzF36l7dDkw/mqdefault.jpg" alt="seo alt">
-                    </a>
-                </div>
-                <div>
-                    <a data-fancybox href="https://www.youtube.com/watch?v=INRY47rlm_Y">
-                        <img src="https://img.youtube.com/vi/INRY47rlm_Y/mqdefault.jpg" alt="seo alt">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!--  -->
-        <div class="main-sales-block">
-            <div class="msb-title">Выгодные предложения</div>
-            <div class="msb-content">
-                <div class="plb-list">
-                    <a href="https://pack-trade.com/nproduct/telezhka_gidravlicheskaya_cby_as-25_al_gum-_/">
-                        <div class="plb-item">
-                                <div class="status-product-cart">
-                                    <div class="pp-present">Подарок</div>
-                                </div>
-
-                            <div class="plb-item-img"><img src="https://pack-trade.com/partsimage/parts_products/large/5aa59edb-7105-11e6-940f-4c72b9d1dcb2_20201111124253.JPG" alt="Тележка гидравлическая Niuli CBY АС-25 (колеса резина)" title="Тележка гидравлическая Niuli CBY АС-25 (колеса резина)">
-                            </div>
-                            <div class="product-number">№4855</div>
-                            <h3>Тележка гидравлическая Niuli CBY АС-25 (колеса резина)</h3>
-                            <div class="price-block">
-                                <div class="old-price">
-                                    <span>1609750</span>
-                                    <span>-68500</span>
-                                </div>
-                                <div class="price">
-                                    <span>1541250 грн</span>
-                                    <span>35 000 €</span>
-                                </div>
-                                <div class="status-product-av">В наличии</div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://pack-trade.com/nproduct/telezhka_gidravlicheskaya_cby_as-25_al_gum-_/">
-                        <div class="plb-item">
-                            <div class="status-product-cart">
-                                <div class="pp-new">Новинка</div>
-                                <!-- <div class="pp-exclusive">Эксклюзивный дилер</div> -->
-                                <div class="plb-video">Видео</div>
-                            </div>
-                            <div class="plb-item-img"><img src="https://pack-trade.com/partsimage/parts_products/large/5aa59edb-7105-11e6-940f-4c72b9d1dcb2_20201111124253.JPG" alt="Тележка гидравлическая Niuli CBY АС-25 (колеса резина)" title="Тележка гидравлическая Niuli CBY АС-25 (колеса резина)">
-                            </div>
-                            <div class="product-number">№4855</div>
-                            <h3>Тележка гидравлическая Niuli CBY АС-25 (колеса резина)</h3>
-                            <div class="price-block">
-                                <div>
-                                    <span class="price"> 6599 грн</span>
-                                </div>
-                                <div class="status-product-av">В наличии</div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://pack-trade.com/nproduct/telezhka_gidravlicheskaya_cby_as-25_al_gum-_/">
-                        <div class="plb-item">
-                            <div class="status-product-cart">
-                                <div class="pp-new">Новинка</div>
-                                <!-- <div class="pp-exclusive">Эксклюзивный дилер</div> -->
-                                <div class="plb-video">Видео</div>
-                            </div>
-                            <div class="plb-item-img"><img src="https://pack-trade.com/partsimage/parts_products/large/5aa59edb-7105-11e6-940f-4c72b9d1dcb2_20201111124253.JPG" alt="Тележка гидравлическая Niuli CBY АС-25 (колеса резина)" title="Тележка гидравлическая Niuli CBY АС-25 (колеса резина)">
-                            </div>
-                            <div class="product-number">№4855</div>
-                            <h3>Тележка гидравлическая Niuli CBY АС-25 (колеса резина)</h3>
-                            <div class="price-block">
-                                <div>
-                                    <span class="price"> 6599 грн</span>
-                                </div>
-                                <div class="status-product-av">В наличии</div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://pack-trade.com/nproduct/telezhka_gidravlicheskaya_cby_as-25_al_gum-_/">
-                        <div class="plb-item">
-                            <div class="status-product-cart">
-                                <div class="pp-new">Новинка</div>
-                                <!-- <div class="pp-exclusive">Эксклюзивный дилер</div> -->
-                                <div class="plb-video">Видео</div>
-                            </div>
-                            <div class="plb-item-img"><img src="https://pack-trade.com/partsimage/parts_products/large/5aa59edb-7105-11e6-940f-4c72b9d1dcb2_20201111124253.JPG" alt="Тележка гидравлическая Niuli CBY АС-25 (колеса резина)" title="Тележка гидравлическая Niuli CBY АС-25 (колеса резина)">
-                            </div>
-                            <div class="product-number">№4855</div>
-                            <h3>Тележка гидравлическая Niuli CBY АС-25 (колеса резина)</h3>
-                            <div class="price-block">
-                                <div>
-                                    <span class="price"> 6599 грн</span>
-                                </div>
-                                <div class="status-product-av">В наличии</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--  -->
-    <div class="subscribe-block">
-        <div class="m-container">
-            <div class="sb-text">
-                <img src="n-img/email-subscribe.svg" alt="pack-trade" title="pack-trade">
-                <div>Узнавайте последние новости и акции!</div>
-                <div>Без спама!</div>
-            </div>
-            <form>
-                <label>
-                    <p>Ваш email</p>
-                    <input type="email">
-                </label>
-                <button>Отправить</button>
+            </form>
+            <form id="login-form-manager" action="" method="post">
+                
             </form>
         </div>
+    </div> -->
+    <div class="m-container">
+        <div class="advantage-product-block">
+            <div class="apb-item">
+                <img src="n-img/vlasne-vurobnustvo.svg" alt="SEO" title="SEO">
+                <div class="apb-title">Собственное производство</div>
+                <p class="apb-description">Описание</p>
+            </div>
+            <div class="apb-item">
+                <img src="n-img/vlasne-vurobnustvo.svg" alt="SEO" title="SEO">
+                <div class="apb-title">Собственное производство</div>
+                <p class="apb-description">Описание</p>
+            </div>
+            <div class="apb-item">
+                <img src="n-img/vlasne-vurobnustvo.svg" alt="SEO" title="SEO">
+                <div class="apb-title">Собственное производство</div>
+                <p class="apb-description">Описание</p>
+            </div>
+            
+        </div>
     </div>
+    <!-- Template -->
+    <div class="pp-more-info-block">
+        <div class="template-product-block">
+            <div class="tpb-item">
+                <div class="tpb-text-block">
+                    <div class="tpb-title">1. Усиленная конструкция</div>
+                    <div class="tpb-text">Верхняя часть ковша усилена замкнутым коробом, что обеспечивает необходимую прочность изделия в моменты пиковых нагрузок.</div>
+                </div>
+                <img alt=" усилена замкнутым коробом" src="https://pack-trade.com/images/newImages/kovsh1.jpg" style="height:100%; width:100%">
+            </div>
+            <div class="tpb-item">
+                <div class="tpb-text-block">
+                    <div class="tpb-title">2. Округлая форма</div>
+                    <div class="tpb-text">Дно ковша имеет округлую форму, что способствует легкому наполнению и полной разгрузке.</div>
+                </div>
+                <img alt="Дно ковша имеет округлую форму," src="https://pack-trade.com/images/newImages/kovsh2.jpg" style="height:100%; width:100%">
+            </div>
+            <div class="tpb-item">
+                <div class="tpb-text-block">
+                    <div class="tpb-title">3. Нож из Hardox 450</div>
+                    <div class="tpb-text">Твердость режущей кромки «ножа» обеспечивается благодаря использованию высокопрочной стали 450 HB Hardox шведского производства.</div>
+                </div>
+                <img alt="450 HB Hardox" src="https://pack-trade.com/images/newImages/kovsh3.jpg" style="height:100%; width:100%">
+            </div>
+            <div class="tpb-item">
+                <div class="tpb-text-block">
+                    <div class="tpb-title">4. Усиленное дно ковша</div>
+                    <div class="tpb-text">Дно ковша усилено продольными пластинами, что также эффективно помогает предотвратить износ.</div>
+                </div>
+                <img alt="усилено продольными пластинами" src="https://pack-trade.com/images/newImages/kovsh4.jpg" style="height:100%; width:100%">
+            </div>
+            <div class="tpb-item">
+                <div class="tpb-text-block">
+                    <div class="tpb-title">5. Жесткий профиль</div>
+                    <div class="tpb-text">Боковые стенки ковша имеют усилители в виде жесткого профиля.</div>
+                </div>
+                <img alt="Боковые стенки ковша имеют усилители" src="https://pack-trade.com/images/newImages/kovsh5.jpg" style="height:100%; width:100%">
+            </div>
+            <div class="tpb-item">
+                <div class="tpb-text-block">
+                    <div class="tpb-title">6. Усилительные пластины</div>
+                    <div class="tpb-text">Боковые стенки снизу, снаружи и внутри оснащены усилительными пластинами, которые имеют клиновидный профиль, что способствует меньшему износу кромки и, в то же время, стабилизирует ее.</div>
+                </div>
+                <img alt="внутри оснащены усилительными пластинами" src="https://pack-trade.com/images/newImages/kovsh6.jpg" style="height:100%; width:100%">
+            </div>
+            <div class="tpb-item">
+                <div class="tpb-text-block">
+                    <div class="tpb-title">7. Усиленные крюки крепления</div>
+                    <div class="tpb-text">Крюки крепления к погрузчику также способствуют усилению общей прочности конструкции ковша.</div>
+                </div>
+                <img alt="усилению общей прочности" src="https://pack-trade.com/images/newImages/kovsh7.jpg" style="height:100%; width:100%">
+            </div>
+        </div>
+    </div>
+    <!-- END Template -->
+    
+    
+    
 </main>
 <footer>
     <div class="m-container">
