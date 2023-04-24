@@ -1,0 +1,47 @@
+.consultation-button, .lang-button, .right-menu a, .mob-menu, .direction-item, .blog-item, .video-item, .product-button, .footer-social a, .footer-menu-item, .blog-button {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+.phone-header:hover {
+    text-decoration: underline;
+}
+.lang-button:hover, .right-menu a:hover, .blog-button:hover {
+    background-color: var(--color-bgmaincolor);
+    color: var(--color-maincolor);
+}
+.footer-menu-item:hover, .footer-social a:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+.mob-menu:hover {
+    color: var(--color-white);
+    background-color: var(--color-bgmaincolor);
+}
+.blog-item:hover {
+    box-shadow: 6px 6px 5px 0 rgb(0 0 0 / 10%);
+    -webkit-transform: translate(-2px, -2px);
+    -moz-transform: translate(-2px, -2px);
+    -ms-transform: translate(-2px, -2px);
+    -o-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+}
+.direction-item:hover {
+    box-shadow: 6px 6px 0px 0 rgb(0 0 0 / 90%);
+    -webkit-transform: translate(-2px, -2px);
+    -moz-transform: translate(-2px, -2px);
+    -ms-transform: translate(-2px, -2px);
+    -o-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+}
+.video-item:hover:after {
+    opacity: .6;
+}
+.product-button:hover {
+    background-color: #9d6d40;
+    border-color: #9d6d40;
+}
+.consultation-button:hover {
+    background-color: rgba(179, 125, 74, .7);
+}
