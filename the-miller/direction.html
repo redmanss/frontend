@@ -115,20 +115,34 @@
 </header>
 
 <main>
-    <section class="index-video">
-        <video class="video" autoplay="" loop="" muted="" playsinline="" poster="/poster-n.jpg"><source src="media/video.mp4" type="video/mp4"></video>
-        <div class="index-title-block">
-            <div class="index-title">Українські жорнові млини</div>
-            <p>Млини для бізнесу та дому</p>
-            <div class="index-button-block flex-block">
-                <div class="main-buttom product-button">Продукція</div>
-                <div class="main-buttom consultation-button">Консультація</div>
+    <section class="container bread-crumbs">
+            <h1>Сторінка Продукція</h1>
+            <div class="crumbs-scroll">
+                <ul itemscope="" itemtype="https://schema.org/BreadcrumbList">
+                    <li>
+                        <a class="home-crumbs" href="#" title="ATOM">
+                            <i class="mdi mdi-home"></i>
+                        </a>
+                    </li>
+                    <span class="bread-slash">/</span>
+                    <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                        <a href="#" itemprop="item">
+                            <span itemprop="name">Жорнові млини</span>
+                        </a>
+                        <meta itemprop="position" content="1">
+                    </li>
+                    <span class="bread-slash">/</span>
+                    <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                        <a href="#" class="active-bread" itemprop="item">
+                            <span itemprop="name">Жорновий млин D-30</span>
+                        </a>
+                        <meta itemprop="position" content="2">
+                    </li>
+                </ul>
             </div>
-        </div>
     </section>
 
     <section class="container">
-        <div class="main-title">Наш асортимент</div>
         <div class="direction-block">
             <a href="#" class="direction-item">
                 <img src="media/milwith.jpg" alt="SEO" title="SEO">
@@ -150,125 +164,8 @@
     </section>
 
     <section class="container">
-        <div class="main-title">У центрі уваги</div>
-        <div class="blog-slider">
-            <div class="arrow-next blog-next"><i></i></div>
-            <div class="arrow-prev blog-prev"><i></i></div>
-            <div class="blog-block">
-                <a href="#" class="blog-item">
-                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
-                    <div class="blog-title">Якому бізнесу вигідно мати жорновий млин?</div>
-                    <div class="blog-description">короткий опис блогу</div>
-                    <div class="blog-button">Дізнатись більше</div>
-                </a>
-                <a href="#" class="blog-item">
-                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
-                    <div class="blog-title">4 причини мати вдома млин</div>
-                    <div class="blog-description">короткий опис блогу короткий опис блогу короткий опис блогу короткий опис блогу короткий опис блогу </div>
-                    <div class="blog-button">Дізнатись більше</div>
-                </a>
-                <a href="#" class="blog-item">
-                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
-                    <div class="blog-title">Втілюйте в життя власні смачні ідеї</div>
-                    <div class="blog-description">короткий опис блогу</div>
-                    <div class="blog-button">Дізнатись більше</div>
-                </a>
-            </div>
-        </div>
-        
-    </section>
-
-    <section class="container">
-        <div class="main-title">Нові відео</div>
-        <div class="video-block">
-            <a href="https://www.youtube.com/watch?v=GQR7NdzUF38" class="video-item" data-fancybox="index-video">
-                <img src="https://img.youtube.com/vi/GQR7NdzUF38/maxresdefault.jpg" alt="SEO" title="SEO">
-                <i class="mdi mdi-play-circle"></i>
-            </a>
-            <a href="https://www.youtube.com/watch?v=GQR7NdzUF38" class="video-item" data-fancybox="index-video">
-                <img src="https://img.youtube.com/vi/GQR7NdzUF38/maxresdefault.jpg" alt="SEO" title="SEO">
-                <i class="mdi mdi-play-circle"></i>
-            </a>
-            <a href="https://www.youtube.com/watch?v=GQR7NdzUF38" class="video-item" data-fancybox="index-video">
-                <img src="https://img.youtube.com/vi/GQR7NdzUF38/maxresdefault.jpg" alt="SEO" title="SEO">
-                <i class="mdi mdi-play-circle"></i>
-            </a>
-            <a href="https://www.youtube.com/watch?v=GQR7NdzUF38" class="video-item" data-fancybox="index-video">
-                <img src="https://img.youtube.com/vi/GQR7NdzUF38/maxresdefault.jpg" alt="SEO" title="SEO">
-                <i class="mdi mdi-play-circle"></i>
-            </a>
-            <a href="https://www.youtube.com/watch?v=GQR7NdzUF38" class="video-item" data-fancybox="index-video">
-                <img src="https://img.youtube.com/vi/GQR7NdzUF38/maxresdefault.jpg" alt="SEO" title="SEO">
-                <i class="mdi mdi-play-circle"></i>
-            </a>
-        </div>
-    </section>
-
-    <!-- <section class="container">
-        <div class="main-title">Переваги</div>
-        <div class="index-advantages-block">
-            <div class="index-advantages-item">
-                <div class="iai-img">
-                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
-                </div>
-                <div class="iai-title">Корисне жорнове борошно</div>
-                <div class="iai-desc">Жорновий помел зберігає корисні для здоров’я речовини в борошні: клітковину, вітаміни, мікро-, макроелементи</div>
-            </div>
-            <div class="index-advantages-item">
-                <div class="iai-img">
-                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
-                </div>
-                <div class="iai-title">Комплектовання провідних виробників </div>
-                <div class="iai-desc">Двигуни, частотні перетворювачі, системи відключення, регулювання забезпечують зручну експлуатацію обладнання</div>
-            </div>
-            <div class="index-advantages-item">
-                <div class="iai-img">
-                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
-                </div>
-                <div class="iai-title">Мобільне компактне обладнання</div>
-                <div class="iai-desc">Завдяки невеликим габаритам та вазі млинів їх легко транспортувати і встановлювати, потребують 20-50 м2 площі</div>
-            </div>
-            <div class="index-advantages-item">
-                <div class="iai-img">
-                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
-                </div>
-                <div class="iai-title">Універсальне борошномельне устатковання</div>
-                <div class="iai-desc">Жорновий млин перемелює більше як п'ятнадцять видів зерна без встановлення додаткових елементів</div>
-            </div>
-            <div class="index-advantages-item">
-                <div class="iai-img">
-                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
-                </div>
-                <div class="iai-title">Використання сертифікованих матеріалів</div>
-                <div class="iai-desc">Безпека використання каменю, оливи для покриття деревини, фарб, мастил підтверджена відповідними сертифікатами</div>
-            </div>
-            <div class="index-advantages-item">
-                <div class="iai-img">
-                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
-                </div>
-                <div class="iai-title">Швидке повернення інвестицій</div>
-                <div class="iai-desc">Жорнове борошно та вироби з нього — високомаржинальні продукти, вкладені кошти повертаються вже за кілька місяців</div>
-            </div>
-            <div class="index-advantages-item">
-                <div class="iai-img">
-                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
-                </div>
-                <div class="iai-title">Легке навчання й експлуатація</div>
-                <div class="iai-desc">Один працівник вправляється з перемелюванням борошна та рутинним сервісом млина, тож не потрібно наймати  додатковий персонал</div>
-            </div>
-            <div class="index-advantages-item">
-                <div class="iai-img">
-                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
-                </div>
-                <div class="iai-title">Стильний елемент інтер'єру</div>
-                <div class="iai-desc">Привабливий дизайн млинів додає у простір затишної атмосфери, приваблює, надихає на кулінарну творчість</div>
-            </div>
-        </div>
-    </section> -->
-
-    <section class="container">
         <div class="seo-block">
-            <h1>h1</h1>
+            <h2>h2</h2>
             <div>seo text</div>
         </div>
     </section>
