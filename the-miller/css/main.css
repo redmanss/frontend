@@ -82,6 +82,7 @@ src: url('../font/roboto-v30-cyrillic_latin-900.eot?#iefix') format('embedded-op
     --color-white: #fff;
     --color-black: #000;
     --color-gray: #808080;
+    --color-gray2: #ccc;
     --color-lowgray: #e5e5e5;
     --color-maincolor: #b37d4a;
     --color-bgmaincolor: #f5e8dc;
@@ -463,6 +464,22 @@ body {
     font: 900 26px "Roboto", sans-serif;
 }
 /* Modal-menu */
+.mob-menu-block::-webkit-scrollbar {
+    width: 23px;
+}
+.mob-menu-block::-webkit-scrollbar-track {
+    background: var(--color-bgmaincolor);
+    border-right: 10px solid var(--color-white);
+    border-left: 10px solid var(--color-white);
+}
+.mob-menu-block::-webkit-scrollbar-thumb {
+    background: var(--color-maincolor);
+    border-right: 10px solid var(--color-white);
+    border-left: 10px solid var(--color-white);
+}
+.mob-menu-block::-webkit-scrollbar-button {
+    background: var(--color-white);
+}
 .mob-menu-modal {
     top: 0;
     left: 0;
@@ -533,14 +550,16 @@ body {
 }
 .mm-main {
     margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--color-lowgray);
 }
 .mm-main-item, .mob-menu-filter-title {
     font: 900 24px "Roboto", sans-serif;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border-radius: 20px;
 }
 .mm-sub a {
-    padding: 10px 20px;
+    padding: 12px 20px;
     font: 300 18px "Roboto", sans-serif;
     border-radius: 20px;
     display: block;
