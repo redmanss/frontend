@@ -31,6 +31,16 @@
     }
 }
 @media (max-width: 767px) {
+    .mob-menu-block img {
+        max-width: 220px;
+        margin: 30px 15px;
+    }
+    .mm-menu, .mm-category-block, .mm-services-block {
+        padding: 0 0 60px;
+    }
+    .ncb-container {
+        padding: 40px 20px;
+    }
     .container {
         padding: 0 10px;
     }

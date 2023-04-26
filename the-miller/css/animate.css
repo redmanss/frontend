@@ -1,4 +1,4 @@
-.consultation-button, .lang-button, .right-menu a, .mob-menu, .direction-item, .blog-item, .video-item, .product-button, .footer-social a, .footer-menu-item, .blog-button {
+.consultation-button, .lang-button, .right-menu a, .mob-menu, .direction-item, .blog-item, .video-item, .product-button, .footer-social a, .footer-menu-item, .blog-button, .mm-main-item, .mm-sub a, .close-mob-menu-modal, .close-consultation, .ncb-send, .drop-lang-header a {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
@@ -8,7 +8,7 @@
 .phone-header:hover {
     text-decoration: underline;
 }
-.lang-button:hover, .right-menu a:hover, .blog-button:hover {
+.lang-button:hover, .right-menu a:hover, .blog-button:hover, .mm-main-item:hover, .mm-sub a:hover, .close-mob-menu-modal:hover, .close-consultation:hover, .drop-lang-header a:hover {
     background-color: var(--color-bgmaincolor);
     color: var(--color-maincolor);
 }
@@ -44,4 +44,8 @@
 }
 .consultation-button:hover {
     background-color: rgba(179, 125, 74, .7);
+}
+.ncb-send:hover {
+    background-color: rgba(179, 125, 74, .7);
+    color: var(--color-white);
 }
