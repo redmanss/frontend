@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/png" href="favicon.png" sizes="96x96">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <title>SEO title</title>
+    <meta name="description" content="SEO description">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="OG title">
+    <meta property="og:site_name" content="OG sitename">
+    <meta property="og:description" content="OG description">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:width" content="300">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="top-header flex-block">
+            <a class="phone-header phone-conversion" href="tel:380674114410">+38 (067) 411-44-10</a>
+            <div class="lang-block">
+                <div class="lang-button flex-block"><p>ua</p><i class="mdi mdi-chevron-down"></i></div>
+                <div class="drop-lang-header">
+                    <a href="#">ru</a>
+                    <a href="#">eng</a>
+                </div>
+            </div>
+            <div class="h-search-tap">
+                <i class="mdi mdi-magnify"></i>
+            </div>
+        </div>
+        <div class="main-menu flex-block">
+            <img class="header-logo" src="img/packlogo1.svg" alt="Логотип PACK-TRADE" title="Логотип PACK-TRADE">       
+            <div class="right-menu flex-block">
+                <div class="mob-menu"><i class="mdi mdi-menu"></i><span>Каталог</span></div>
+                <a href="#" class="sale-head">Акції</a>
+                <a href="#">Бренди</a>
+                <a href="#">Контакти</a>
+                <!-- <a href="#">Блог</a>
+                <a href="#">Медіа</a>
+                <a href="#">Про нас</a> -->
+                
+                
+                <div class="sub-menu-block">
+                    <div class="sub-menu-button flex-block"><p>Ще</p><i class="mdi mdi-chevron-down"></i></div>
+                    <div class="drop-sub-menu">
+                        <a href="#">Очікуєтья на складі</a>
+                        <a href="#">Блог</a>
+                        <a href="#">Медіа</a>
+                        <a href="#">Про нас</a>
+                    </div>
+                </div>
+
+                <div id="open-product-favorites">
+                    <i class="mdi mdi-heart-outline"></i>
+                    <div id="favorites-number"><span>0</span></div>
+                </div>
+                <div id="open-product-cart">
+                    <i class="mdi mdi-cart-outline"></i>
+                    <div id="basket-number"><span>99</span></div>
+                </div>
+                <div class="n-login">
+                    <i class="mdi mdi-account-outline"></i>
+                    <span>Вхід</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <!-- menu -->
+    <div class="mob-menu-modal">
+        <div class="mob-menu-block">
+            <img src="img/packlogo1.svg" alt="SEO" title="SEO">
+            <div class="mob-menu-block-title"></div>
+            <i class="close-mob-menu-modal mdi mdi-close"></i>
+            <div class="mm-menu">
+                <div class="mm-main">
+                    <a href="#" class="mm-main-item flex-block">Направлення</a>
+                    <a href="#" class="mm-main-item flex-block">Направлення</a>
+                    <a href="#" class="mm-main-item flex-block">Направлення</a>
+                    <a href="#" class="mm-main-item flex-block">Направлення</a>
+                    <a href="#" class="mm-main-item flex-block">Направлення</a>
+                    <a href="#" class="mm-main-item flex-block">Направлення</a>
+                    <a href="#" class="mm-main-item flex-block">Направлення</a>
+                    <a href="#" class="mm-main-item flex-block">Направлення</a>
+                    <a href="#" class="mm-main-item flex-block">Направлення</a>
+                    <a href="#" class="mm-main-item flex-block">Направлення</a>
+                    <a href="#" class="mm-main-item flex-block">Направлення</a>
+
+                </div>
+                <div class="mm-sub">
+                    <a href="#">Відгуки</a>
+                    <a href="#">Контакти</a>
+                    <a href="#">Блог</a>
+                    <a href="#">Про нас</a>
+                    <a href="#">Оплата і Доставка</a>
+                    <a href="#">Договір оферти</a>
+                    <a href="#">Умови повернення товару</a>
+                    <a href="#">Політика конфіденційності</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- consultation -->
+    <div class="n-consultation-block">
+        <div class="ncb-container">
+            <i class="mdi mdi-close close-consultation"></i>
+            <form id="form-p-send-manager" action="/../manager/send-message/" method="post">
+                <input type="hidden" name="_csrf-frontend" value="xPIVGrSel1kxwk1x90PfHY6KkKlpYguZwdq1ZqmXFnyulkps_u7gDAe0Jje_DLBR6MTFyh0hOvyImPkn9tYjPQ==">
+                <div class="form-group field-contactmanagerform-username required">
+                    <label class="control-label" for="contactmanagerform-username">Ім'я</label>
+                    <input type="text" id="contactmanagerform-username" class="form-control" name="ContactManagerForm[userName]" placeholder="Ваше ім'я" aria-required="true">
+                    <p class="help-block help-block-error"></p>
+                </div>
+                <div class="form-group field-contactmanagerform-useremail required">
+                    <label class="control-label" for="contactmanagerform-useremail">Email</label>
+                    <input type="text" id="contactmanagerform-useremail" class="form-control" name="ContactManagerForm[userEmail]" placeholder="Ваш email" aria-required="true">
+                    <p class="help-block help-block-error"></p>
+                </div>
+                <div class="form-group field-contactmanagerform-userphone required">
+                    <label class="control-label" for="contactmanagerform-userphone">Телефон</label>
+                    <input type="tel" id="contactmanagerform-userphone" class="form-control" name="ContactManagerForm[userPhone]" placeholder="+38(___)___-__-__" aria-required="true">
+                    <p class="help-block help-block-error"></p>
+                </div>
+                <div class="form-group field-contactmanagerform-usermessage required">
+                    <label class="control-label" for="contactmanagerform-usermessage">Повідомлення</label>
+                    <textarea id="contactmanagerform-usermessage" class="form-control" name="ContactManagerForm[userMessage]" placeholder="Ваше повідомлення менеджеру..." aria-required="true"></textarea>
+                    <p class="help-block help-block-error"></p>
+                </div>
+                <div class="form-group field-contactmanagerform-pagemessage required">
+                    <input type="hidden" id="contactmanagerform-pagemessage" class="form-control" name="ContactManagerForm[pageMessage]" value="https://pack-trade.com/nproduct/telezhka_gidravlicheskaya_2_5_tonny_model_cby_as-25_kolesa_poliuretan-niuli/" readonly="">
+                    <p class="help-block help-block-error"></p>
+                </div>
+                <div class="form-group field-contactmanagerform-gclid_field">
+                    <input type="hidden" id="contactmanagerform-gclid_field" class="form-control" name="ContactManagerForm[gclid_field]" readonly="" value="Cj0KCQjw_r6hBhDdARIsAMIDhV-nbif9WbHD2o2jNu_D1p4nycPZvDgGna2zjcIinfStljY2Gb97kmwaAuW3EALw_wcB">
+                    <p class="help-block help-block-error"></p>
+                </div>                
+                <button type="submit" class="main-button ncb-send">Відправити повідомлення</button>
+            </form>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="index-slider-block">
+        <div class="home-slider-block flex-block container">
+            <div class="hsb-main">
+                <div>
+                    <a href="/">
+                        <!-- <video class="video" autoplay="" loop="" muted="" playsinline="" poster="media/no-img.jpg">
+                            <source src="media/video.mp4" type="video/mp4">
+                        </video> -->
+                        <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    </a>
+                </div>
+                <div>
+                    <a href="/">
+                        <!-- <video class="video" autoplay="" loop="" muted="" playsinline="" poster="media/no-img.jpg">
+                            <source src="video/1pack-vbg.mp4" type="video/mp4">
+                        </video> -->
+                        <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    </a>
+                </div>
+            </div>
+            <div class="hsb-sub">
+                <a href="/">
+                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    <div class="hsb-button">Акції та знижки</div>
+                </a>
+                <a href="/">
+                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    <div class="hsb-button">Актуально зараз</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="home-brand-block container">
+            <div class="hbb-tb flex-block">
+                <div class="hbb-tb-title">Ми офіційні дилери</div>
+                <a href="/">Всі бренди ></a>
+            </div>
+            <div class="hbb-brand-list">
+                <div>
+                    <a class="hbb-brand-item" href="">
+                        <img src="https://pack-trade.com/images/brands/spm-cat134.svg" alt="SEO" title="SEO">
+                    </a>
+                </div>
+                <div>
+                    <a class="hbb-brand-item" href="">
+                        <img src="https://pack-trade.com/images/brands/spm-cat134.svg" alt="SEO" title="SEO">
+                    </a>
+                </div>
+                <div>
+                    <a class="hbb-brand-item" href="">
+                        <img src="https://pack-trade.com/images/brands/spm-cat134.svg" alt="SEO" title="SEO">
+                    </a>
+                </div>
+                <div>
+                    <a class="hbb-brand-item" href="">
+                        <img src="https://pack-trade.com/images/brands/spm-cat134.svg" alt="SEO" title="SEO">
+                    </a>
+                </div>
+                <div>
+                    <a class="hbb-brand-item" href="">
+                        <img src="https://pack-trade.com/images/brands/spm-cat134.svg" alt="SEO" title="SEO">
+                    </a>
+                </div>
+                <div>
+                    <a class="hbb-brand-item" href="">
+                        <img src="https://pack-trade.com/images/brands/spm-cat134.svg" alt="SEO" title="SEO">
+                    </a>
+                </div>
+                <div>
+                    <a class="hbb-brand-item" href="">
+                        <img src="https://pack-trade.com/images/brands/spm-cat134.svg" alt="SEO" title="SEO">
+                    </a>
+                </div>
+                <div>
+                    <a class="hbb-brand-item" href="">
+                        <img src="https://pack-trade.com/images/brands/spm-cat134.svg" alt="SEO" title="SEO">
+                    </a>
+                </div>
+                <div>
+                    <a class="hbb-brand-item" href="">
+                        <img src="https://pack-trade.com/images/brands/spm-cat134.svg" alt="SEO" title="SEO">
+                    </a>
+                </div>
+                <div>
+                    <a class="hbb-brand-item" href="">
+                        <img src="https://pack-trade.com/images/brands/spm-cat134.svg" alt="SEO" title="SEO">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <section class="container">
+        <div class="main-title">Напрями діяльності компанії</div>
+        <div class="direction-block">
+            <a href="#" class="direction-item">
+                <div class="db-img flex-block">
+                    <img src="media/upakovka.svg" alt="SEO" title="SEO">
+                </div>
+                <div class="direction-title">Пакувальні матеріали та інструмент</div>
+                <div class="direction-desc">Пакувальні матеріали та інструмент Пакувальні матеріали та інструмент</div>
+            </a>
+            <a href="#" class="direction-item">
+                <div class="db-img flex-block">
+                    <img src="media/robot.svg" alt="SEO" title="SEO">
+                </div>
+                <div class="direction-title">Пакувальне обладнання</div>
+                <div class="direction-desc">Пакувальні матеріали та інструмент Пакувальні матеріали та інструмент</div>
+            </a>
+            <a href="#" class="direction-item">
+                <div class="db-img flex-block">
+                    <img src="media/n1-sklad.svg" alt="SEO" title="SEO">
+                </div>
+                <div class="direction-title">Складська техніка</div>
+                <div class="direction-desc">Пакувальні матеріали та інструмент Пакувальні матеріали та інструмент</div>
+            </a>
+            <a href="#" class="direction-item">
+                <div class="db-img flex-block">
+                    <img src="media/1specteh.svg" alt="SEO" title="SEO">
+                </div>
+                <div class="direction-title">Спецтехніка і агротехніка</div>
+                <div class="direction-desc">Пакувальні матеріали та інструмент Пакувальні матеріали та інструмент</div>
+            </a>
+            <a href="#" class="direction-item">
+                <div class="db-img flex-block">
+                    <img src="media/avto-ta-prisep.svg" alt="SEO" title="SEO">
+                </div>
+                <div class="direction-title">Автомобілі та причепи</div>
+                <div class="direction-desc">Пакувальні матеріали та інструмент Пакувальні матеріали та інструмент</div>
+            </a>
+            <a href="#" class="direction-item">
+                <div class="db-img flex-block">
+                    <img src="media/navoz.svg" alt="SEO" title="SEO">
+                </div>
+                <div class="direction-title">Техніка для переробки та внесення гною. Шлангові системи</div>
+                <div class="direction-desc">Пакувальні матеріали та інструмент Пакувальні матеріали та інструмент</div>
+            </a>
+            <a href="#" class="direction-item">
+                <div class="db-img flex-block">
+                    <img src="media/navisne.svg" alt="SEO" title="SEO">
+                </div>
+                <div class="direction-title">Навісне обладнання та комплектуючі</div>
+                <div class="direction-desc">Пакувальні матеріали та інструмент Пакувальні матеріали та інструмент</div>
+            </a>
+            <a href="#" class="direction-item">
+                <div class="db-img flex-block">
+                    <img src="media/orenda2.svg" alt="SEO" title="SEO">
+                </div>
+                <div class="direction-title">Оренда техніки</div>
+                <div class="direction-desc">Пакувальні матеріали та інструмент Пакувальні матеріали та інструмент</div>
+            </a>
+            <a href="#" class="direction-item">
+                <div class="db-img flex-block">
+                    <img src="media/service.svg" alt="SEO" title="SEO">
+                </div>
+                <div class="direction-title">Сервіс і ремонт</div>
+                <div class="direction-desc">Пакувальні матеріали та інструмент Пакувальні матеріали та інструмент</div>
+            </a>
+            <a href="#" class="direction-item">
+                <div class="db-img flex-block">
+                    <img src="media/parts.svg" alt="SEO" title="SEO">
+                </div>
+                <div class="direction-title">Запчастини, інструмент, склад</div>
+                <div class="direction-desc">Пакувальні матеріали та інструмент Пакувальні матеріали та інструмент</div>
+            </a>
+            <a href="#" class="direction-item">
+                <div class="db-img flex-block">
+                    <img src="media/tires.svg" alt="SEO" title="SEO">
+                </div>
+                <div class="direction-title">Шини, гусениці</div>
+                <div class="direction-desc">Пакувальні матеріали та інструмент Пакувальні матеріали та інструмент</div>
+            </a>
+        </div>
+    </section>
+
+    <section class="container product-block">
+        <div class="pl-title">Лідери продажу</div>
+        <div class="product-list">
+            <div href="#" class="pl-item">
+                <div class="top-product flex-block">
+                    <i class="mdi mdi-fire"></i>
+                    <i class="mdi mdi-video-outline"></i>
+                    <i class="mdi mdi-percent-outline"></i>
+                </div>
+                <a class="pl-img" href="#">
+                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                </a>
+                <div class="product-number">№123123</div>
+                <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач  </div>
+                <div class="price-block">
+                    <div class="old-price">
+                        <span>3 794 400</span>
+                        <span>-126480</span>
+                    </div>
+                    <div class="price">
+                        <span>3 667 920 грн</span>
+                        <span>89 900 €</span>
+                    </div>
+                </div>
+                <div class="status-product-av">В наявності</div>
+                <div class="pl-buttons flex-block">
+                    <div class="pl-addcart"><i class="mdi mdi-cart-outline"></i><span>В кошик</span></div>
+                    <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                </div>
+            </div>
+
+            <div href="#" class="pl-item">
+                <a class="pl-img" href="#">
+                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                </a>
+                <div class="product-number">№123123</div>
+                <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м </div>
+                <div class="price-block">
+                    <div class="old-price">
+                        
+                    </div>
+                    <div class="price">
+                        <span>3 667 920 грн</span>
+                        <span>89 900 €</span>
+                    </div>
+                </div>
+                <div class="status-product-underorder">Під замовлення</div>
+                <div class="pl-buttons flex-block">
+                    <div class="pl-cons">Замовити</div>
+                    <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                </div>
+            </div>
+
+            <div href="#" class="pl-item">
+                <a class="pl-img" href="#">
+                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                </a>
+                <div class="product-number">№123123</div>
+                <div class="pl-item-title">Навантажувач </div>
+                <div class="price-block">
+                    <div class="old-price">
+                        
+                    </div>
+                    <div class="price">
+                        <span>3 667 920 грн</span>
+                        
+                    </div>
+                </div>
+               
+                <div class="status-product-sales">Немає в наявності</div>
+                <div class="pl-buttons flex-block">
+                    <div class="pl-cons">Замовити</div>
+                    <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                </div>
+            </div>
+
+            <div href="#" class="pl-item">
+                <a class="pl-img" href="#">
+                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                </a>
+                <div class="product-number">№123123</div>
+                <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
+                <div class="price-block">
+                    <div class="old-price">
+                        
+                    </div>
+                    <div class="price">
+                        <span>Ціну уточнюйте</span>
+                       
+                    </div>
+                </div>
+               
+                <div class="status-product-sales">Очікується</div>
+                <div class="pl-buttons flex-block">
+                    <div class="pl-cons">Замовити</div>
+                    <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                </div>
+            </div>
+            <div href="#" class="pl-item">
+                <a class="pl-img" href="#">
+                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                </a>
+                <div class="product-number">№123123</div>
+                <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
+                <div class="price-block">
+                    <div class="old-price">
+                        
+                    </div>
+                    <div class="price">
+                        <span>Ціну уточнюйте</span>
+                       
+                    </div>
+                </div>
+               
+                <div class="status-product-sales">Очікується</div>
+                <div class="pl-buttons flex-block">
+                    <div class="pl-cons">Замовити</div>
+                    <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                </div>
+            </div>
+            <div href="#" class="pl-item">
+                <a class="pl-img" href="#">
+                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                </a>
+                <div class="product-number">№123123</div>
+                <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
+                <div class="price-block">
+                    <div class="old-price">
+                        
+                    </div>
+                    <div class="price">
+                        <span>Ціну уточнюйте</span>
+                       
+                    </div>
+                </div>
+               
+                <div class="status-product-sales">Очікується</div>
+                <div class="pl-buttons flex-block">
+                    <div class="pl-cons">Замовити</div>
+                    <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                </div>
+            </div>
+            <div href="#" class="pl-item">
+                <a class="pl-img" href="#">
+                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                </a>
+                <div class="product-number">№123123</div>
+                <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
+                <div class="price-block">
+                    <div class="old-price">
+                        
+                    </div>
+                    <div class="price">
+                        <span>Ціну уточнюйте</span>
+                       
+                    </div>
+                </div>
+               
+                <div class="status-product-sales">Очікується</div>
+                <div class="pl-buttons flex-block">
+                    <div class="pl-cons">Замовити</div>
+                    <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                </div>
+            </div>
+            <div href="#" class="pl-item">
+                <a class="pl-img" href="#">
+                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                </a>
+                <div class="product-number">№123123</div>
+                <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
+                <div class="price-block">
+                    <div class="old-price">
+                        
+                    </div>
+                    <div class="price">
+                        <span>Ціну уточнюйте</span>
+                       
+                    </div>
+                </div>
+               
+                <div class="status-product-sales">Очікується</div>
+                <div class="pl-buttons flex-block">
+                    <div class="pl-cons">Замовити</div>
+                    <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                </div>
+            </div>
+            <div href="#" class="pl-item">
+                <a class="pl-img" href="#">
+                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                </a>
+                <div class="product-number">№123123</div>
+                <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
+                <div class="price-block">
+                    <div class="old-price">
+                        
+                    </div>
+                    <div class="price">
+                        <span>Ціну уточнюйте</span>
+                       
+                    </div>
+                </div>
+               
+                <div class="status-product-sales">Очікується</div>
+                <div class="pl-buttons flex-block">
+                    <div class="pl-cons">Замовити</div>
+                    <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                </div>
+            </div>
+            <div href="#" class="pl-item">
+                <a class="pl-img" href="#">
+                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                </a>
+                <div class="product-number">№123123</div>
+                <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
+                <div class="price-block">
+                    <div class="old-price">
+                        
+                    </div>
+                    <div class="price">
+                        <span>Ціну уточнюйте</span>
+                       
+                    </div>
+                </div>
+               
+                <div class="status-product-sales">Очікується</div>
+                <div class="pl-buttons flex-block">
+                    <div class="pl-cons">Замовити</div>
+                    <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="index-show-more">
+            <i class="mdi mdi-chevron-double-down"></i>
+            <span>Показати ще</span>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="pl-title">Переглянуті товари</div>
+        <div class="products-list-slider">
+            <div class="pp-arow-next"></div>
+            <div class="pp-arow-prev"></div>
+            <div class="pp-last-views-products">
+                <div href="#" class="pl-item">
+                    <div class="top-product flex-block">
+                        <i class="mdi mdi-fire"></i>
+                        <i class="mdi mdi-video-outline"></i>
+                        <i class="mdi mdi-percent-outline"></i>
+                    </div>
+                    <a class="pl-img" href="#">
+                        <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    </a>
+                    <div class="product-number">№123123</div>
+                    <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач  </div>
+                    <div class="price-block">
+                        <div class="old-price">
+                            <span>3 794 400</span>
+                            <span>-126480</span>
+                        </div>
+                        <div class="price">
+                            <span>3 667 920 грн</span>
+                            <span>89 900 €</span>
+                        </div>
+                    </div>
+                    <div class="status-product-av">В наявності</div>
+                    <div class="pl-buttons flex-block">
+                        <div class="pl-addcart"><i class="mdi mdi-cart-outline"></i><span>В кошик</span></div>
+                        <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                    </div>
+                </div>
+                <div href="#" class="pl-item">
+                    <a class="pl-img" href="#">
+                        <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    </a>
+                    <div class="product-number">№123123</div>
+                    <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м </div>
+                    <div class="price-block">
+                        <div class="old-price">
+                            
+                        </div>
+                        <div class="price">
+                            <span>3 667 920 грн</span>
+                            <span>89 900 €</span>
+                        </div>
+                    </div>
+                    <div class="status-product-underorder">Під замовлення</div>
+                    <div class="pl-buttons flex-block">
+                        <div class="pl-cons">Замовити</div>
+                        <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                    </div>
+                </div>
+    
+                <div href="#" class="pl-item">
+                    <a class="pl-img" href="#">
+                        <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    </a>
+                    <div class="product-number">№123123</div>
+                    <div class="pl-item-title">Навантажувач </div>
+                    <div class="price-block">
+                        <div class="old-price">
+                            
+                        </div>
+                        <div class="price">
+                            <span>3 667 920 грн</span>
+                            
+                        </div>
+                    </div>
+                   
+                    <div class="status-product-sales">Немає в наявності</div>
+                    <div class="pl-buttons flex-block">
+                        <div class="pl-cons">Замовити</div>
+                        <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                    </div>
+                </div>
+    
+                <div href="#" class="pl-item">
+                    <a class="pl-img" href="#">
+                        <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    </a>
+                    <div class="product-number">№123123</div>
+                    <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
+                    <div class="price-block">
+                        <div class="old-price">
+                            
+                        </div>
+                        <div class="price">
+                            <span>Ціну уточнюйте</span>
+                           
+                        </div>
+                    </div>
+                   
+                    <div class="status-product-sales">Очікується</div>
+                    <div class="pl-buttons flex-block">
+                        <div class="pl-cons">Замовити</div>
+                        <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                    </div>
+                </div>
+                <div href="#" class="pl-item">
+                    <a class="pl-img" href="#">
+                        <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    </a>
+                    <div class="product-number">№123123</div>
+                    <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
+                    <div class="price-block">
+                        <div class="old-price">
+                            
+                        </div>
+                        <div class="price">
+                            <span>Ціну уточнюйте</span>
+                           
+                        </div>
+                    </div>
+                   
+                    <div class="status-product-sales">Очікується</div>
+                    <div class="pl-buttons flex-block">
+                        <div class="pl-cons">Замовити</div>
+                        <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                    </div>
+                </div>
+                <div href="#" class="pl-item">
+                    <a class="pl-img" href="#">
+                        <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    </a>
+                    <div class="product-number">№123123</div>
+                    <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
+                    <div class="price-block">
+                        <div class="old-price">
+                            
+                        </div>
+                        <div class="price">
+                            <span>Ціну уточнюйте</span>
+                           
+                        </div>
+                    </div>
+                   
+                    <div class="status-product-sales">Очікується</div>
+                    <div class="pl-buttons flex-block">
+                        <div class="pl-cons">Замовити</div>
+                        <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+    
+    <section class="container">
+        <div class="main-title">У центрі уваги</div>
+        <div class="blog-slider">
+            <div class="arrow-next blog-next"><i></i></div>
+            <div class="arrow-prev blog-prev"><i></i></div>
+            <div class="blog-block">
+                <a href="#" class="blog-item">
+                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    <div class="blog-title">Спецтехніка в Україні: що купували найбільше у 2022?</div>
+                    <div class="blog-description">Спецтехніка в Україні — це велика група машин та обладнання, які призначені для виконання здебільшого вузькоспеціалізованих завдань</div>
+                    <div class="blog-button">Дізнатись більше</div>
+                </a>
+                <a href="#" class="blog-item">
+                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    <div class="blog-title">Спецтехніка в Україні: що купували найбільше у 2022?</div>
+                    <div class="blog-description">Спецтехніка в Україні — це велика група машин та обладнання, які призначені для виконання здебільшого вузькоспеціалізованих завдань</div>
+                    <div class="blog-button">Дізнатись більше</div>
+                </a>
+                <a href="#" class="blog-item">
+                    <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    <div class="blog-title">Спецтехніка в Україні: що купували найбільше у 2022?</div>
+                    <div class="blog-description">Спецтехніка в Україні — це велика група машин та обладнання, які призначені для виконання здебільшого вузькоспеціалізованих завдань</div>
+                    <div class="blog-button">Дізнатись більше</div>
+                </a>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="container">
+        <div class="main-title">Нові відео</div>
+        <div class="video-block">
+            <a href="https://www.youtube.com/watch?v=uR_53Ubcg3o" class="video-item" data-fancybox="index-video">
+                <img src="https://img.youtube.com/vi/uR_53Ubcg3o/maxresdefault.jpg" alt="SEO" title="SEO">
+                <i class="mdi mdi-play-circle"></i>
+            </a>
+            <a href="https://www.youtube.com/watch?v=uR_53Ubcg3o" class="video-item" data-fancybox="index-video">
+                <img src="https://img.youtube.com/vi/uR_53Ubcg3o/maxresdefault.jpg" alt="SEO" title="SEO">
+                <i class="mdi mdi-play-circle"></i>
+            </a>
+            <a href="https://www.youtube.com/watch?v=uR_53Ubcg3o" class="video-item" data-fancybox="index-video">
+                <img src="https://img.youtube.com/vi/uR_53Ubcg3o/maxresdefault.jpg" alt="SEO" title="SEO">
+                <i class="mdi mdi-play-circle"></i>
+            </a>
+            <a href="https://www.youtube.com/watch?v=uR_53Ubcg3o" class="video-item" data-fancybox="index-video">
+                <img src="https://img.youtube.com/vi/uR_53Ubcg3o/maxresdefault.jpg" alt="SEO" title="SEO">
+                <i class="mdi mdi-play-circle"></i>
+            </a>
+            <a href="https://www.youtube.com/watch?v=uR_53Ubcg3o" class="video-item" data-fancybox="index-video">
+                <img src="https://img.youtube.com/vi/uR_53Ubcg3o/maxresdefault.jpg" alt="SEO" title="SEO">
+                <i class="mdi mdi-play-circle"></i>
+            </a>
+        </div>
+    </section>
+    <section class="container">
+        <div class="main-block">
+            <div class="pop-cl-title">Популярні категорії</div>
+            <div class="scroll-block">
+                <a class="pop-cl-item" href="#">Категорія</a>
+                <a class="pop-cl-item" href="#">Категорія</a>
+                <a class="pop-cl-item" href="#">Категорія</a>
+                <a class="pop-cl-item" href="#">Категорія</a>
+                <a class="pop-cl-item" href="#">Категорія</a>
+                <a class="pop-cl-item" href="#">Категорія</a>
+                <a class="pop-cl-item" href="#">Категорія</a>
+                <a class="pop-cl-item" href="#">Категорія</a>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="seo-block main-block">
+            <h1>PACK-TRADE Україна</h1>
+            <div class="seo-text">
+                <p>Від продажу стретч-плівки до власного виробництва навісного обладнання! Колись історія української компанії «Пак-Трейд» почалася з одного перспективного напрямку, а за 18 років їх стало… понад 15! Ми подумали: а як стати тими, про кого кажуть: «Купую ТІЛЬКИ в них, бо впевнений у якості»? Відповідь ми знайшли у своєму ж питанні: треба просто продавати тільки якісне!</p><h3><strong>Хто ми та чим можемо бути корисні для Вас?</strong></h3><p>Якщо Ви опинились на цій сторінці, то, швидше за все, Ви:</p><h3><strong>Шукаєте якісні пакувальні матеріали та інструмент, щоб надійно зберігати або транспортувати свою продукцію.</strong></h3><p>Якщо так, то вже за кілька хвилин наш менеджер допоможе Вам у виборі пакувальних рішень та запропонує вигідну ціну. Офіційно представляємо таких виробників, як Gruplast (Польща), Folpak (Польща), JUTA (Чехія)</p><h3><strong>Починаєте власний бізнес або оновлюєте пакувальну лінію. </strong></h3><p>Ми — офіційні дилери найкращих виробників пакувального обладнання у світі — Robopac (Італія), Itatools (Італія), Messersy (Італія). Маємо успішні кейси налаштування пакувальних процесів на підприємствах найрізноманітніших напрямів.</p><h3><strong>Прагнете максимально спростити складські процеси та звести до мінімуму ручну роботу. </strong></h3><p>Для Вас ми пропонуємо рокли, річтраки, штабелери, більшість з яких використовуємо й самі.</p><h3><strong>Шукаєте спецтехніку, навантажувач, трактор чи екскаватор у відмінному стані та «не за всі гроші світу».</strong></h3><p>Ми привозимо машини з Європи та Америки, здійснюємо повний ТО на власній сервісній базі, щоб наш клієнт отримав техніку, повністю готову до роботи з моменту придбання! Автопарк представлений брендами JСВ, BOBCAT, KUBOTA, LINDE, TOYOTA, VOLVO, JOHN DEERE, CLAAS, CHALLENGER та ін.</p><h3><strong>Будуєте дороги різних масштабів та шукаєте надійного постачальника техніки для цих цілей. </strong></h3><p>У нашому парку дорожньо-будівельних машин представлені фрези, автогрейдери, катки, асфальтоукладачі та інша техніка від ВОМАG, VOGELE, HAMM, WIRTGEN, яку Ви можете придбати чи орендувати.</p><h3><strong>Не просто цікавитесь, а й бачите перспективу в переробленні органіки. </strong></h3><p>Ми допомагаємо маленьким українським фермам та великим агрокомпаніям робити з відходів корисну та прибуткову справу, перетворюючи гній та рослинні залишки на високоякісне добриво. Ось чому в наших клієнтів щороку покращуються врожаї.</p><h3><strong>Хотіли б нарешті знайти перевіреного та надійного постачальника якісних запчастин та олив для спецтехніки. </strong></h3><p>«Пак-Трейд» — ексклюзивний дилер виробника альтернативних запчастин JCB — Interpart, а також — офіційний дилер британського бренду паливно-мастильних матеріалів Millers Oils. Понад 40&nbsp;000 найменувань — завжди в наявності на складі.</p><h3><strong>Маєте регулярну або одноразову потребу в оренді спецтехніки чи агротехніки.</strong></h3><p>Завантажити / розвантажити, викопати чи закопати, спланувати, прибрати, викорчувати, зібрати урожай, тюкувати, трамбувати, мульчувати, фрезерувати, викачати лагуну, компостувати — усі ці роботи Ви можете довірити нам у будь-який сезон та в будь-якій точці України, зекономивши на придбанні сезонної техніки.</p><p>Наша особлива гордість — це власне виробництво навісного обладнання «А.ТОМ» для навантажувачів, екскаваторів, тракторів та іншої спеціалізованої техніки. Наш клієнт може переконатися в ефективності кожної з понад 100 моделей на власні очі, адже усе навісне обладнання обов’язково тестується в реальних, а нерідко — і в екстремальних умовах. «А.ТОМ» довів: українська «навіска» може не просто задовольнити потреби вітчизняного агросектору, будівельної, комунальної, дорожньо-будівельної сфери, а й бути корисною за кордоном.</p><p>Крім того, бути офіційними дилерами в Україні нам довірили такі світові гіганти, як</p><ul><li>Prinoth (Італія) — виробник мульчувальної техніки.</li><li>MBCrusher (Італія) – бренд преміального дробарного навісного обладнання.</li><li>SMP (Швеція) — одна з найкращих компаній, що спеціалізуються на виробництві похило-поворотних механізмів (тілтротаторів).</li></ul><p>Цифри та досягнення щороку збільшуються, але найголовніша цінність «Пак-Трейд» — це наші Люди. Від менеджера до інженера, кожна Людина у наші компанії — це талановитий професіонал, технічний експерт, допитливий фахівець, якого ми цінуємо понад усе. Люди — основний актив, завдяки якому «Пак-Трейд» здобуває авторитет в Україні та у світі.Дозвольте нам одного разу розв’язати Вашу проблему — і ми докладемо максимум зусиль, щоб вже завтра Ви рекомендували нас іншим. Адже наш успіх — це успіх наших партнерів.</p>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="main-block">
+            <div class="pop-cl-title">Групи товарів</div>
+            <div class="scroll-block">
+                <a class="pop-cl-item" href="#">Категорія</a>
+                <a class="pop-cl-item" href="#">Категорія</a>
+                <a class="pop-cl-item" href="#">Категорія</a>
+                <a class="pop-cl-item" href="#">Категорія</a>
+                <a class="pop-cl-item" href="#">Категорія</a>
+                <a class="pop-cl-item" href="#">Категорія</a>
+                <a class="pop-cl-item" href="#">Категорія</a>
+                <a class="pop-cl-item" href="#">Категорія</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<footer>
+    <div class="subscribe-block">
+        <div class="container sb-content">
+            <div class="sb-info flex-block">
+                <img src="img/email-subscribe.svg" alt="Підписка PACK-TRADE" title="Підписка PACK-TRADE">
+                <div>
+                    <div>Твоя персоналізована розсилка!</div>
+                    <p>Найвигідніші ціни, круті акції і персональні пропозиції в твоїй розсилці</p>
+                </div>
+            </div>
+            <div class="subscribe-channel">
+                <form id="save-email" class="flex-block" action="/../manager/send-email-validate/" method="post">
+                    <input type="hidden" name="_csrf-frontend" value="QzOtX111iOp2rSSVDqbuRmxXlV3Io7l6TRRCSRH9O-Y7bJhuOjTdizfmUOU46YgZOzjEF-XP7jgUIXNwc6lxiA=="><div class="form-group field-emailform-email required">
+                    <label class="control-label" for="emailform-email">Ваш E-mail</label>
+                    <input type="text" id="emailform-email" class="form-control" name="EmailForm[email]" aria-required="true"><p class="help-block help-block-error"></p></div>
+                    <button type="submit">Відправити</button>
+                </form>
+                <div class="official-channel-block">
+                    <div class="ocb-title">Офіційні канали</div>
+                    <div class="ocb-item-block flex-block">
+                        <a href="https://t.me/packtrade_official" class="ocb-item flex-block">
+                            <img src="img/telegram-channel.svg" alt="Pack-Trade Telegram" title="Pack-Trade Telegram">
+                            <p>Telegram</p>
+                        </a>
+                        <a href="https://invite.viber.com/?g2=AQB1qeZJ%2FCcpsU5a0gE5d3PmoGXGVcT9GU7UUIOMxgTPthPE%2FkMbkrZeQaw2x5eA&amp;lang=ru" class="ocb-item flex-block">
+                            <img src="img/viber-channel.svg" alt="Pack-Trade Viber" title="Pack-Trade Viber">
+                            <p>Viber</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container footer-block">
+        <div class="footer-info">
+            <img class="footer-logo" src="img/packlogo1.svg" alt="Логотип PACK-TRADE" title="Логотип PACK-TRADE">
+            <div class="fi-title">Телефон:</div>
+            <a href="tel:+380674114410" class="phone-conversion footer-phone">
+                <div>+38 (067) 411-44-10</div>
+                <p>9:00 - 18:00</p>
+            </a>
+            <div class="fi-title">Email:</div>
+            <a class="footer-email" href="mailto:info@pack-trade.com">info@pack-trade.com</a>
+            <div class="fi-title">Ми в соціальних мережах:</div>
+            <div class="footer-social flex-block">
+                <a href="#"><img src="img/viber.svg" alt="PACK-TRADE Viber" title="PACK-TRADE Viber"></a>
+                <a href="#"><img src="img/telegram.svg" alt="PACK-TRADE Telegram" title="PACK-TRADE Telegram"></a>
+                <a href="#"><img src="img/facebook.svg" alt="PACK-TRADE Facebook" title="PACK-TRADE Facebook"></a>
+                <a href="#"><img src="img/insta.svg" alt="PACK-TRADE Instagram" title="PACK-TRADE Instagram"></a>
+                <a href="#"><img src="img/you.svg" alt="PACK-TRADE Youtube" title="PACK-TRADE Youtube"></a>
+            </div>
+        </div>
+        <div class="footer-menu">
+            <div class="fm-title">PACK-TRADE</div>
+            <a href="#" class="footer-menu-item"><span>Контакти</span></a>
+            <a href="#" class="footer-menu-item"><span>Про компанію</span></a>
+            <a href="#" class="footer-menu-item"><span>Вакансії</span></a>
+            <a href="#" class="footer-menu-item"><span>Блог</span></a>
+            <a href="#" class="footer-menu-item"><span>Медіа</span></a>
+        </div>
+        <div class="footer-menu">
+            <div class="fm-title">Клієнтам</div>
+            <a href="#" class="footer-menu-item"><span>Оплата і Доставка</span></a>
+            <a href="#" class="footer-menu-item"><span>Договір оферти</span></a>
+            <a href="#" class="footer-menu-item"><span>Умови повернення товару</span></a>
+            <a href="#" class="footer-menu-item"><span>Політика конфіденційності</span></a>
+        </div>
+        <div class="footer-sub-menu">
+            <div class="fm-title">Корисні посилання</div>
+            <a href="#" class="footer-menu-item"><span>Пальці для спецтехніки та навісного обладнання</span></a>
+            <a href="#" class="footer-menu-item"><span>Підбір, викуп і доставка будь-якої техніки з Європи «під ключ»</span></a>
+        </div>
+    </div>
+    <div class="corp">© 2004-2023 "PACK-TRADE". Всі права захищені</div>
+</footer>
+
+<script src="js/jquery-3.7.0.min.js"></script>
+<script src="js/fancybox.umd.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>
