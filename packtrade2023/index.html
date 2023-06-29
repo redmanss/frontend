@@ -47,12 +47,7 @@
                 <div class="mob-menu"><i class="mdi mdi-menu"></i><span>Каталог</span></div>
                 <a href="#" class="sale-head">Акції</a>
                 <a href="#">Бренди</a>
-                <a href="#">Контакти</a>
-                <!-- <a href="#">Блог</a>
-                <a href="#">Медіа</a>
-                <a href="#">Про нас</a> -->
-                
-                
+                <a href="#">Контакти</a>               
                 <div class="sub-menu-block">
                     <div class="sub-menu-button flex-block"><p>Ще</p><i class="mdi mdi-chevron-down"></i></div>
                     <div class="drop-sub-menu">
@@ -62,7 +57,6 @@
                         <a href="#">Про нас</a>
                     </div>
                 </div>
-
                 <div id="open-product-favorites">
                     <i class="mdi mdi-heart-outline"></i>
                     <div id="favorites-number"><span>0</span></div>
@@ -80,6 +74,46 @@
     </div>
     
     <!-- Modal -->
+    <!-- Search -->
+    <div class="h-search-block">
+        <i class="mdi mdi-close h-close-search"></i>
+        <form action="#">
+            <input type="text" class="who" placeholder="Пошук товарів" name="q" autocomplete="off" data-search="">
+            <div class="h-start-search flex-block">
+                <i class="mdi mdi-magnify"></i>
+            </div>
+        </form>
+        <div class="dynamic-search-block">
+            <a href="#" class="dsb-result-item flex-block">
+                <div class="dsb-item-img">
+                    <picture>
+                        <source srcset="https://atom-attachments.com/images/Products/82/280/kartinka_p6SOfc.webp" type="image/webp">
+                        <img src="https://atom-attachments.com/images/Products/82/280/kartinka_p6SOfc.jpg" alt="Ківш для Біг Бегів - А.ТОМ 1 м³" title="Ківш для Біг Бегів - А.ТОМ 1 м³" width="auto" height="auto">
+                    </picture>
+                </div>
+                <div class="dsb-item-info">
+                    <div class="dsb-item-name">Ківш для Біг Бегів - А.ТОМ 1 м³</div>
+                    <div class="dsb-id">Код: 82 / Каталожний номер: 225 </div>
+                    <span class="dsb-status">В наявності</span>
+                    <div class="dsb-item-price">
+                        <div class="pp-price-block">
+                            <div class="pp-price">199 000 грн</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+
+
+            <div class="pagination-show-more-leave" date-page="2" date-search="ковш"><i class="mdi mdi-refresh"></i><div id="show_btn">Показати ще 30 товарів</div></div>
+
+            <div class="ds-title">Категорії:</div>
+        <div class="dsb-result-category flex-block">
+            <a href="#" class="dsb-result-item-category"><i class="mdi mdi-folder-outline"></i>Для телескопічних навантажувачів</a>
+        </div>
+        </div>
+        
+    </div>
     <!-- menu -->
     <div class="mob-menu-modal">
         <div class="mob-menu-block">
@@ -380,7 +414,7 @@
                 <div class="status-product-underorder">Під замовлення</div>
                 <div class="pl-buttons flex-block">
                     <div class="pl-cons">Замовити</div>
-                    <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                    <div class="pl-addfavorite favorite-active"><i class="mdi mdi-heart"></i></div>
                 </div>
             </div>
 
