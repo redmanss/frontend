@@ -74,9 +74,38 @@
     </div>
     
     <!-- Modal -->
+    <!-- Login -->
+    <div class="modal-body login-modal" style="display: block;">
+        <i class="mdi mdi-close modal-close close-login-modal"></i>
+        <div class="modal-body-block">
+            <div class="modal-title">Вхід</div>
+            <div class="login-tab-block flex-block">
+                <div class="login-for-client login-active">Вхід для клієнтів</div>
+                <div class="login-for-manager">Вхід для менеджерів</div>
+            </div>
+            <form id="login-form-user">
+                <input type="hidden" name="_csrf-frontend" value="zjzm0LEvuUUyxWztIL3Snzlcbp2j7wrJLLHr6-yaDaiaTtPihX_2NH2mFIpkiP-oTSknqsmAMv5WwrTbmftcxA=="><div class="form-group field-loginform-username required">
+                <label class="control-label" for="loginform-username">Логін</label>
+                <input type="text" id="loginform-username" class="form-control" name="LoginForm[username]" maxlength="200" aria-required="true"><p class="help-block help-block-error"></p></div><div class="form-group field-loginform-password required">
+                <label class="control-label" for="loginform-password">Пароль</label>
+                <input type="password" id="loginform-password" class="form-control" name="LoginForm[password]" aria-required="true"><p class="help-block help-block-error"></p></div><div class="form-group field-loginform-rememberme"><div class="checkbox">
+                <label for="loginform-rememberme">
+                <input type="hidden" name="LoginForm[rememberMe]" value="0"><input type="checkbox" id="loginform-rememberme" name="LoginForm[rememberMe]" value="1" checked="">
+                Запам'ятати мене
+                </label><p class="help-block help-block-error"></p></div></div><div class="form-group">
+                <button type="submit" class="login-in">Вхід</button></div>
+            </form>
+            <form id="login-form-manager" style="display: none;">
+                <input type="hidden" name="_csrf-frontend" value="zjzm0LEvuUUyxWztIL3Snzlcbp2j7wrJLLHr6-yaDaiaTtPihX_2NH2mFIpkiP-oTSknqsmAMv5WwrTbmftcxA=="><div class="form-group field-managerphone-phone required">
+                <label class="control-label" for="managerphone-phone">Телефон</label>
+                <input type="tel" id="managerphone-phone" class="form-control" name="ManagerPhone[phone]" placeholder="+38(___)___-__-__" aria-required="true"><p class="help-block help-block-error"></p></div><div class="form-group">
+                <button type="submit" class="login-in">Вхід</button></div>
+            </form>
+        </div>
+    </div>
     <!-- Search -->
-    <div class="h-search-block">
-        <i class="mdi mdi-close h-close-search"></i>
+    <div class="modal-body h-search-block">
+        <i class="mdi mdi-close modal-close h-close-search"></i>
         <form action="#">
             <input type="text" class="who" placeholder="Пошук товарів" name="q" autocomplete="off" data-search="">
             <div class="h-start-search flex-block">
@@ -84,35 +113,84 @@
             </div>
         </form>
         <div class="dynamic-search-block">
-            <a href="#" class="dsb-result-item flex-block">
-                <div class="dsb-item-img">
-                    <picture>
-                        <source srcset="https://atom-attachments.com/images/Products/82/280/kartinka_p6SOfc.webp" type="image/webp">
+            <div class="ds-title">Товари:</div>
+            <div class="dsb-result-products">
+                <a href="#" class="dsb-result-item flex-block">
+                    <div class="dsb-item-img">
                         <img src="https://atom-attachments.com/images/Products/82/280/kartinka_p6SOfc.jpg" alt="Ківш для Біг Бегів - А.ТОМ 1 м³" title="Ківш для Біг Бегів - А.ТОМ 1 м³" width="auto" height="auto">
-                    </picture>
-                </div>
-                <div class="dsb-item-info">
-                    <div class="dsb-item-name">Ківш для Біг Бегів - А.ТОМ 1 м³</div>
-                    <div class="dsb-id">Код: 82 / Каталожний номер: 225 </div>
-                    <span class="dsb-status">В наявності</span>
-                    <div class="dsb-item-price">
-                        <div class="pp-price-block">
-                            <div class="pp-price">199 000 грн</div>
+                    </div>
+                    <div class="dsb-item-info">
+                        <div class="dsb-item-name">Ківш для Біг Бегів - А.ТОМ 1 м³</div>
+                        <div class="dsb-id">№225</div>
+                        <span class="dsb-status">В наявності</span>
+                        <div class="price-block dsb-item-price">
+                            <div class="old-price">
+                                <span>3 794 400</span>
+                                <span>-126480</span>
+                            </div>
+                            <div class="price">
+                                <span>3 667 920 грн</span>
+                                <span>89 900 €</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </a>
+                </a>
+                <a href="#" class="dsb-result-item flex-block">
+                    <div class="dsb-item-img">
+                        <img src="https://atom-attachments.com/images/Products/82/280/kartinka_p6SOfc.jpg" alt="Ківш для Біг Бегів - А.ТОМ 1 м³" title="Ківш для Біг Бегів - А.ТОМ 1 м³" width="auto" height="auto">
+                    </div>
+                    <div class="dsb-item-info">
+                        <div class="dsb-item-name">Ківш для Біг Бегів - А.ТОМ 1 м³</div>
+                        <div class="dsb-id">№225</div>
+                        <span class="dsb-status status-product-sales">Немає в наявності</span>
+                        <div class="price-block dsb-item-price">
 
-
-
-            <div class="pagination-show-more-leave" date-page="2" date-search="ковш"><i class="mdi mdi-refresh"></i><div id="show_btn">Показати ще 30 товарів</div></div>
-
+                            <div class="price">
+                                <span>3 667 920 грн</span>
+                                <span>89 900 €</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="dsb-result-item flex-block">
+                    <div class="dsb-item-img">
+                        <img src="https://atom-attachments.com/images/Products/82/280/kartinka_p6SOfc.jpg" alt="Ківш для Біг Бегів - А.ТОМ 1 м³" title="Ківш для Біг Бегів - А.ТОМ 1 м³" width="auto" height="auto">
+                    </div>
+                    <div class="dsb-item-info">
+                        <div class="dsb-item-name">Ківш для Біг Бегів - А.ТОМ 1 м³</div>
+                        <div class="dsb-id">№225 </div>
+                        <span class="dsb-status status-product-sales">Очікується</span>
+                        <div class="price-block dsb-item-price">
+                            <div class="price">
+                                <span>3 667 920 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="dsb-result-item flex-block">
+                    <div class="dsb-item-img">
+                        <img src="https://atom-attachments.com/images/Products/82/280/kartinka_p6SOfc.jpg" alt="Ківш для Біг Бегів - А.ТОМ 1 м³" title="Ківш для Біг Бегів - А.ТОМ 1 м³" width="auto" height="auto">
+                    </div>
+                    <div class="dsb-item-info">
+                        <div class="dsb-item-name">Ківш для Біг Бегів - А.ТОМ 1 м³</div>
+                        <div class="dsb-id">№225 </div>
+                        <span class="dsb-status status-product-underorder">Під замовлення</span>
+                        <div class="price-block dsb-item-price">
+                            <div class="price">
+                                <span>Ціну уточнюйте</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="pagination-show-more-leave"><i class="mdi mdi-refresh"></i><div id="show_btn">Показати ще 30 товарів</div></div>
+            </div>
             <div class="ds-title">Категорії:</div>
-        <div class="dsb-result-category flex-block">
-            <a href="#" class="dsb-result-item-category"><i class="mdi mdi-folder-outline"></i>Для телескопічних навантажувачів</a>
+            <div class="dsb-result-category flex-block">
+                <a href="#" class="dsb-result-item-category"><i class="mdi mdi-folder-outline"></i><span>Для телескопічних навантажувачів</span></a>
+                <a href="#" class="dsb-result-item-category"><i class="mdi mdi-folder-outline"></i><span>Для телескопічних навантажувачів</span></a>
+                <a href="#" class="dsb-result-item-category"><i class="mdi mdi-folder-outline"></i><span>Для телескопічних навантажувачів</span></a>
+            </div>
         </div>
-        </div>
-        
     </div>
     <!-- menu -->
     <div class="mob-menu-modal">

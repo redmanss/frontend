@@ -10,6 +10,15 @@ if (!$(e.target).closest(".drop-lang-header, .lang-button, .sub-menu-button, .dr
 }
     e.stopPropagation()
 })
+// search
+$('.h-search-tap').click(function(){
+    $('.h-search-block').show()
+    $('body').addClass('block-body')
+})
+$('.h-close-search').click(function(){
+    $('.h-search-block').hide()
+    $('body').removeClass('block-body')
+})
 // sub-menu
 $(".sub-menu-button").click(function() {
     $('.drop-sub-menu').slideToggle(100)

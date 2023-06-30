@@ -1,14 +1,14 @@
-.consultation-button, .lang-button, .right-menu a, .mob-menu, .direction-item, .blog-item, .video-item, .product-button, .footer-social a, .footer-menu-item, .blog-button, .mm-main-item, .mm-sub a, .close-mob-menu-modal, .close-consultation, .ncb-send, .drop-lang-header a, .sort-block div, .bread-crumbs a, .pl-item, .ivb-item, #open-product-favorites, #open-product-cart, .h-search-tap, .n-login, .sub-menu-button, .footer-phone, .footer-email, .hbb-tb a, .slick-prev, .slick-next, .pp-arow-next, .pp-arow-prev, .hbb-brand-item img, .pl-cons, .pl-addcart, .pl-addfavorite, .index-show-more, .pop-cl-item, .subscribe-channel button, .ocb-item {
+.consultation-button, .lang-button, .right-menu a, .mob-menu, .direction-item, .blog-item, .video-item, .product-button, .footer-social a, .footer-menu-item, .blog-button, .mm-main-item, .mm-sub a, .close-mob-menu-modal, .close-consultation, .ncb-send, .drop-lang-header a, .sort-block div, .bread-crumbs a, .pl-item, .ivb-item, #open-product-favorites, #open-product-cart, .h-search-tap, .n-login, .sub-menu-button, .footer-phone, .footer-email, .hbb-tb a, .slick-prev, .slick-next, .pp-arow-next, .pp-arow-prev, .hbb-brand-item img, .pl-cons, .pl-addcart, .pl-addfavorite, .index-show-more, .pop-cl-item, .subscribe-channel button, .ocb-item, .pagination-show-more-leave, .dsb-result-item-category, .modal-close, .h-start-search, input, textarea, button {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
-.phone-header:hover, .pl-item-title:hover {
+.phone-header:hover, .pl-item-title:hover, .dsb-item-name:hover {
     text-decoration: underline;
 }
-.lang-button:hover, .right-menu a:hover, .blog-button:hover, .mm-main-item:hover, .mm-sub a:hover, .close-mob-menu-modal:hover, .close-consultation:hover, .drop-lang-header a:hover, .sort-block div:hover, .bread-crumbs a:hover, .sub-menu-button:hover, .hbb-tb a:hover {
+.lang-button:hover, .right-menu a:hover, .blog-button:hover, .mm-main-item:hover, .mm-sub a:hover, .close-mob-menu-modal:hover, .close-consultation:hover, .drop-lang-header a:hover, .sort-block div:hover, .bread-crumbs a:hover, .sub-menu-button:hover, .hbb-tb a:hover, .pagination-show-more-leave:hover, .dsb-result-item-category:hover, .h-start-search:hover {
     background-color: var(--color-bgmaincolor);
     color: var(--color-maincolor);
 }
@@ -38,7 +38,7 @@ button:hover {
 #open-product-favorites:hover, #open-product-cart:hover, .n-login:hover {
     background-color: var(--color-bgmaincolor);
 }
-.footer-menu-item:hover, .footer-social a:hover, .footer-phone:hover, .footer-email:hover {
+.footer-menu-item:hover, .footer-social a:hover, .footer-phone:hover, .footer-email:hover, .modal-close:hover {
     background-color: rgba(0, 0, 0, .05);
 }
 .hbb-brand-list .slick-prev:hover, .hbb-brand-list .slick-next:hover, .pp-arow-next:hover, .pp-arow-prev:hover, .index-show-more:hover {
