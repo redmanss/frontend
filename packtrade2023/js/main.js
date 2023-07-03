@@ -54,4 +54,25 @@ $('.close-n-callback-block').click(function(){
     $(".n-callback").hide()
     $('body').removeClass('block-body')
 })
+// LOGIN
+$('.login-for-client').click(function() {
+    $('#login-form-user').show()
+    $('#login-form-manager').hide()
+    $('.login-for-manager').removeClass('login-active')
+    $(this).addClass('login-active')
+})
+$('.login-for-manager').click(function() {
+    $('#login-form-user').hide()
+    $('#login-form-manager').show()
+    $('.login-for-client').removeClass('login-active')
+    $(this).addClass('login-active')
+})
+$('.n-login').click(function(){
+    $('.login-modal').show()
+    $('body').addClass('block-body')
+})
+$('.close-login-modal').click(function(){
+    $('.login-modal').hide()
+    $('body').removeClass('block-body')
+})
   })

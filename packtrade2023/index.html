@@ -74,8 +74,46 @@
     </div>
     
     <!-- Modal -->
+    <!-- CART -->
+    <div class="modal-body cart-modal" style="display: block;">
+        <div class="modal-body-block">
+            <div class="modal-title">Мій кошик</div>
+            <i class="mdi mdi-close modal-close close-cart-modal"></i>
+
+            <div class="cart-modal-item flex-block">
+                <i class="mdi mdi-close item-close"></i>
+                <img src="media/no-img.jpg">
+                <div class="cmi-name-block">
+                    <a href="#" class="cmi-title"> Візок гідравлічний колеса поліуретан 2 т Niuli CBY JС-20</a>
+                    <div class="cmi-number">
+                        <span>Код:</span>
+                        <span>№3809 </span>
+                    </div>
+                    <div class="cmi-price">
+                        <span>Ціна:</span>
+                        <span class="cmi-old-price"> 10100.04, грн</span>
+                        <span class="cmi-price"> 10100.04, грн</span>
+                    </div>
+                </div>
+                <div class="n-modal-item-quantity">
+                    <span class="basket-del"></span>
+                    <span class="basket-amount">
+                        <label>
+                            <input class="quantity-num" type="number" value="1" data-basketvalue="1" data-id="3809">
+                        </label>
+                    </span>
+                    <span class="basket-add" ></span>
+                    <div class="basket-availability">Доступно: 1130шт.</div>
+                </div>
+                <div class="cmi-sum-price">152525 грн</div>
+            </div>
+
+           
+
+        </div>
+    </div>
     <!-- Login -->
-    <div class="modal-body login-modal" style="display: block;">
+    <div class="modal-body login-modal">
         <i class="mdi mdi-close modal-close close-login-modal"></i>
         <div class="modal-body-block">
             <div class="modal-title">Вхід</div>
@@ -96,7 +134,7 @@
                 <button type="submit" class="login-in">Вхід</button></div>
             </form>
             <form id="login-form-manager" style="display: none;">
-                <input type="hidden" name="_csrf-frontend" value="zjzm0LEvuUUyxWztIL3Snzlcbp2j7wrJLLHr6-yaDaiaTtPihX_2NH2mFIpkiP-oTSknqsmAMv5WwrTbmftcxA=="><div class="form-group field-managerphone-phone required">
+                <input type="hidden" name="_csrf-frontend"><div class="form-group field-managerphone-phone required">
                 <label class="control-label" for="managerphone-phone">Телефон</label>
                 <input type="tel" id="managerphone-phone" class="form-control" name="ManagerPhone[phone]" placeholder="+38(___)___-__-__" aria-required="true"><p class="help-block help-block-error"></p></div><div class="form-group">
                 <button type="submit" class="login-in">Вхід</button></div>
