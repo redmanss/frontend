@@ -1,29 +1,39 @@
-.consultation-button, .lang-button, .right-menu a, .mob-menu, .direction-item, .blog-item, .video-item, .product-button, .footer-social a, .footer-menu-item, .blog-button, .mm-main-item, .mm-sub a, .close-mob-menu-modal, .close-consultation, .ncb-send, .drop-lang-header a, .sort-block div, .bread-crumbs a, .pl-item, .ivb-item, #open-product-favorites, #open-product-cart, .h-search-tap, .n-login, .sub-menu-button, .footer-phone, .footer-email, .hbb-tb a, .slick-prev, .slick-next, .pp-arow-next, .pp-arow-prev, .hbb-brand-item img, .pl-cons, .pl-addcart, .pl-addfavorite, .index-show-more, .pop-cl-item, .subscribe-channel button, .ocb-item, .pagination-show-more-leave, .dsb-result-item-category, .modal-close, .h-start-search, input, textarea, button {
+.consultation-button, .lang-button, .right-menu a, .mob-menu, .direction-item, .blog-item, .video-item, .product-button, .footer-social a, .footer-menu-item, .blog-button, .mm-main-item, .mm-sub a, .close-mob-menu-modal, .close-consultation, .ncb-send, .drop-lang-header a, .sort-block div, .bread-crumbs a, .pl-item, .ivb-item, #open-product-favorites, #open-product-cart, .h-search-tap, .account-button, .sub-menu-button, .footer-phone, .footer-email, .hbb-tb a, .slick-prev, .slick-next, .pp-arow-next, .pp-arow-prev, .hbb-brand-item img, .pl-cons, .pl-addcart, .pl-addfavorite, .index-show-more, .pop-cl-item, .subscribe-channel button, .ocb-item, .pagination-show-more-leave, .dsb-result-item-category, .modal-close, .h-start-search, input, textarea, button, .item-close, .basket-del, .basket-add, .cart-accept, .main-button, .back-mob-menu-modal, .mmms-item, .mmms-title, .go-top, .direction-item-main {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
-.phone-header:hover, .pl-item-title:hover, .dsb-item-name:hover {
+.phone-header:hover, .pl-item-title:hover, .dsb-item-name:hover, .cmi-title:hover {
     text-decoration: underline;
 }
-.lang-button:hover, .right-menu a:hover, .blog-button:hover, .mm-main-item:hover, .mm-sub a:hover, .close-mob-menu-modal:hover, .close-consultation:hover, .drop-lang-header a:hover, .sort-block div:hover, .bread-crumbs a:hover, .sub-menu-button:hover, .hbb-tb a:hover, .pagination-show-more-leave:hover, .dsb-result-item-category:hover, .h-start-search:hover {
+.mob-menu-modal .account-button:hover {
     background-color: var(--color-bgmaincolor);
     color: var(--color-maincolor);
 }
-button:hover {
+.review-block a:hover {
+    color: var(--color-white);
+    background-color: var(--color-yellow);
+}
+.lang-button:hover, .right-menu a:hover, .blog-button:hover, .mm-main-item:hover, .mm-sub a:hover, .drop-lang-header a:hover, .sort-block div:hover, .bread-crumbs a:hover, .sub-menu-button:hover, .hbb-tb a:hover, .pagination-show-more-leave:hover, .dsb-result-item-category:hover, .h-start-search:hover, .mmms-item:hover, .mmms-title:hover, .ocb-item:hover {
+    background-color: var(--color-bgmaincolor);
+    color: var(--color-maincolor);
+}
+.login-in:hover, .cart-accept:hover, .consultation-button:hover, .subscribe-channel button:hover, .consultation-block button:hover, .successful-button:hover {
     background-color: var(--color-bgbutton);
     border-color: transparent;
+}
+.reg-button:hover {
+    color: var(--color-bgbutton);
 }
 .pl-cons:hover, .pl-addcart:hover {
     color: var(--color-white);
     background-color: var(--color-available);
     border-color: var(--color-available);
 }
-.pl-addfavorite:hover, .ocb-item:hover {
-    color: var(--color-maincolor);
-    background-color: var(--color-bgmaincolor);
+.pl-addfavorite:hover {
+    color: var(--color-sale);
 }
 .pop-cl-item:hover {
     color: var(--color-maincolor);
@@ -35,13 +45,16 @@ button:hover {
     filter: grayscale(0%);
     opacity: 1;
 }
-#open-product-favorites:hover, #open-product-cart:hover, .n-login:hover {
+.go-top:hover {
+    opacity: 1;
+}
+#open-product-favorites:hover, #open-product-cart:hover, .main-menu .account-button:hover {
     background-color: var(--color-bgmaincolor);
 }
-.footer-menu-item:hover, .footer-social a:hover, .footer-phone:hover, .footer-email:hover, .modal-close:hover {
+.footer-menu-item:hover, .footer-social a:hover, .footer-phone:hover, .footer-email:hover, .modal-close:hover, .item-close:hover, .basket-del:hover, .basket-add:hover, .close-consultation:hover, .close-mob-menu-modal:hover, .back-mob-menu-modal:hover {
     background-color: rgba(0, 0, 0, .05);
 }
-.hbb-brand-list .slick-prev:hover, .hbb-brand-list .slick-next:hover, .pp-arow-next:hover, .pp-arow-prev:hover, .index-show-more:hover {
+.hbb-brand-list .slick-prev:hover, .hbb-brand-list .slick-next:hover, .pp-arow-next:hover, .pp-arow-prev:hover, .index-show-more:hover, .cart-return:hover, .pp-last-views-products .slick-next:hover, .pp-last-views-products .slick-prev:hover {
     background-color: rgba(0, 0, 0, .1);
 }
 .mob-menu:hover, .h-search-tap:hover {
@@ -51,7 +64,7 @@ button:hover {
     color: var(--color-white);
     background-color: var(--color-maincolor);
 }
-.blog-item:hover, .direction-item:hover, .product-list .pl-item:hover  {
+.blog-item:hover, .direction-item:hover, .product-list .pl-item:hover, .direction-item-main:hover  {
     box-shadow: 6px 6px 5px 0 rgb(0 0 0 / 10%);
     -webkit-transform: translate(-2px, -2px);
     -moz-transform: translate(-2px, -2px);
@@ -59,30 +72,7 @@ button:hover {
     -o-transform: translate(-2px, -2px);
     transform: translate(-2px, -2px);
 }
-/* .direction-item:hover {
-    box-shadow: 6px 6px 0px 0 rgb(0 0 0 / 10%);
-    -webkit-transform: translate(-2px, -2px);
-    -moz-transform: translate(-2px, -2px);
-    -ms-transform: translate(-2px, -2px);
-    -o-transform: translate(-2px, -2px);
-    transform: translate(-2px, -2px);
-} */
-/* .pl-item:hover {
-    box-shadow: 6px 6px 0px 0 rgb(0 0 0 / 30%);
-    -webkit-transform: translate(-2px, -2px);
-    -moz-transform: translate(-2px, -2px);
-    -ms-transform: translate(-2px, -2px);
-    -o-transform: translate(-2px, -2px);
-    transform: translate(-2px, -2px);
-} */
+
 .video-item:hover:after, .ivb-item:hover:after {
     opacity: .6;
-}
-.product-button:hover {
-    background-color: #9d6d40;
-    border-color: #9d6d40;
-}
-.ncb-send:hover {
-    background-color: rgba(179, 125, 74, .7);
-    color: var(--color-white);
 }

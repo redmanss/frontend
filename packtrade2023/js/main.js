@@ -1,4 +1,18 @@
 $(document).ready(function(){
+// successful
+$('.successful-button').click(function(){
+    $('.msg-successful').hide()
+    $('body').removeClass('block-body')
+})
+// Consultation
+$('.consultation-button').click(function(){
+    $('.consultation-block').show()
+    $('body').addClass('block-body')
+})
+$('.close-consultation').click(function(){
+    $('.consultation-block').hide()
+    $('body').removeClass('block-body')
+})
 // lang
 $(".lang-button").click(function() {
     $('.drop-lang-header').slideToggle(100)
@@ -36,14 +50,27 @@ $('.close-mob-menu-modal').click(function(){
         left: -650
     })
 })
-// consultation
-$('.consultation-button').click(function(){
-    $(".n-consultation-block").show()
-    $('body').addClass('block-body')
+// Mob Menu Func
+$('.mm-main-item').click(function() {
+    let index = $(this).index() + 1
+    $('.back-mob-menu-modal').delay(400).fadeIn(0)
+    $('.mm-main-sub-item').hide()
+    $('.mm-menu').animate({
+        left: -650
+    })
+    $('.mm-main-sub').animate({
+        left: 0
+    })
+    $('.mm-main-sub-item:nth-child(' + index + ')').show()
 })
-$('.close-consultation').click(function(){
-    $(".n-consultation-block").hide()
-    $('body').removeClass('block-body')
+$('.back-mob-menu-modal').click(function(){
+    $(this).hide()
+    $('.mm-menu').animate({
+        left: 0
+    })
+    $('.mm-main-sub').animate({
+        left: -650
+    })
 })
 // callback
 $('.call-back-button').click(function(){
@@ -74,5 +101,25 @@ $('.n-login').click(function(){
 $('.close-login-modal').click(function(){
     $('.login-modal').hide()
     $('body').removeClass('block-body')
+})
+// CART
+$('#open-product-cart').click(function(){
+    $('.cart-modal').show()
+    $('body').addClass('block-body')
+})
+$('.close-cart-modal').click(function(){
+    $('.cart-modal').hide()
+    $('body').removeClass('block-body')
+})
+// GO TOP
+$(function () {
+    $.fn.scrollToTop = function () {
+        $(this).click(function () {
+            $("html, body").animate({scrollTop: 0}, "slow");
+        })
+    }
+})
+$(function () {
+    $(".go-top").scrollToTop();
 })
   })

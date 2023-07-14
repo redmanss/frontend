@@ -1,33 +1,40 @@
 $(document).ready(function(){
+// top sales products, new products index
+$('.new-products-button').click(function(){
+    $('.new-products .pl-item').show()
+    $(this).hide()
+})
+$('.sales-leader-button').click(function(){
+    $('.sales-leader .pl-item').show()
+    $(this).hide()
+})
 //
 Fancybox.bind('[data-fancybox="index-video"]')
 //
 $('.pp-last-views-products').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
-    prevArrow: '.pp-arow-prev',
-    nextArrow: '.pp-arow-next',
     responsive: [
       {
-          breakpoint: 1400,
+          breakpoint: 1600,
           settings: {
-              slidesToShow: 6
+              slidesToShow: 5
           }
       },
+      {
+        breakpoint: 1200,
+        settings: {
+            slidesToShow: 4
+        }
+    },
       {
           breakpoint: 1023,
-          settings: {
-              slidesToShow: 4
-          }
-      },
-      {
-          breakpoint: 767,
           settings: {
               slidesToShow: 3
           }
       },
       {
-          breakpoint: 500,
+          breakpoint: 767,
           settings: {
               slidesToShow: 2
           }
