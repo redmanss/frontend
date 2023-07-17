@@ -63,7 +63,7 @@
         left: 10px;
         bottom: 10px;
     }
-    .product-list {
+    .product-list, .direction-category-grid {
         grid-template-columns: repeat(4,1fr);
     }
     .sales-leader .pl-item:nth-child(n+9):nth-child(-n+12), .new-products .pl-item:nth-child(n+9):nth-child(-n+12) {

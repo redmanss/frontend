@@ -1,11 +1,11 @@
-.consultation-button, .lang-button, .right-menu a, .mob-menu, .direction-item, .blog-item, .video-item, .product-button, .footer-social a, .footer-menu-item, .blog-button, .mm-main-item, .mm-sub a, .close-mob-menu-modal, .close-consultation, .ncb-send, .drop-lang-header a, .sort-block div, .bread-crumbs a, .pl-item, .ivb-item, #open-product-favorites, #open-product-cart, .h-search-tap, .account-button, .sub-menu-button, .footer-phone, .footer-email, .hbb-tb a, .slick-prev, .slick-next, .pp-arow-next, .pp-arow-prev, .hbb-brand-item img, .pl-cons, .pl-addcart, .pl-addfavorite, .index-show-more, .pop-cl-item, .subscribe-channel button, .ocb-item, .pagination-show-more-leave, .dsb-result-item-category, .modal-close, .h-start-search, input, textarea, button, .item-close, .basket-del, .basket-add, .cart-accept, .main-button, .back-mob-menu-modal, .mmms-item, .mmms-title, .go-top, .direction-item-main {
+.consultation-button, .lang-button, .right-menu a, .mob-menu, .direction-item, .blog-item, .video-item, .product-button, .footer-social a, .footer-menu-item, .blog-button, .mm-main-item, .mm-sub a, .close-mob-menu-modal, .close-consultation, .ncb-send, .drop-lang-header a, .sort-block div, .bread-crumbs a, .pl-item, .ivb-item, #open-product-favorites, #open-product-cart, .h-search-tap, .account-button, .sub-menu-button, .footer-phone, .footer-email, .hbb-tb a, .slick-prev, .slick-next, .pp-arow-next, .pp-arow-prev, .hbb-brand-item img, .pl-cons, .pl-addcart, .pl-addfavorite, .index-show-more, .pop-cl-item, .subscribe-channel button, .ocb-item, .pagination-show-more-leave, .dsb-result-item-category, .modal-close, .h-start-search, input, textarea, button, .item-close, .basket-del, .basket-add, .cart-accept, .main-button, .back-mob-menu-modal, .mmms-item, .mmms-title, .go-top, .direction-item-main, .show-more-button {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
-.phone-header:hover, .pl-item-title:hover, .dsb-item-name:hover, .cmi-title:hover {
+.phone-header:hover, .pl-item-title:hover, .dsb-item-name:hover, .cmi-title:hover, .direction-title:hover {
     text-decoration: underline;
 }
 .mob-menu-modal .account-button:hover {
@@ -54,7 +54,7 @@
 .footer-menu-item:hover, .footer-social a:hover, .footer-phone:hover, .footer-email:hover, .modal-close:hover, .item-close:hover, .basket-del:hover, .basket-add:hover, .close-consultation:hover, .close-mob-menu-modal:hover, .back-mob-menu-modal:hover {
     background-color: rgba(0, 0, 0, .05);
 }
-.hbb-brand-list .slick-prev:hover, .hbb-brand-list .slick-next:hover, .pp-arow-next:hover, .pp-arow-prev:hover, .index-show-more:hover, .cart-return:hover, .pp-last-views-products .slick-next:hover, .pp-last-views-products .slick-prev:hover {
+.hbb-brand-list .slick-prev:hover, .hbb-brand-list .slick-next:hover, .pp-arow-next:hover, .pp-arow-prev:hover, .index-show-more:hover, .cart-return:hover, .pp-last-views-products .slick-next:hover, .pp-last-views-products .slick-prev:hover, .show-more-button:hover, .pop-brands .slick-prev:hover, .pop-brands .slick-next:hover {
     background-color: rgba(0, 0, 0, .1);
 }
 .mob-menu:hover, .h-search-tap:hover {
@@ -64,7 +64,7 @@
     color: var(--color-white);
     background-color: var(--color-maincolor);
 }
-.blog-item:hover, .direction-item:hover, .product-list .pl-item:hover, .direction-item-main:hover  {
+.blog-item:hover, .direction-item:hover, .product-list .pl-item:hover, .direction-item-main:hover, .direction-category-grid .pl-item:hover {
     box-shadow: 6px 6px 5px 0 rgb(0 0 0 / 10%);
     -webkit-transform: translate(-2px, -2px);
     -moz-transform: translate(-2px, -2px);
