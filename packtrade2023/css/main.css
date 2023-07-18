@@ -178,7 +178,7 @@ body {
     padding: 0 20px;
     margin: 0 auto;
 }
-.drop-lang-header, .drop-sub-menu, .modal-body, .consultation-block label, .mm-main-sub-item, .back-mob-menu-modal, .new-products .pl-item, .sales-leader .pl-item, .index-show-more {
+.drop-lang-header, .drop-sub-menu, .modal-body, .consultation-block label, .mm-main-sub-item, .back-mob-menu-modal, .new-products .pl-item, .sales-leader .pl-item, .index-show-more, .pp-arow-next, .pp-arow-prev {
     display: none;
 }
 .blog-button, .pop-cl-item {
@@ -393,6 +393,9 @@ body {
     top: 4px;
     width: 15px;
     height: 15px;
+}
+.direction-title, .direction-desc, .pl-item-title {
+    word-break: break-word;
 }
 /* -------------------------------------------------------END common style */
 header {
@@ -1926,4 +1929,7 @@ input[type="checkbox"] {
 .pop-brands .pop-cl-item {
     padding: 5px 10px;
     margin: 5px;
+}
+.category-show-more {
+    margin: 30px 0 0;
 }

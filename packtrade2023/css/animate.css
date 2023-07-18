@@ -16,9 +16,12 @@
     color: var(--color-white);
     background-color: var(--color-yellow);
 }
-.lang-button:hover, .right-menu a:hover, .blog-button:hover, .mm-main-item:hover, .mm-sub a:hover, .drop-lang-header a:hover, .sort-block div:hover, .bread-crumbs a:hover, .sub-menu-button:hover, .hbb-tb a:hover, .pagination-show-more-leave:hover, .dsb-result-item-category:hover, .h-start-search:hover, .mmms-item:hover, .mmms-title:hover, .ocb-item:hover {
+.lang-button:hover, .right-menu a:hover, .blog-button:hover, .mm-main-item:hover, .mm-sub a:hover, .drop-lang-header a:hover, .sort-block div:hover, .bread-crumbs a:hover, .sub-menu-button:hover, .hbb-tb a:hover, .show-more-search:hover, .dsb-result-item-category:hover, .h-start-search:hover, .mmms-item:hover, .mmms-title:hover, .ocb-item:hover {
     background-color: var(--color-bgmaincolor);
     color: var(--color-maincolor);
+}
+.category-show-more:hover {
+    background-color: var(--color-lowgray);
 }
 .login-in:hover, .cart-accept:hover, .consultation-button:hover, .subscribe-channel button:hover, .consultation-block button:hover, .successful-button:hover {
     background-color: var(--color-bgbutton);

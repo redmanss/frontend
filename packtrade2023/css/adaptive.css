@@ -55,9 +55,14 @@
         margin: 2px 0 0;
         height: 17px;
     }
-    
+    .direction-block-main {
+        grid-template-columns: repeat(6,1fr);
+    }
 }
 @media (max-width: 1200px) {
+    .direction-block-main {
+        grid-template-columns: repeat(5,1fr);
+    }
     .hsb-button {
         font-size: 16px;
         left: 10px;
@@ -112,6 +117,37 @@
     }
 }
 @media (max-width: 1023px) {
+    .pp-last-views-products .slick-prev:after, .pp-last-views-products .slick-next:after {
+        width: 10px;
+        height: 10px;
+    }
+    .pp-last-views-products .slick-next, .pp-last-views-products .slick-prev {
+        width: 40px;
+        height: 80px;
+    }
+    .products-list-slider {
+        padding: 0;
+    }
+    .pp-last-views-products .slick-next {
+        right: 0;
+    }
+    .pp-last-views-products .slick-prev {
+        left: 0;
+    }
+    .direction-category-grid {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .pop-brands .pop-cl-item {
+        margin: 12px 2px;
+    }
+    .pop-brands {
+        padding: 0;
+        white-space: nowrap;
+        overflow: auto;
+    }
+    .direction-block-main {
+        grid-template-columns: repeat(4,1fr);
+    }
     .cmi-old-price, .cmi-price {
         display: block;
     }
@@ -226,8 +262,23 @@
     .sb-content {
         padding: 0 40px;
     }
+    .main-block {
+        padding: 25px;
+    }
+    .pop-cl-item {
+        margin: 7px 2px;
+    }
 }
 @media (max-width: 767px) {
+    .bread-crumbs {
+        margin: 30px auto 30px;
+    }
+    .bread-crumbs h1, .direction-category h2 {
+        font-size: 18px;
+    }
+    .direction-block-main, .direction-category-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
     .notification-block {
         font-size: 14px;
     }
@@ -252,13 +303,6 @@
     .pp-arow-prev:after, .pp-arow-next:after {
         width: 10px;
         height: 10px;
-    }
-    .pp-arow-next, .pp-arow-prev {
-        width: 40px;
-        height: 70px;
-    }
-    .products-list-slider {
-        padding: 0;
     }
     .container {
         padding: 0 10px;
@@ -408,9 +452,6 @@
     .hsb-button {
         left: 0px;
         bottom: 0px;
-    }
-    .main-block {
-        padding: 25px;
     }
     .video-item i {
         font-size: 40px;
