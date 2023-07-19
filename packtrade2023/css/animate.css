@@ -67,7 +67,7 @@
     color: var(--color-white);
     background-color: var(--color-maincolor);
 }
-.blog-item:hover, .direction-item:hover, .product-list .pl-item:hover, .direction-item-main:hover, .direction-category-grid .pl-item:hover {
+.blog-item:hover, .direction-item:hover, .product-list .pl-item:hover, .direction-item-main:hover, .direction-category-grid .pl-item:hover, .products-list-grid .pl-item:hover {
     box-shadow: 6px 6px 5px 0 rgb(0 0 0 / 10%);
     -webkit-transform: translate(-2px, -2px);
     -moz-transform: translate(-2px, -2px);

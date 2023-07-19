@@ -178,7 +178,7 @@ body {
     padding: 0 20px;
     margin: 0 auto;
 }
-.drop-lang-header, .drop-sub-menu, .modal-body, .consultation-block label, .mm-main-sub-item, .back-mob-menu-modal, .new-products .pl-item, .sales-leader .pl-item, .index-show-more, .pp-arow-next, .pp-arow-prev {
+.drop-lang-header, .drop-sub-menu, .modal-body, .consultation-block label, .mm-main-sub-item, .back-mob-menu-modal, .new-products .pl-item, .sales-leader .pl-item, .index-show-more, .pp-arow-next, .pp-arow-prev, .open-filter {
     display: none;
 }
 .blog-button, .pop-cl-item {
@@ -190,7 +190,7 @@ body {
 .flex-block, .checkbox label {
     display: flex;
 }
-.direction-block, .blog-block, .video-block, .index-advantages-block, .footer-block, .sb-content, .product-list, .direction-block-main, .direction-category-grid {
+.direction-block, .blog-block, .video-block, .index-advantages-block, .footer-block, .sb-content, .product-list, .direction-block-main, .direction-category-grid, .products-list-grid {
     display: grid;
 }
 .more-button, .footer-info a, .modal-body form, .pagination-show-more-leave, .basket-del, .basket-amount, .basket-add, .cart-return, .cart-accept, .successful-button, .show-more-button {
@@ -256,7 +256,7 @@ body {
 .video-item:after, .index-video:after, .slick-prev:after, .slick-next:after, .home-slider-block a:after, .basket-del:before, .basket-add:before, .basket-add:after {
     content: "";
 }
-.direction-item, .blog-item, .video-item, .video-item:after, .blog-button, .seo-block, .right-menu a, .main-button, .more-button, .lang-button, .footer-menu-item, img, .mob-menu, .account-button, .hbb-brand-list, .slick-prev, .slick-next, .hbb-brand-item, .hsb-sub a:after, .hsb-main, .hsb-sub, .main-block, .pop-cl-item, .sub-menu-button, .footer-phone, .footer-email, .index-show-more, .pl-addcart, .pl-addfavorite, .pl-cons, .hbb-tb a, .ocb-item, .modal-body form, input, textarea, .h-start-search, .dynamic-search-block, .dsb-item-img, .pagination-show-more-leave, .dsb-result-item-category, .modal-body-block, .mmms-item, .mmms-title, .pc-all-products, .hsb-main a, .notification-block, .direction-item-main, .show-more-button {
+.direction-item, .blog-item, .video-item, .video-item:after, .blog-button, .seo-block, .right-menu a, .main-button, .more-button, .lang-button, .footer-menu-item, img, .mob-menu, .account-button, .hbb-brand-list, .slick-prev, .slick-next, .hbb-brand-item, .hsb-sub a:after, .hsb-main, .hsb-sub, .main-block, .pop-cl-item, .sub-menu-button, .footer-phone, .footer-email, .index-show-more, .pl-addcart, .pl-addfavorite, .pl-cons, .hbb-tb a, .ocb-item, .modal-body form, input, textarea, .h-start-search, .dynamic-search-block, .dsb-item-img, .pagination-show-more-leave, .dsb-result-item-category, .modal-body-block, .mmms-item, .mmms-title, .pc-all-products, .hsb-main a, .notification-block, .direction-item-main, .show-more-button, .sidebar, .sort-block {
     border-radius: 20px;
 }
 .hsb-main img, .direction-item img, footer img, .basket-amount input, .mm-main-item img, .direction-item-main img {
@@ -307,7 +307,7 @@ body {
 .main-title, .lang-button {
     text-transform: uppercase;
 }
-.direction-block, .blog-block, .video-block, .index-advantages-block, .product-list, .direction-block-main, .direction-category-grid {
+.direction-block, .blog-block, .video-block, .index-advantages-block, .product-list, .direction-block-main, .direction-category-grid, .products-list-grid {
     grid-gap: 10px;
 }
 .footer-block, .sb-content {
@@ -319,7 +319,7 @@ body {
 .product-list, .direction-category-grid {
     grid-template-columns: repeat(6,1fr);
 }
-.direction-block {
+.direction-block, .products-list-grid {
     grid-template-columns: repeat(5,1fr);
 }
 .video-block, .index-advantages-block, .footer-block {
@@ -1032,11 +1032,13 @@ footer {
 }
 /* Product-list */
 .sort-block {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    background-color: var(--color-white);
+    padding: 15px;
 }
 .sort-block p {
     font-size: 12px;
-    margin: 0 15px 10px 0;
+    margin-bottom: 5px;
 }
 .sort-block div {
     padding: 8px 15px;
@@ -1932,4 +1934,11 @@ input[type="checkbox"] {
 }
 .category-show-more {
     margin: 30px 0 0;
+}
+.sidebar {
+    flex: none;
+    width: 300px;
+    margin-right: 10px;
+    background-color: var(--color-white);
+    padding: 20px;
 }
