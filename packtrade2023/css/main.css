@@ -124,7 +124,7 @@ input, textarea {
 .basket-amount input {
     border-color: var(--color-white);
 }
-textarea:focus, .login-modal input:focus, .basket-amount input:focus, .consultation-block input:focus {
+textarea:focus, .login-modal input:focus, .basket-amount input:focus, .consultation-block input:focus, .range-filter input:focus {
     border-color: var(--color-maincolor);
 }
 .has-error input, .has-error textarea {
@@ -178,13 +178,13 @@ body {
     padding: 0 20px;
     margin: 0 auto;
 }
-.drop-lang-header, .drop-sub-menu, .modal-body, .consultation-block label, .mm-main-sub-item, .back-mob-menu-modal, .new-products .pl-item, .sales-leader .pl-item, .index-show-more, .pp-arow-next, .pp-arow-prev, .open-filter {
+.drop-lang-header, .drop-sub-menu, .modal-body, .consultation-block label, .mm-main-sub-item, .back-mob-menu-modal, .new-products .pl-item, .sales-leader .pl-item, .index-show-more, .pp-arow-next, .pp-arow-prev, .open-filter, .mob-menu-filter-title, .close-mob-filter-modal, .filter-box {
     display: none;
 }
-.blog-button, .pop-cl-item {
+.blog-button, .pop-cl-item, .filter-show {
     display: inline-block;
 }
-.video-item:after, .index-video:after, .footer-menu-item, .hbb-brand-item, .home-slider-block a, .home-slider-block a:after, .footer-logo, .pl-img, .login-modal label, .pc-all-products, .sales-leader .pl-item:nth-child(-n+12), .new-products .pl-item:nth-child(-n+12), .checkmark, .review-block a, .svg-point:before {
+.video-item:after, .index-video:after, .footer-menu-item, .hbb-brand-item, .home-slider-block a, .home-slider-block a:after, .footer-logo, .pl-img, .login-modal label, .pc-all-products, .sales-leader .pl-item:nth-child(-n+12), .new-products .pl-item:nth-child(-n+12), .checkmark, .review-block a, .svg-point:before, .mm-logo {
     display: block;
 }
 .flex-block, .checkbox label {
@@ -193,7 +193,7 @@ body {
 .direction-block, .blog-block, .video-block, .index-advantages-block, .footer-block, .sb-content, .product-list, .direction-block-main, .direction-category-grid, .products-list-grid {
     display: grid;
 }
-.more-button, .footer-info a, .modal-body form, .pagination-show-more-leave, .basket-del, .basket-amount, .basket-add, .cart-return, .cart-accept, .successful-button, .show-more-button {
+.more-button, .footer-info a, .modal-body form, .pagination-show-more-leave, .basket-del, .basket-amount, .basket-add, .cart-return, .cart-accept, .successful-button, .show-more-button, .sft-reset-filter, .mob-menu-modal .account-button, .mob-menu-modal .account-button i {
     display: inline-block;
 }
 .dsb-result-category {
@@ -205,19 +205,22 @@ body {
 .main-menu, .hbb-tb {
     justify-content: space-between;
 }
-.index-button-block, .db-img, .h-start-search, .chanel-review-block, .review-star-block  {
+.index-button-block, .db-img, .h-start-search, .chanel-review-block, .review-star-block, .pagination-pages, .open-filter, .filter-buttons {
     justify-content: center;
 }
-.main-menu, .top-header, .footer-social, .right-menu, .hbb-tb, .sb-info, .ocb-item, .subscribe-channel form, .pl-buttons, .h-start-search, .dsb-result-item, .checkbox label, .cart-modal-item, .mm-main-item, .mmms-item, .mmms-title, .mob-menu-modal .account-button, .notification-block {
+.main-menu, .top-header, .footer-social, .right-menu, .hbb-tb, .sb-info, .ocb-item, .subscribe-channel form, .pl-buttons, .h-start-search, .dsb-result-item, .checkbox label, .cart-modal-item, .mm-main-item, .mmms-item, .mmms-title, .mob-menu-modal .account-button, .notification-block, .pagination-pages, .open-filter, .range-filter {
     align-items: center;
 }
 .db-img {
     align-items: flex-end;
 }
-.main-title, .blog-button, .index-advantages-item, .index-title-block, .blog-block, .direction-item, .corp, .pl-buttons, .pl-cons, .product-block, .modal-body, .dynamic-search-block, .n-modal-item-quantity, .basket-amount input, .hsb-button, .chanel-review-block, .direction-item-main, .direction-category {
+.products-list {
+    align-items: flex-start;
+}
+.main-title, .blog-button, .index-advantages-item, .index-title-block, .blog-block, .direction-item, .corp, .pl-buttons, .pl-cons, .product-block, .modal-body, .dynamic-search-block, .n-modal-item-quantity, .basket-amount input, .hsb-button, .chanel-review-block, .direction-item-main, .direction-category, .products-list-page {
     text-align: center;
 }
-.blog-title, .blog-description, .pl-title, .dsb-result-item, .ds-title, .login-modal label, .cmi-name-block, .direction-category h2 {
+.blog-title, .blog-description, .pl-title, .dsb-result-item, .ds-title, .login-modal label, .cmi-name-block, .direction-category h2, .filter, .sort-block {
     text-align: left;
 }
 .cart-p, .cart-sum-price, .cart-buttons-block {
@@ -232,13 +235,13 @@ body {
 .basket-del, .basket-amount, .basket-add {
     vertical-align: top;
 }
-.main-menu, .index-video, .video-item, .mob-menu, .iai-img, .video, .footer-social a, .lang-block, .cpmi-social-block a, #open-product-favorites, #open-product-cart, .h-search-tap, .home-slider-block a, .sub-menu-block, .subscribe-channel form, .top-product i, .pl-img, .products-list-slider, .modal-body form, .dsb-item-img, .cart-modal-item, .basket-del, .basket-add, .modal-body-block, .cmi-img, .mmms-item, .mmms-title, .mm-main-item, .blog-item-img, .mob-menu-modal .account-button i, .pop-brands, .filter-name, .svg-point {
+.main-menu, .index-video, .video-item, .mob-menu, .iai-img, .video, .footer-social a, .lang-block, .cpmi-social-block a, #open-product-favorites, #open-product-cart, .h-search-tap, .home-slider-block a, .sub-menu-block, .subscribe-channel form, .top-product i, .pl-img, .products-list-slider, .modal-body form, .dsb-item-img, .cart-modal-item, .basket-del, .basket-add, .modal-body-block, .cmi-img, .mmms-item, .mmms-title, .mm-main-item, .blog-item-img, .mob-menu-modal .account-button i, .pop-brands, .filter-name, .svg-point, .prev-page, .next-page, .filter-show {
     position: relative;
 }
 .modal-body {
     position: fixed;
 }
-.index-title-block, .video-item:after, .video-item i, .iai-img img, .index-video:after, .footer-social img, .cpmi-social-block img, #open-product-favorites i, #open-product-cart i, #open-product-favorites span, #open-product-cart span, #favorites-number, #basket-number, .h-search-tap i, .slick-prev, .slick-next, .slick-prev:after, .slick-next:after, .hsb-button, .home-slider-block a:after, .hsb-main video, .hsb-sub img, .hsb-main img, .subscribe-block label, .top-product i:before, .pl-img img, .h-start-search, .dsb-item-img img, .basket-del:before, .basket-add:before, .item-close, .basket-add:after, .cmi-img img, .item-close:before, .modal-close, .mmms-item i, .mmms-title i, .mm-main-item i, .back-mob-menu-modal, .close-mob-menu-modal, .mdi-close::before, .back-mob-menu-modal:before, .mm-menu, .mm-main-sub, .blog-item-img img, .mob-menu-modal .account-button i:before, .filter-name i, .svg-point svg {
+.index-title-block, .video-item:after, .video-item i, .iai-img img, .index-video:after, .footer-social img, .cpmi-social-block img, #open-product-favorites i, #open-product-cart i, #open-product-favorites span, #open-product-cart span, #favorites-number, #basket-number, .h-search-tap i, .slick-prev, .slick-next, .slick-prev:after, .slick-next:after, .hsb-button, .home-slider-block a:after, .hsb-main video, .hsb-sub img, .hsb-main img, .subscribe-block label, .top-product i:before, .pl-img img, .h-start-search, .dsb-item-img img, .basket-del:before, .basket-add:before, .item-close, .basket-add:after, .cmi-img img, .item-close:before, .modal-close, .mmms-item i, .mmms-title i, .mm-main-item i, .back-mob-menu-modal, .close-mob-menu-modal, .mdi-close::before, .back-mob-menu-modal:before, .mm-menu, .mm-main-sub, .blog-item-img img, .mob-menu-modal .account-button i:before, .filter-name i, .svg-point svg, .next-page i, .prev-page i, .filter-show i {
     position: absolute;
 }
 .video-item i, .index-title-block, .slick-prev, .slick-next, .top-product, .go-top, .close-mob-menu-modal, .hsb-button, .item-close, .notification-block {
@@ -250,14 +253,17 @@ body {
 .modal-body {
     z-index: 5;
 }
-.lang-button, .mob-menu, .main-button, #open-product-favorites, #open-product-cart, .account-button, .h-search-tap, .slick-prev, .slick-next, .sub-menu-button, button, .pl-item-title, .pl-addcart, .pl-addfavorite, .pl-cons, .index-show-more, .h-start-search, .h-start-search i, .modal-close, .pagination-show-more-leave, .login-tab-block div, .checkbox label, input[type="checkbox"], .basket-del, .basket-add, .item-close, .mm-main-item, .show-more-button, .filter-name, .cbx {
+.lang-button, .mob-menu, .main-button, #open-product-favorites, #open-product-cart, .account-button, .h-search-tap, .slick-prev, .slick-next, .sub-menu-button, button, .pl-item-title, .pl-addcart, .pl-addfavorite, .pl-cons, .index-show-more, .h-start-search, .h-start-search i, .modal-close, .pagination-show-more-leave, .login-tab-block div, .checkbox label, input[type="checkbox"], .basket-del, .basket-add, .item-close, .mm-main-item, .show-more-button, .filter-name, .cbx, .filter-show, .sft-reset-filter {
     cursor: pointer;
 }
 .video-item:after, .index-video:after, .slick-prev:after, .slick-next:after, .home-slider-block a:after, .basket-del:before, .basket-add:before, .basket-add:after, .svg-point:before {
     content: "";
 }
-.direction-item, .blog-item, .video-item, .video-item:after, .blog-button, .seo-block, .right-menu a, .main-button, .more-button, .lang-button, .footer-menu-item, img, .mob-menu, .account-button, .hbb-brand-list, .slick-prev, .slick-next, .hbb-brand-item, .hsb-sub a:after, .hsb-main, .hsb-sub, .main-block, .pop-cl-item, .sub-menu-button, .footer-phone, .footer-email, .index-show-more, .pl-addcart, .pl-addfavorite, .pl-cons, .hbb-tb a, .ocb-item, .modal-body form, input, textarea, .h-start-search, .dynamic-search-block, .dsb-item-img, .pagination-show-more-leave, .dsb-result-item-category, .modal-body-block, .mmms-item, .mmms-title, .pc-all-products, .hsb-main a, .notification-block, .direction-item-main, .show-more-button, .sidebar, .sort-block, .filter-name {
+.direction-item, .blog-item, .video-item, .video-item:after, .blog-button, .seo-block, .right-menu a, .main-button, .more-button, .lang-button, .footer-menu-item, img, .mob-menu, .account-button, .hbb-brand-list, .slick-prev, .slick-next, .hbb-brand-item, .hsb-sub a:after, .hsb-main, .hsb-sub, .main-block, .pop-cl-item, .sub-menu-button, .footer-phone, .footer-email, .index-show-more, .pl-addcart, .pl-addfavorite, .pl-cons, .hbb-tb a, .ocb-item, .modal-body form, input, textarea, .h-start-search, .dynamic-search-block, .dsb-item-img, .pagination-show-more-leave, .dsb-result-item-category, .modal-body-block, .mmms-item, .mmms-title, .pc-all-products, .hsb-main a, .notification-block, .direction-item-main, .show-more-button, .sort-block, .filter-name, .checkbox-list, .open-filter, .sidebar {
     border-radius: 20px;
+}
+.pagination-pages a, .active-page {
+    border-radius: 10px;
 }
 .hsb-main img, .direction-item img, footer img, .basket-amount input, .mm-main-item img, .direction-item-main img {
     border-radius: 0;
@@ -265,7 +271,7 @@ body {
 .footer-social a, .top-product i, .item-close, .mob-menu-modal .account-button i, .svg-point:before {
     border-radius: 50%;
 }
-.index-title-block, .video-item i, .iai-img img, .footer-social img, .cpmi-social-block img, #open-product-favorites i, #open-product-cart i, #open-product-favorites span, #open-product-cart span, .h-search-tap i, .top-product i:before, .pl-img img, .dsb-item-img img, .basket-del:before, .basket-add:before, .basket-add:after, .cmi-img img, .item-close:before, .mdi-close::before, .back-mob-menu-modal:before, .blog-item-img img, .mob-menu-modal .account-button i:before, .svg-point svg {
+.index-title-block, .video-item i, .iai-img img, .footer-social img, .cpmi-social-block img, #open-product-favorites i, #open-product-cart i, #open-product-favorites span, #open-product-cart span, .h-search-tap i, .top-product i:before, .pl-img img, .dsb-item-img img, .basket-del:before, .basket-add:before, .basket-add:after, .cmi-img img, .item-close:before, .mdi-close::before, .back-mob-menu-modal:before, .blog-item-img img, .mob-menu-modal .account-button i:before, .svg-point svg, .next-page i, .prev-page i {
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%,-50%);
@@ -282,7 +288,7 @@ body {
     -o-transform: translate(-50%,0);
     transform: translate(-50%,0);
 }
-.filter-name i {
+.filter-name i, .filter-show i {
     top: 50%;
     -webkit-transform: translate(0,-50%);
     -moz-transform: translate(0,-50%);
@@ -614,7 +620,7 @@ header {
     margin-bottom: 10px;
 }
 .pop-cl-item {
-    margin: 7px;
+    margin: 5px 2px;
     padding: 8px 25px;
     border: 1px solid var(--color-gray2);
     background-color: var(--color-white);
@@ -1038,10 +1044,10 @@ footer {
 }
 .sort-block p {
     font-size: 12px;
-    margin: 0 0 5px 15px;
+    margin: 0 0 5px;
 }
 .sort-block div {
-    padding: 8px 15px;
+    padding: 8px 12px;
     display: inline-block;
     cursor: pointer;
     border-radius: 20px;
@@ -1564,6 +1570,9 @@ table td {
     margin: 50px 0;
     padding: 20px;
 }
+.product-list-show-more {
+    margin: 50px 0 0;
+}
 .pagination-show-more-leave i {
     font-size: 50px;
     margin-bottom: 10px;
@@ -1769,7 +1778,7 @@ input[type="checkbox"] {
     font-weight: 500;
 }
 .mob-menu-modal .account-button {
-    padding: 10px 20px;
+    padding: 20px 30px;
     margin: 25px 0 10px;
 }
 .mob-menu-modal .account-button span {
@@ -1937,14 +1946,14 @@ input[type="checkbox"] {
 }
 .sidebar {
     flex: none;
-    width: 300px;
+    width: 320px;
     margin-right: 10px;
     background-color: var(--color-white);
-    padding: 20px;
+    padding: 20px 20px 35px;
 }
 .filter-list {
     border-bottom: 1px dashed var(--color-gray2);
-    padding: 20px 0;
+    padding: 15px 0;
 }
 .filter-name {
     font: 700 16px "Roboto", sans-serif;
@@ -2031,4 +2040,101 @@ input[type="checkbox"] {
 }
 .checkbox-list input {
     display: none;
+}
+.pagination-pages {
+    margin: 30px 0 50px;
+}
+.pagination-pages a, .active-page {
+    padding: 10px 15px;
+    border: 1px solid var(--color-gray);
+    font-size: 16px;
+    margin: 0 5px;
+}
+.prev-page, .next-page {
+    width: 41px;
+    height: 41px;
+}
+.next-page i, .prev-page i {
+    font-size: 25px;
+}
+.active-page {
+    background-color: var(--color-bgmaincolor);
+    border-color: var(--color-maincolor);
+    color: var(--color-maincolor);
+}
+.mob-menu-filter-title {
+    font: 900 24px "Roboto",sans-serif;
+    padding: 10px;
+}
+.open-filter {
+    padding: 12px 30px;
+    background-color: var(--color-maincolor);
+    color: var(--color-white);
+}
+.open-filter i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+.selected-filter {
+    margin-bottom: 30px;
+}
+.selected-filter-title {
+    font-size: 12px;
+}
+.filter-show, .sft-reset-filter {
+    font-size: 12px;
+    padding: 10px 30px 10px 20px;
+    border: 1px solid var(--color-gray2);
+    border-radius: 50px;
+    margin: 10px 5px 0 0;
+}
+.filter-show i {
+    right: 15px;
+}
+.sft-reset-filter {
+    padding: 10px 20px;
+    border: 2px solid var(--color-maincolor);
+    font-weight: 700;
+    color: var(--color-maincolor);
+}
+.faq-block__title {
+    font: 900 24px "Roboto",sans-serif;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.faq-block__item {
+    margin-bottom: 25px;
+}
+.faq-block__question {
+    font: 700 18px "Roboto",sans-serif;
+    padding-right: 30px;
+    line-height: 24px;
+}
+.faq-block__answer {
+    margin-top: 15px;
+    line-height: 22px;
+}
+.range-filter input {
+    padding: 10px 15px;
+}
+.range-button {
+    padding: 14px 15px;
+    border-radius: 15px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.range-filter span {
+    margin: 0 10px;
+}
+.filter-buttons {
+    display: none;
+    background-color: var(--color-white);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 6px 6px 5px 10px rgb(0 0 0 / 5%);
+}
+.fb-reset {
+    color: var(--color-maincolor);
+    background-color: transparent;
 }

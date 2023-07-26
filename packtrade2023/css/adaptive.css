@@ -2,6 +2,9 @@
     .product-list {
         grid-template-columns: repeat(5,1fr);
     }
+    .products-list-grid {
+        grid-template-columns: repeat(4,1fr);
+    }
     .price {
         font-size: 16px;
     }
@@ -60,6 +63,9 @@
     }
 }
 @media (max-width: 1200px) {
+    .products-list-grid {
+        grid-template-columns: repeat(3,1fr);
+    }
     .direction-block-main {
         grid-template-columns: repeat(5,1fr);
     }
@@ -117,6 +123,58 @@
     }
 }
 @media (max-width: 1023px) {
+    .filter-buttons {
+        display: flex;
+    }
+    .selected-filter {
+        margin: 25px 0;
+        padding: 0 10px;
+    }
+    .sort-block p {
+        display: none;
+    }
+    .sort-block {
+        margin: 0;
+        padding: 6px 0;
+        background-color: transparent;
+    }
+    .plb-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .open-filter {
+        display: flex;
+    }
+    .mob-menu-filter-title, .close-mob-filter-modal {
+        display: block;
+    }
+    .filter {
+        overflow-y: scroll;
+        max-width: 100%;
+        width: 100%;
+        top: 0;
+        left: -650px;
+        background-color: var(--color-white);
+        box-shadow: 0 0 14px 6px rgb(0 0 0/15%);
+        height: 100%;
+        padding: 40px;
+        position: relative;
+    }
+    .sidebar {
+        display: none;
+        margin: 0;
+        padding: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        background: rgba(0,0,0,.5);
+        z-index: 2;
+        width: 100%;
+        border-radius: 0;
+    }
     .pp-last-views-products .slick-prev:after, .pp-last-views-products .slick-next:after {
         width: 10px;
         height: 10px;
@@ -265,11 +323,23 @@
     .main-block {
         padding: 25px;
     }
-    .pop-cl-item {
-        margin: 7px 2px;
-    }
 }
 @media (max-width: 767px) {
+    .prev-page, .next-page {
+        width: 35px;
+        height: 36px;
+    }
+    .pagination-pages a, .active-page {
+        font-size: 12px;
+        padding: 10px;
+        margin: 0 3px;
+    }
+    .next-page i, .prev-page i {
+        font-size: 20px;
+    }
+    .products-list-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
     .bread-crumbs {
         margin: 30px auto 30px;
     }
@@ -291,6 +361,10 @@
     .main-button, button {
         padding: 17px;
         font-size: 14px;
+    }
+    .range-button {
+        padding: 14px 15px;
+        font-size: 12px;
     }
     .cart-return, .cart-accept {
         display: block;
@@ -390,6 +464,18 @@
     }
 }
 @media (max-width: 500px) {
+    .faq-block__question {
+        font-size: 15px;
+    }
+    .filter {
+        padding: 40px 20px;
+    }
+    .mob-menu-filter-title {
+        font-size: 20px;
+    }
+    header {
+        padding-bottom: 20px;
+    }
     .cmi-img {
         width: 200px;
         height: 135px;
@@ -406,7 +492,7 @@
     .close-mob-menu-modal {
         right: 10px;
     }
-    .mm-main-item, .mob-menu-filter-title, .mm-sub a {
+    .mm-main-item, .mm-sub a {
         font-size: 14px;
     }
     .mm-sub a {
@@ -474,7 +560,7 @@
     .phone-header, .hbb-tb-title, .pop-cl-title, .pl-title, .seo-block h3 {
         font-size: 16px;
     }
-    .main-title, .pl-addcart i, .pl-cons i, .seo-block h1, .seo-block h2 {
+    .main-title, .pl-addcart i, .pl-cons i, .seo-block h1, .seo-block h2, .faq-block__title {
         font-size: 18px;
     }
     .lang-button {
@@ -501,7 +587,6 @@
     .pop-cl-item {
         font-size: 12px;
         padding: 6px 20px;
-        margin: 7px 2px;
     }
     .seo-block div {
         line-height: 20px;

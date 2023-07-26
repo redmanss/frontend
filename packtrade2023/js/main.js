@@ -43,12 +43,14 @@ $('.mob-menu').click(function(){
     $(".mob-menu-block").animate({
         left: 0
     })
+    $('body').addClass('block-body')
 })
 $('.close-mob-menu-modal').click(function(){
     $(".mob-menu-modal").fadeOut(200)
     $(".mob-menu-block").animate({
         left: -650
     })
+    $('body').removeClass('block-body')
 })
 // Mob Menu Func
 $('.mm-main-item').click(function() {

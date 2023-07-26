@@ -1,4 +1,4 @@
-.consultation-button, .lang-button, .right-menu a, .mob-menu, .direction-item, .blog-item, .video-item, .product-button, .footer-social a, .footer-menu-item, .blog-button, .mm-main-item, .mm-sub a, .close-mob-menu-modal, .close-consultation, .ncb-send, .drop-lang-header a, .sort-block div, .bread-crumbs a, .pl-item, .ivb-item, #open-product-favorites, #open-product-cart, .h-search-tap, .account-button, .sub-menu-button, .footer-phone, .footer-email, .hbb-tb a, .slick-prev, .slick-next, .pp-arow-next, .pp-arow-prev, .hbb-brand-item img, .pl-cons, .pl-addcart, .pl-addfavorite, .index-show-more, .pop-cl-item, .subscribe-channel button, .ocb-item, .pagination-show-more-leave, .dsb-result-item-category, .modal-close, .h-start-search, input, textarea, button, .item-close, .basket-del, .basket-add, .cart-accept, .main-button, .back-mob-menu-modal, .mmms-item, .mmms-title, .go-top, .direction-item-main, .show-more-button, .svg-point svg {
+.consultation-button, .lang-button, .right-menu a, .mob-menu, .direction-item, .blog-item, .video-item, .product-button, .footer-social a, .footer-menu-item, .blog-button, .mm-main-item, .mm-sub a, .close-mob-menu-modal, .close-consultation, .ncb-send, .drop-lang-header a, .sort-block div, .bread-crumbs a, .pl-item, .ivb-item, #open-product-favorites, #open-product-cart, .h-search-tap, .account-button, .sub-menu-button, .footer-phone, .footer-email, .hbb-tb a, .slick-prev, .slick-next, .pp-arow-next, .pp-arow-prev, .hbb-brand-item img, .pl-cons, .pl-addcart, .pl-addfavorite, .index-show-more, .pop-cl-item, .subscribe-channel button, .ocb-item, .pagination-show-more-leave, .dsb-result-item-category, .modal-close, .h-start-search, input, textarea, button, .item-close, .basket-del, .basket-add, .cart-accept, .main-button, .back-mob-menu-modal, .mmms-item, .mmms-title, .go-top, .direction-item-main, .show-more-button, .svg-point svg, .pagination-pages a, .checkbox-list, .filter-name:hover, .open-filter, .filter-show, .selected-filter-block div {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
@@ -8,7 +8,7 @@
 .phone-header:hover, .pl-item-title:hover, .dsb-item-name:hover, .cmi-title:hover, .direction-title:hover {
     text-decoration: underline;
 }
-.mob-menu-modal .account-button:hover {
+.mob-menu-modal .account-button:hover, .checkbox-list:hover, .filter-name:hover {
     background-color: var(--color-bgmaincolor);
     color: var(--color-maincolor);
 }
@@ -20,10 +20,10 @@
     background-color: var(--color-bgmaincolor);
     color: var(--color-maincolor);
 }
-.category-show-more:hover {
+.category-show-more:hover, .product-list-show-more:hover {
     background-color: var(--color-lowgray);
 }
-.login-in:hover, .cart-accept:hover, .consultation-button:hover, .subscribe-channel button:hover, .consultation-block button:hover, .successful-button:hover {
+.login-in:hover, .cart-accept:hover, .consultation-button:hover, .subscribe-channel button:hover, .consultation-block button:hover, .successful-button:hover, .range-button:hover {
     background-color: var(--color-bgbutton);
     border-color: transparent;
 }
@@ -38,7 +38,7 @@
 .pl-addfavorite:hover {
     color: var(--color-sale);
 }
-.pop-cl-item:hover {
+.pop-cl-item:hover, .pagination-pages a:hover, .selected-filter-block div:hover {
     color: var(--color-maincolor);
     background-color: var(--color-bgmaincolor);
     border-color: var(--color-maincolor);
