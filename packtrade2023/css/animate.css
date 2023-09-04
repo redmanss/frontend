@@ -1,14 +1,37 @@
-.consultation-button, .lang-button, .right-menu a, .mob-menu, .direction-item, .blog-item, .video-item, .product-button, .footer-social a, .footer-menu-item, .blog-button, .mm-main-item, .mm-sub a, .close-mob-menu-modal, .close-consultation, .ncb-send, .drop-lang-header a, .sort-block div, .bread-crumbs a, .pl-item, .ivb-item, #open-product-favorites, #open-product-cart, .h-search-tap, .account-button, .sub-menu-button, .footer-phone, .footer-email, .hbb-tb a, .slick-prev, .slick-next, .pp-arow-next, .pp-arow-prev, .hbb-brand-item img, .pl-cons, .pl-addcart, .pl-addfavorite, .index-show-more, .pop-cl-item, .subscribe-channel button, .ocb-item, .pagination-show-more-leave, .dsb-result-item-category, .modal-close, .h-start-search, input, textarea, button, .item-close, .basket-del, .basket-add, .cart-accept, .main-button, .back-mob-menu-modal, .mmms-item, .mmms-title, .go-top, .direction-item-main, .show-more-button, .svg-point svg, .pagination-pages a, .checkbox-list, .filter-name:hover, .open-filter, .filter-show, .selected-filter-block div {
+.consultation-button, .lang-button, .right-menu a, .mob-menu, .direction-item, .blog-item, .video-item:after, .product-button, .footer-social a, .footer-menu-item, .blog-button, .mm-main-item, .mm-sub a, .close-mob-menu-modal, .close-consultation, .ncb-send, .drop-lang-header a, .sort-block div, .bread-crumbs a, .pl-item, .ivb-item, #open-product-favorites, #open-product-cart, .h-search-tap, .account-button, .sub-menu-button, .footer-phone, .footer-email, .hbb-tb a, .slick-prev, .slick-next, .pp-arow-next, .pp-arow-prev, .hbb-brand-item img, .pl-cons, .pl-addcart, .pl-addfavorite, .index-show-more, .pop-cl-item, .subscribe-channel button, .ocb-item, .pagination-show-more-leave, .dsb-result-item-category, .modal-close, .h-start-search, input, textarea, button, .item-close, .basket-del, .basket-add, .cart-accept, .main-button, .back-mob-menu-modal, .mmms-item, .mmms-title, .go-top, .direction-item-main, .show-more-button, .svg-point svg, .pagination-pages a, .checkbox-list, .filter-name:hover, .open-filter, .filter-show, .selected-filter-block div, .sft-reset-filter, .show-all-filter, .hide-all-filter, .wb-button, .pp-download-item, .pp-active-brand, .download-modal-item, .brand-filter a, .brand-list a, .mpl-item:hover {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
-.phone-header:hover, .pl-item-title:hover, .dsb-item-name:hover, .cmi-title:hover, .direction-title:hover {
+.phone-header:hover, .pl-item-title:hover, .dsb-item-name:hover, .cmi-title:hover, .direction-title:hover, .pp-addfavorite:hover, .pp-callback:hover, .mob-menu-modal .account-button:hover, .contacts-page a:hover, .bp-sidebar-item a:hover {
     text-decoration: underline;
 }
-.mob-menu-modal .account-button:hover, .checkbox-list:hover, .filter-name:hover {
+.brand-list a:hover {
+    color: var(--color-maincolor);
+    text-decoration: underline;
+}
+.sft-reset-filter:hover {
+    opacity: .7;
+}
+.tab-product-page a:hover {
+    color: var(--color-black);
+    border-bottom: 2px solid var(--color-black);
+}
+.buy-button:hover {
+    background-color: #02c751;
+}
+.pp-sub-button:hover, .list-button:hover {
+    background-color: #02c751;
+    border-color: #02c751;
+    color: var(--color-white);
+}
+.show-all-filter:hover, .hide-all-filter:hover {
+    color: var(--color-maincolor);
+    border-color: var(--color-maincolor);
+}
+.checkbox-list:hover {
     background-color: var(--color-bgmaincolor);
     color: var(--color-maincolor);
 }
@@ -16,14 +39,15 @@
     color: var(--color-white);
     background-color: var(--color-yellow);
 }
-.lang-button:hover, .right-menu a:hover, .blog-button:hover, .mm-main-item:hover, .mm-sub a:hover, .drop-lang-header a:hover, .sort-block div:hover, .bread-crumbs a:hover, .sub-menu-button:hover, .hbb-tb a:hover, .show-more-search:hover, .dsb-result-item-category:hover, .h-start-search:hover, .mmms-item:hover, .mmms-title:hover, .ocb-item:hover {
+.lang-button:hover, .right-menu a:hover, .blog-button:hover, .mm-main-item:hover, .mm-sub a:hover, .drop-lang-header a:hover, .sort-block div:hover, .bread-crumbs a:hover, .sub-menu-button:hover, .hbb-tb a:hover, .show-more-search:hover, .dsb-result-item-category:hover, .h-start-search:hover, .mmms-item:hover, .mmms-title:hover, .ocb-item:hover, .pp-active-brand:hover {
     background-color: var(--color-bgmaincolor);
     color: var(--color-maincolor);
+    border-color: var(--color-maincolor);
 }
 .category-show-more:hover, .product-list-show-more:hover {
     background-color: var(--color-lowgray);
 }
-.login-in:hover, .cart-accept:hover, .consultation-button:hover, .subscribe-channel button:hover, .consultation-block button:hover, .successful-button:hover, .range-button:hover {
+.login-in:hover, .cart-accept:hover, .subscribe-channel button:hover, .consultation-block button:hover, .successful-button:hover, .range-button:hover, .call-back-block button:hover {
     background-color: var(--color-bgbutton);
     border-color: transparent;
 }
@@ -51,7 +75,7 @@
 .go-top:hover {
     opacity: 1;
 }
-#open-product-favorites:hover, #open-product-cart:hover, .main-menu .account-button:hover {
+#open-product-favorites:hover, #open-product-cart:hover, .main-menu .account-button:hover, .download-modal-item:hover, .brand-filter a:hover {
     background-color: var(--color-bgmaincolor);
 }
 .footer-menu-item:hover, .footer-social a:hover, .footer-phone:hover, .footer-email:hover, .modal-close:hover, .item-close:hover, .basket-del:hover, .basket-add:hover, .close-consultation:hover, .close-mob-menu-modal:hover, .back-mob-menu-modal:hover {
@@ -60,14 +84,10 @@
 .hbb-brand-list .slick-prev:hover, .hbb-brand-list .slick-next:hover, .pp-arow-next:hover, .pp-arow-prev:hover, .index-show-more:hover, .cart-return:hover, .pp-last-views-products .slick-next:hover, .pp-last-views-products .slick-prev:hover, .show-more-button:hover, .pop-brands .slick-prev:hover, .pop-brands .slick-next:hover {
     background-color: rgba(0, 0, 0, .1);
 }
-.mob-menu:hover, .h-search-tap:hover {
+.mob-menu:hover, .h-search-tap:hover, .wb-button:hover, .pp-download-item:hover {
     opacity: .8;
 }
-.pp-buttons-block .consultation-button:hover {
-    color: var(--color-white);
-    background-color: var(--color-maincolor);
-}
-.blog-item:hover, .direction-item:hover, .product-list .pl-item:hover, .direction-item-main:hover, .direction-category-grid .pl-item:hover, .products-list-grid .pl-item:hover {
+.blog-item:hover, .direction-item:hover, .product-list .pl-item:hover, .direction-item-main:hover, .direction-category-grid .pl-item:hover, .products-list-grid .pl-item:hover, .mpl-item:hover {
     box-shadow: 6px 6px 5px 0 rgb(0 0 0 / 10%);
     -webkit-transform: translate(-2px, -2px);
     -moz-transform: translate(-2px, -2px);
@@ -78,4 +98,10 @@
 
 .video-item:hover:after, .ivb-item:hover:after {
     opacity: .6;
+}
+@media (min-width: 1023px) {
+    .filter-name:hover {
+        background-color: var(--color-bgmaincolor);
+        color: var(--color-maincolor);
+    }
 }

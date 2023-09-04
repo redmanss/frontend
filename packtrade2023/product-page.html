@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/adaptive.css">
@@ -430,6 +431,28 @@
             </form>
         </div>
     </div>
+    <!-- call back -->
+    <div class="modal-body call-back-block">
+        <div class="modal-body-block">
+            <i class="mdi mdi-close modal-close close-call-back-block"></i>
+            <div class="modal-title">Зворотній зв'язок</div>
+            <form id="form-p-send-manager" action="/../manager/send-message/" method="post">
+                
+                <div class="form-group field-contactmanagerform-userphone required">
+                    <label class="control-label" for="contactmanagerform-userphone">Телефон</label>
+                    <input type="tel" id="contactmanagerform-userphone" class="form-control" name="ContactManagerForm[userPhone]" placeholder="+38(___)___-__-__" aria-required="true">
+                    <p class="help-block help-block-error"></p>
+                </div>
+                
+                <div class="form-group field-contactmanagerform-pagemessage required">
+                    <input type="hidden" id="contactmanagerform-pagemessage" class="form-control" name="ContactManagerForm[pageMessage]" value="https://pack-trade.com/nproduct/telezhka_gidravlicheskaya_2_5_tonny_model_cby_as-25_kolesa_poliuretan-niuli/" readonly="">
+                    <p class="help-block help-block-error"></p>
+                </div>
+                               
+                <button type="submit" class="main-button">Відправити</button>
+            </form>
+        </div>
+    </div>
     <!-- menu -->
     <div class="mob-menu-modal">
         <div class="mob-menu-block">
@@ -600,11 +623,52 @@
             </div>
         </div>
     </div>
+    <!-- Warehouse modal -->
+    <div class="modal-body warehose-modal-block">
+        <div class="modal-body-block">
+            <i class="mdi mdi-close modal-close close-warehose-modal-block"></i>
+            <div class="modal-title">Склад</div>
+            <div class="wmb-item flex-block">
+                <div class="wmb-name">Ківш А.ТОМ 1 м³ Manitou (АТ4.057.02-00)</div>
+                <div class="wmb-amount">10 шт</div>
+                <div class="list-button wmb-addtocard">До кошику</div>
+            </div>
+            <div class="wmb-item flex-block">
+                <div class="wmb-name">Ківш А.ТОМ 1 м³ Manitou (АТ4.057.02-00)</div>
+                <div class="wmb-amount">0 шт</div>
+                <div class="list-button consultation-button">Замовити</div>
+            </div>
+        </div>
+    </div>
+    <!-- download modal -->
+    <div class="modal-body download-modal-block">
+        <div class="modal-body-block">
+            <i class="mdi mdi-close modal-close close-download-modal-block"></i>
+            <div class="modal-title">Брошури</div>
+            <div class="download-modal-grid">
+                <div class="download-modal-item">
+                    <img src="https://pack-trade.com/n-img/pdf.svg" alt="SEO" title="SEO">
+                    <div>Специфікація 540-140</div>
+                </div>
+                <div class="download-modal-item">
+                    <img src="https://pack-trade.com/n-img/pdf.svg" alt="SEO" title="SEO">
+                    <div>Специфікація 540-140</div>
+                </div>
+                <div class="download-modal-item">
+                    <img src="https://pack-trade.com/n-img/pdf.svg" alt="SEO" title="SEO">
+                    <div>Специфікація 540-140</div>
+                </div>
+                <div class="download-modal-item">
+                    <img src="https://pack-trade.com/n-img/pdf.svg" alt="SEO" title="SEO">
+                    <div>Специфікація 540-140</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 
 <main>
-    <section class="container bread-crumbs">
-        <h1>Сторінка Список товару</h1>
+    <section class="container bread-crumbs pp-crumbs">
         <div class="crumbs-scroll">
             <ul itemscope="" itemtype="https://schema.org/BreadcrumbList">
                 <li>
@@ -630,599 +694,484 @@
         </div>
     </section>
 
-    <section class="container products-list-page">
-        <div class="products-list flex-block">
-            <div class="sidebar">
-                <div class="filter">
-                    <div class="mob-menu-filter-title">Фільтр</div>
-                    <i class="close-mob-filter-modal modal-close mdi mdi-close"></i>
-
-                    <div class="selected-filter">
-                        <div class="selected-filter-title">Вибрані фільтри:</div>
-                        <div class="selected-filter-block">
-                            <div class="filter-show">
-                                <p>Обраний фільтр</p>
-                                <i class="mdi mdi-close"></i>
-                            </div>
-                            <div class="filter-show">
-                                <p>Обраний фільтр</p>
-                                <i class="mdi mdi-close"></i>
-                            </div>
-                        </div>
-                        <div class="sft-reset-filter">Скинути фільтр</div>
-                    </div>
-
-                    <div class="filter-block">
-                        <div class="filter-list">
-                            <div class="filter-name"><p>Назва фільтра</p><i class="mdi mdi-chevron-up"></i></div>
-                            <div class="filter-box">
-                                <div class="checkbox-list">
-                                    <label class="cbx flex-block">
-                                        <input class="inp-cbx" type="checkbox" data-category="25" data-value="dorozhno_stroitelnye">
-                                        <div class="svg-point">
-                                            <svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
-                                        </div>
-                                        <div>Фільтер ітем</div>
-                                    </label>
-                                </div>
-                                <div class="checkbox-list">
-                                    <label class="cbx flex-block">
-                                        <input class="inp-cbx" type="checkbox" data-category="25" data-value="gornodobyvayuschie">
-                                        <div class="svg-point">
-                                            <svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
-                                        </div>
-                                        <div>Фільтер ітем</div>
-                                    </label>
-                                </div>
-                                <div class="checkbox-list">
-                                    <label class="cbx flex-block">
-                                        <input class="inp-cbx" type="checkbox" data-category="25" data-value="gornodobyvayuschie">
-                                        <div class="svg-point">
-                                            <svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
-                                        </div>
-                                        <div>Фільтер ітем</div>
-                                    </label>
-                                </div>
-                                <div class="checkbox-list">
-                                    <label class="cbx flex-block">
-                                        <input class="inp-cbx" type="checkbox" data-category="25" data-value="gornodobyvayuschie">
-                                        <div class="svg-point">
-                                            <svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
-                                        </div>
-                                        <div>Фільтер ітем</div>
-                                    </label>
-                                </div>
-                                <div class="checkbox-list">
-                                    <label class="cbx flex-block">
-                                        <input class="inp-cbx" type="checkbox" data-category="25" data-value="gornodobyvayuschie">
-                                        <div class="svg-point">
-                                            <svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
-                                        </div>
-                                        <div>Фільтер ітем</div>
-                                    </label>
-                                </div>
-                                <div class="checkbox-list">
-                                    <label class="cbx flex-block">
-                                        <input class="inp-cbx" type="checkbox" data-category="25" data-value="gornodobyvayuschie">
-                                        <div class="svg-point">
-                                            <svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
-                                        </div>
-                                        <div>Фільтер ітем</div>
-                                    </label>
-                                </div>
-                                <div class="checkbox-list">
-                                    <label class="cbx flex-block">
-                                        <input class="inp-cbx" type="checkbox" data-category="25" data-value="gornodobyvayuschie">
-                                        <div class="svg-point">
-                                            <svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
-                                        </div>
-                                        <div>Фільтер ітем</div>
-                                    </label>
-                                </div>
-                                <div class="checkbox-list">
-                                    <label class="cbx flex-block">
-                                        <input class="inp-cbx" type="checkbox" data-category="25" data-value="gornodobyvayuschie">
-                                        <div class="svg-point">
-                                            <svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
-                                        </div>
-                                        <div>Фільтер ітем</div>
-                                    </label>
-                                </div>
-                                <div class="show-all-filter inline-block">Показати всі</div>
-                                <div class="hide-all-filter">Сховати</div>
-                            </div>
-                        </div>
-    
-                        <div class="filter-list">
-                            <div class="filter-name"><p>Назва фільтра</p><i class="mdi mdi-chevron-up"></i></div>
-                            <div class="filter-box">
-                                <div class="checkbox-list">
-                                    <label class="cbx flex-block">
-                                        <input class="inp-cbx" type="checkbox" data-category="25" data-value="dorozhno_stroitelnye">
-                                        <div class="svg-point">
-                                            <svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
-                                        </div>
-                                        <div>Фільтер ітем</div>
-                                    </label>
-                                </div>
-                                <div class="checkbox-list">
-                                    <label class="cbx flex-block">
-                                        <input class="inp-cbx" type="checkbox" data-category="25" data-value="gornodobyvayuschie">
-                                        <div class="svg-point">
-                                            <svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
-                                        </div>
-                                        <div>Фільтер ітем</div>
-                                    </label>
-                                </div>
-                                <div class="checkbox-list">
-                                    <label class="cbx flex-block">
-                                        <input class="inp-cbx" type="checkbox" data-category="25" data-value="gornodobyvayuschie">
-                                        <div class="svg-point">
-                                            <svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
-                                        </div>
-                                        <div>Фільтер ітем</div>
-                                    </label>
-                                </div>
-                                <div class="checkbox-list">
-                                    <label class="cbx flex-block">
-                                        <input class="inp-cbx" type="checkbox" data-category="25" data-value="gornodobyvayuschie">
-                                        <div class="svg-point">
-                                            <svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
-                                        </div>
-                                        <div>Фільтер ітем</div>
-                                    </label>
-                                </div>
-                                <div class="checkbox-list">
-                                    <label class="cbx flex-block">
-                                        <input class="inp-cbx" type="checkbox" data-category="25" data-value="gornodobyvayuschie">
-                                        <div class="svg-point">
-                                            <svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
-                                        </div>
-                                        <div>Фільтер ітем</div>
-                                    </label>
-                                </div>
-                                <div class="show-all-filter inline-block">Показати всі</div>
-                                <div class="hide-all-filter">Сховати</div>
-                            </div>
-                        </div>
-                        <div class="filter-list">
-                            <div class="filter-name"><p>Назва фільтра</p><i class="mdi mdi-chevron-up"></i></div>
-                            <div class="filter-box">
-                                <div class="checkbox-list">
-                                    <label class="cbx flex-block">
-                                        <input class="inp-cbx" type="checkbox" data-category="25" data-value="dorozhno_stroitelnye">
-                                        <div class="svg-point">
-                                            <svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
-                                        </div>
-                                        <div>Фільтер ітем</div>
-                                    </label>
-                                </div>
-                                <div class="checkbox-list">
-                                    <label class="cbx flex-block">
-                                        <input class="inp-cbx" type="checkbox" data-category="25" data-value="gornodobyvayuschie">
-                                        <div class="svg-point">
-                                            <svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
-                                        </div>
-                                        <div>Фільтер ітем</div>
-                                    </label>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="filter-list">
-                            <div class="filter-name"><p>Назва фільтра</p><i class="mdi mdi-chevron-up"></i></div>
-                            <div class="filter-box">
-                                <div class="checkbox-list">
-                                    <label class="cbx flex-block">
-                                        <input class="inp-cbx" type="checkbox" data-category="25" data-value="dorozhno_stroitelnye">
-                                        <div class="svg-point">
-                                            <svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
-                                        </div>
-                                        <div>Фільтер ітем</div>
-                                    </label>
-                                </div>
-                                <div class="checkbox-list">
-                                    <label class="cbx flex-block">
-                                        <input class="inp-cbx" type="checkbox" data-category="25" data-value="gornodobyvayuschie">
-                                        <div class="svg-point">
-                                            <svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
-                                        </div>
-                                        <div>Фільтер ітем</div>
-                                    </label>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="filter-list">
-                            <div class="filter-name"><p>Назва фільтра</p><i class="mdi mdi-chevron-up"></i></div>
-                            <div class="filter-box">
-                                <div class="checkbox-list">
-                                    <label class="cbx flex-block">
-                                        <input class="inp-cbx" type="checkbox" data-category="25" data-value="dorozhno_stroitelnye">
-                                        <div class="svg-point">
-                                            <svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
-                                        </div>
-                                        <div>Фільтер ітем</div>
-                                    </label>
-                                </div>
-                                <div class="checkbox-list">
-                                    <label class="cbx flex-block">
-                                        <input class="inp-cbx" type="checkbox" data-category="25" data-value="gornodobyvayuschie">
-                                        <div class="svg-point">
-                                            <svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
-                                        </div>
-                                        <div>Фільтер ітем</div>
-                                    </label>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="filter-list">
-                            <div class="filter-name"><p>Назва фільтра</p><i class="mdi mdi-chevron-up"></i></div>
-                            <div class="filter-box">
-                                <div class="checkbox-list">
-                                    <label class="cbx flex-block">
-                                        <input class="inp-cbx" type="checkbox" data-category="25" data-value="dorozhno_stroitelnye">
-                                        <div class="svg-point">
-                                            <svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
-                                        </div>
-                                        <div>Фільтер ітем</div>
-                                    </label>
-                                </div>
-                                <div class="checkbox-list">
-                                    <label class="cbx flex-block">
-                                        <input class="inp-cbx" type="checkbox" data-category="25" data-value="gornodobyvayuschie">
-                                        <div class="svg-point">
-                                            <svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
-                                        </div>
-                                        <div>Фільтер ітем</div>
-                                    </label>
-                                </div>
-                                
-                            </div>
-                        </div>
-    
-                        <div class="filter-list">
-                            <div class="filter-name"><p>Рейндж фільтер</p><i class="mdi mdi-chevron-up"></i></div>
-                            <div class="filter-box">
-                                
-                                <div class="range-filter flex-block">
-                                    <label>
-                                        <input type="number" class="old-for" min="5" max="14868.7" value="5" maxlength="6">
-                                    </label>
-                                    <span>-</span>
-                                    <label>
-                                        <input type="number" class="old-to" min="5" max="14868.7" value="14868.7" maxlength="6">
-                                    </label>
-                                    <div class="range-button main-button"><div>OK</div></div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                    
-                </div>
-                <div class="filter-buttons">
-                    <div class="main-button fb-reset">Скинути</div>
-                    <div class="main-button fb-show">Показати (30)</div>
-                </div>
-            </div>
-
-            <div class="products-list-block">
-                <div class="plb-buttons">
-                    <div class="open-filter"><i class="mdi mdi-format-list-bulleted"></i><p>Фільтр</p></div>
-                    <div class="sort-block">
-                        <p>Сортування:</p>
-                        <div class="asc active-sort">Дешеві</div>
-                        <div class="desc">Дорогі</div>
-                    </div>
-                </div>
-                
-
-                <div class="products-list-grid">
-                    <div class="pl-item">
-                        <div class="top-product flex-block">
-                            <i class="mdi mdi-fire"></i>
-                            <i class="mdi mdi-video-outline"></i>
-                            <i class="mdi mdi-percent-outline"></i>
-                        </div>
-                        <a class="pl-img" href="#">
-                            <img src="media/no-img.jpg" alt="SEO" title="SEO">
-                        </a>
-                        <div class="product-number">№123123</div>
-                        <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач  </div>
-                        <div class="price-block">
-                            <div class="old-price">
-                                <span>3 794 400</span>
-                                <span>-126480</span>
-                            </div>
-                            <div class="price">
-                                <span>3 667 920 грн</span>
-                                <span>89 900 €</span>
-                            </div>
-                        </div>
-                        <div class="status-product-av">В наявності</div>
-                        <div class="pl-buttons flex-block">
-                            <div class="pl-addcart"><i class="mdi mdi-cart-outline"></i><span>В кошик</span></div>
-                            <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
-                        </div>
-                    </div>
-        
-                    <div class="pl-item">
-                        <a class="pl-img" href="#">
-                            <img src="media/no-img.jpg" alt="SEO" title="SEO">
-                        </a>
-                        <div class="product-number">№123123</div>
-                        <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м </div>
-                        <div class="price-block">
-                            <div class="old-price">
-                                
-                            </div>
-                            <div class="price">
-                                <span>3 667 920 грн</span>
-                                <span>89 900 €</span>
-                            </div>
-                        </div>
-                        <div class="status-product-underorder">Під замовлення</div>
-                        <div class="pl-buttons flex-block">
-                            <div class="pl-cons consultation-button"><i class="mdi mdi-tooltip-text-outline"></i><span>Замовити</span></div>
-                            <div class="pl-addfavorite favorite-active"><i class="mdi mdi-heart-outline"></i></div>
-                        </div>
-                    </div>
-        
-                    <div class="pl-item">
-                        <a class="pl-img" href="#">
-                            <img src="media/no-img.jpg" alt="SEO" title="SEO">
-                        </a>
-                        <div class="product-number">№123123</div>
-                        <div class="pl-item-title">Навантажувач </div>
-                        <div class="price-block">
-                            <div class="old-price">
-                                
-                            </div>
-                            <div class="price">
-                                <span>3 667 920 грн</span>
-                                
-                            </div>
-                        </div>
-                       
-                        <div class="status-product-sales">Немає в наявності</div>
-                        <div class="pl-buttons flex-block">
-                            <div class="pl-cons consultation-button"><i class="mdi mdi-tooltip-text-outline"></i><span>Замовити</span></div>
-                            <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
-                        </div>
-                    </div>
-        
-                    <div class="pl-item">
-                        <a class="pl-img" href="#">
-                            <img src="media/no-img.jpg" alt="SEO" title="SEO">
-                        </a>
-                        <div class="product-number">№123123</div>
-                        <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
-                        <div class="price-block">
-                            <div class="old-price">
-                                
-                            </div>
-                            <div class="price">
-                                <span>Ціну уточнюйте</span>
-                               
-                            </div>
-                        </div>
-                       
-                        <div class="status-product-sales">Очікується</div>
-                        <div class="pl-buttons flex-block">
-                            <div class="pl-cons consultation-button"><i class="mdi mdi-tooltip-text-outline"></i><span>Замовити</span></div>
-                            <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
-                        </div>
-                    </div>
-                    <div class="pl-item">
-                        <a class="pl-img" href="#">
-                            <img src="media/no-img.jpg" alt="SEO" title="SEO">
-                        </a>
-                        <div class="product-number">№123123</div>
-                        <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
-                        <div class="price-block">
-                            <div class="old-price">
-                                
-                            </div>
-                            <div class="price">
-                                <span>Ціну уточнюйте</span>
-                               
-                            </div>
-                        </div>
-                       
-                        <div class="status-product-sales">Очікується</div>
-                        <div class="pl-buttons flex-block">
-                            <div class="pl-cons consultation-button"><i class="mdi mdi-tooltip-text-outline"></i><span>Замовити</span></div>
-                            <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
-                        </div>
-                    </div>
-                    <div class="pl-item">
-                        <a class="pl-img" href="#">
-                            <img src="media/no-img.jpg" alt="SEO" title="SEO">
-                        </a>
-                        <div class="product-number">№123123</div>
-                        <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
-                        <div class="price-block">
-                            <div class="old-price">
-                                
-                            </div>
-                            <div class="price">
-                                <span>Ціну уточнюйте</span>
-                               
-                            </div>
-                        </div>
-                       
-                        <div class="status-product-sales">Очікується</div>
-                        <div class="pl-buttons flex-block">
-                            <div class="pl-cons consultation-button"><i class="mdi mdi-tooltip-text-outline"></i><span>Замовити</span></div>
-                            <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
-                        </div>
-                    </div>
-                    <div class="pl-item">
-                        <a class="pl-img" href="#">
-                            <img src="media/no-img.jpg" alt="SEO" title="SEO">
-                        </a>
-                        <div class="product-number">№123123</div>
-                        <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
-                        <div class="price-block">
-                            <div class="old-price">
-                                
-                            </div>
-                            <div class="price">
-                                <span>Ціну уточнюйте</span>
-                               
-                            </div>
-                        </div>
-                       
-                        <div class="status-product-sales">Очікується</div>
-                        <div class="pl-buttons flex-block">
-                            <div class="pl-cons consultation-button"><i class="mdi mdi-tooltip-text-outline"></i><span>Замовити</span></div>
-                            <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
-                        </div>
-                    </div>
-                    <div class="pl-item">
-                        <a class="pl-img" href="#">
-                            <img src="media/no-img.jpg" alt="SEO" title="SEO">
-                        </a>
-                        <div class="product-number">№123123</div>
-                        <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
-                        <div class="price-block">
-                            <div class="old-price">
-                                
-                            </div>
-                            <div class="price">
-                                <span>Ціну уточнюйте</span>
-                               
-                            </div>
-                        </div>
-                       
-                        <div class="status-product-sales">Очікується</div>
-                        <div class="pl-buttons flex-block">
-                            <div class="pl-cons consultation-button"><i class="mdi mdi-tooltip-text-outline"></i><span>Замовити</span></div>
-                            <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
-                        </div>
-                    </div>
-                    <div class="pl-item">
-                        <a class="pl-img" href="#">
-                            <img src="media/no-img.jpg" alt="SEO" title="SEO">
-                        </a>
-                        <div class="product-number">№123123</div>
-                        <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
-                        <div class="price-block">
-                            <div class="old-price">
-                                
-                            </div>
-                            <div class="price">
-                                <span>Ціну уточнюйте</span>
-                               
-                            </div>
-                        </div>
-                       
-                        <div class="status-product-sales">Очікується</div>
-                        <div class="pl-buttons flex-block">
-                            <div class="pl-cons consultation-button"><i class="mdi mdi-tooltip-text-outline"></i><span>Замовити</span></div>
-                            <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
-                        </div>
-                    </div>
-                    <div class="pl-item">
-                        <a class="pl-img" href="#">
-                            <img src="media/no-img.jpg" alt="SEO" title="SEO">
-                        </a>
-                        <div class="product-number">№123123</div>
-                        <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
-                        <div class="price-block">
-                            <div class="old-price">
-                                
-                            </div>
-                            <div class="price">
-                                <span>Ціну уточнюйте</span>
-                               
-                            </div>
-                        </div>
-                       
-                        <div class="status-product-sales">Очікується</div>
-                        <div class="pl-buttons flex-block">
-                            <div class="pl-cons consultation-button"><i class="mdi mdi-tooltip-text-outline"></i><span>Замовити</span></div>
-                            <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
-                        </div>
-                    </div>
-                    <div class="pl-item">
-                        <a class="pl-img" href="#">
-                            <img src="media/no-img.jpg" alt="SEO" title="SEO">
-                        </a>
-                        <div class="product-number">№123123</div>
-                        <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
-                        <div class="price-block">
-                            <div class="old-price">
-                                
-                            </div>
-                            <div class="price">
-                                <span>Ціну уточнюйте</span>
-                               
-                            </div>
-                        </div>
-                       
-                        <div class="status-product-sales">Очікується</div>
-                        <div class="pl-buttons flex-block">
-                            <div class="pl-cons consultation-button"><i class="mdi mdi-tooltip-text-outline"></i><span>Замовити</span></div>
-                            <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
-                        </div>
-                    </div>
-                    <div class="pl-item"> 
-                        <a class="pl-img" href="#">
-                            <img src="media/no-img.jpg" alt="SEO" title="SEO">
-                        </a>
-                        <div class="product-number">№123123</div>
-                        <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
-                        <div class="price-block">
-                            <div class="old-price">
-                                
-                            </div>
-                            <div class="price">
-                                <span>Ціну уточнюйте</span>
-                               
-                            </div>
-                        </div>
-                       
-                        <div class="status-product-sales">Очікується</div>
-                        <div class="pl-buttons flex-block">
-                            <div class="pl-cons consultation-button"><i class="mdi mdi-tooltip-text-outline"></i><span>Замовити</span></div>
-                            <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                
-                
-            </div>
-            
-        </div>
-        <div class="pagination-show-more-leave product-list-show-more">
-            <i class="mdi mdi-refresh"></i>
-            <div id="show_btn">Показати ще 30 товарів</div>
-        </div>
-        <div class="pagination-pages flex-block">
-            <a href="#" class="prev-page">
-                <i class="mdi mdi-chevron-left"></i>
-            </a>
-            <a href="#">1</a>
-            <div class="pagination-dots">...</div>
-            <a href="#">4</a>
-            <div class="active-page">5</div>
-            <a href="#">6</a>
-            <div class="pagination-dots">...</div>
-            <a href="#">21</a>
-            <a href="#" class="next-page">
-                <i class="mdi mdi-chevron-right"></i>
-            </a>
+    <section class="tpp-block">
+        <div class="tab-product-page flex-block container">
+            <a href="#aat-product" class="active-tpp">Все про товар</a>
+            <a href="#charvideo">Характеристики</a>
+            <a href="#p-desc">Опис</a>
+            <a href="#charvideo">Відео</a>
         </div>
     </section>
     
+    <section class="static-tpp-block">
+        <div class="tab-product-page flex-block container">
+            <a href="#aat-product" class="active-tpp">Все про товар</a>
+            <a href="#charvideo">Характеристики</a>
+            <a href="#p-desc">Опис</a>
+            <a href="#charvideo">Відео</a>
+        </div>
+    </section>
+    
+    <section class="container">
+        <div id="aat-product" class="product-page-grid">
+            <div class="pp-img-block">
+                <div class="pp-img-block-grid">
+                    <a data-fancybox="pp-img" href="media/no-img.jpg"><img src="media/no-img.jpg" alt="SEO" title="SEO"></a>
+                    <a data-fancybox="pp-img" href="media/no-img.jpg"><img src="media/no-img.jpg" alt="SEO" title="SEO"></a>
+                    <a data-fancybox="pp-img" href="media/no-img.jpg"><img src="media/no-img.jpg" alt="SEO" title="SEO"></a>
+                    <a data-fancybox="pp-img" href="media/no-img.jpg"><img src="media/no-img.jpg" alt="SEO" title="SEO"></a>
+                    <a data-fancybox="pp-img" href="media/no-img.jpg"><img src="media/no-img.jpg" alt="SEO" title="SEO"></a>
+                </div>
+            </div>
+            
+            <div class="pp-main-info">
+                <div class="pp-kod">Код: 83</div>
+                <h1>Телескопічний навантажувач JCB 535-125 Hi-Viz 2019 р. 55 кВт. 995.3 м/г. № 3736 L</h1>
+                <div class="pp-status-block">
+                    <div class="pp-status pp-available"><i class="mdi mdi-check-all"></i><span>В наявності</span></div>
+                    <!-- <div class="pp-status pp-not-available"><i class="mdi mdi-close-circle-outline"></i><span>Немає в наявності</span></div> -->
+                    <!-- <div class="pp-status pp-made"><i class="mdi mdi-package-variant-closed-check"></i><span>Під замовлення</span></div> -->
+                    <!-- <div class="pp-status pp-expected"><i class="mdi mdi-clock-time-four-outline"></i><span>Очікується</span></div> -->
+                    <!-- <div class="pp-status pp-topprice"><i class="mdi mdi-fire"></i><span>Топ продажів</span></div> -->
+                    <!-- <div class="pp-status pp-sale"><i class="mdi mdi-percent-outline"></i><span>Акція</span></div> -->
+                </div>
+                <div class="pp-price-product">
+                    <div class="pp-price-desc">Ціна з ПДВ</div>  
+                    <div class="price-block">
+                        <div class="old-price">
+                            <span>3 794 400</span>
+                            <span>-126480</span>
+                        </div>
+                        <div class="price">
+                            <span>3 667 920 грн</span>
+                            <span>89 900 €</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pp-buttons-block flex-block">
+                    <div class="main-button buy-button"><i class="mdi mdi-cart"></i><span>До кошику</span></div>
+                    <div class="main-button pp-sub-button consultation-button">Консультація</div>
+                    <!-- <div class="main-button pp-sub-button consultation-button">Замовити</div> -->
+                    <!-- <div class="main-button pp-sub-button consultation-button">Купити в лізинг</div> -->
+                    <!-- <div class="main-button pp-sub-button compdf-button">Скачати комерційну пропозиції</div> -->
+                </div>
+                <div class="warehouse-block flex-block">
+                    <div class="wb-amount"><span>Кількість на складі:</span><span>10 шт</span></div>
+                    <div class="wb-button"><i class="mdi mdi-package-variant-closed"></i><span>Склад</span></div>
+                </div>
+                <div class="pp-sub-buttons-block flex-block">
+                    <div class="pp-addfavorite "><i class="mdi mdi-heart-outline"></i>
+                        <span>До обраного</span>
+                        <!-- <span>В обраному</span> -->
+                    </div>
+                    <div class="pp-callback"><i class="mdi mdi-phone-incoming"></i><span>Зателефонуйте мені</span></div>
+                </div>
+            
+                <div class="pp-sub-info-block">
+                    <div class="pp-sub-info-item">
+                        <span>Бренд:</span>
+                        <a href="#" class="pp-active-brand">JCB</a>
+                    </div>
+                    <div class="pp-sib-description">
+                        <div>Опис:</div>
+                        <div>Відвал для силосу гідравлічний - А.ТОМ 4500 H – професійне навісне обладнання для економічної та оперативної заготівлі силосу та сінажу. Спеціальна конструкція з секціями, що складаються, дозволяє захоплювати та вирівнювати максимальну площу зеленої маси та значно економити паливні витрати. Закриваючи одну з секцій, оператор може переміщуватися вздовж стіни силосної ями, а під час закривання обох – досягти компактної форми для безпечного та мобільного транспортування. Надійна гідравліка забезпечує автономну роботу кожної секції (лівої та правої) для максимально ефективного захоплення та вирівнювання силосної маси.</div>
+                    </div>
+                </div>
+                <div class="pp-payment">
+                    <div class="pp-payment-title">Оплата:</div>
+                    <div class="pp-payment-block flex-block">
+                        <div class="pp-paymant-item"><i class="mdi mdi-cash-multiple"></i><span>Готівкою</span></div>
+                        <div class="pp-paymant-item"><i class="mdi mdi-bank"></i><span>Безготівковий розрахунок</span></div>
+                    </div>
+                </div>
+                <div class="pp-download">
+                    <div class="pp-download-item"><i class="mdi mdi-file-document-outline"></i><span>Завантажити брошури</span></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- buy with this product -->
+    <section class="container bwtp-slider">
+        <div class="pl-title">З цим товаром купують</div>
+        <div class="products-list-slider">
+            <div class="pp-arow-next"></div>
+            <div class="pp-arow-prev"></div>
+            <div class="pp-last-views-products">
+                <div class="pl-item">
+                    <div class="top-product flex-block">
+                        <i class="mdi mdi-fire"></i>
+                        <i class="mdi mdi-video-outline"></i>
+                        <i class="mdi mdi-percent-outline"></i>
+                    </div>
+                    <a class="pl-img" href="#">
+                        <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    </a>
+                    <div class="product-number">№123123</div>
+                    <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач  </div>
+                    <div class="price-block">
+                        <div class="old-price">
+                            <span>3 794 400</span>
+                            <span>-126480</span>
+                        </div>
+                        <div class="price">
+                            <span>3 667 920 грн</span>
+                            <span>89 900 €</span>
+                        </div>
+                    </div>
+                    <div class="status-product-av">В наявності</div>
+                    <div class="pl-buttons flex-block">
+                        <div class="pl-addcart"><i class="mdi mdi-cart-outline"></i><span>В кошик</span></div>
+                        <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                    </div>
+                </div>
+                <div class="pl-item">
+                    <a class="pl-img" href="#">
+                        <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    </a>
+                    <div class="product-number">№123123</div>
+                    <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м </div>
+                    <div class="price-block">
+                        <div class="old-price">
+                            
+                        </div>
+                        <div class="price">
+                            <span>3 667 920 грн</span>
+                            <span>89 900 €</span>
+                        </div>
+                    </div>
+                    <div class="status-product-underorder">Під замовлення</div>
+                    <div class="pl-buttons flex-block">
+                        <div class="pl-cons consultation-button"><i class="mdi mdi-tooltip-text-outline"></i><span>Замовити</span></div>
+                        <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                    </div>
+                </div>
+
+                <div class="pl-item">
+                    <a class="pl-img" href="#">
+                        <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    </a>
+                    <div class="product-number">№123123</div>
+                    <div class="pl-item-title">Навантажувач </div>
+                    <div class="price-block">
+                        <div class="old-price">
+                            
+                        </div>
+                        <div class="price">
+                            <span>3 667 920 грн</span>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="status-product-sales">Немає в наявності</div>
+                    <div class="pl-buttons flex-block">
+                        <div class="pl-cons consultation-button"><i class="mdi mdi-tooltip-text-outline"></i><span>Замовити</span></div>
+                        <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                    </div>
+                </div>
+
+                <div class="pl-item">
+                    <a class="pl-img" href="#">
+                        <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    </a>
+                    <div class="product-number">№123123</div>
+                    <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
+                    <div class="price-block">
+                        <div class="old-price">
+                            
+                        </div>
+                        <div class="price">
+                            <span>Ціну уточнюйте</span>
+                        
+                        </div>
+                    </div>
+                
+                    <div class="status-product-sales">Очікується</div>
+                    <div class="pl-buttons flex-block">
+                        <div class="pl-cons consultation-button"><i class="mdi mdi-tooltip-text-outline"></i><span>Замовити</span></div>
+                        <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                    </div>
+                </div>
+                <div class="pl-item">
+                    <a class="pl-img" href="#">
+                        <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    </a>
+                    <div class="product-number">№123123</div>
+                    <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
+                    <div class="price-block">
+                        <div class="old-price">
+                            
+                        </div>
+                        <div class="price">
+                            <span>Ціну уточнюйте</span>
+                        
+                        </div>
+                    </div>
+                
+                    <div class="status-product-sales">Очікується</div>
+                    <div class="pl-buttons flex-block">
+                        <div class="pl-cons consultation-button"><i class="mdi mdi-tooltip-text-outline"></i><span>Замовити</span></div>
+                        <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                    </div>
+                </div>
+                <div class="pl-item">
+                    <a class="pl-img" href="#">
+                        <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    </a>
+                    <div class="product-number">№123123</div>
+                    <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
+                    <div class="price-block">
+                        <div class="old-price">
+                            
+                        </div>
+                        <div class="price">
+                            <span>Ціну уточнюйте</span>
+                        
+                        </div>
+                    </div>
+                
+                    <div class="status-product-sales">Очікується</div>
+                    <div class="pl-buttons flex-block">
+                        <div class="pl-cons consultation-button"><i class="mdi mdi-tooltip-text-outline"></i><span>Замовити</span></div>
+                        <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="charvideo" class="container pp-charvideo">
+        <div class="pp-table main30-block">
+            <h2 class="pp-h2"><span>Основні характеристики</span><span>Екскаватор навантажувач JCB 3CX Sitemaster Plus 2021 р. 81 кВт. 588 м/г., № 3505 L</span></h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Ширина</td>
+                        <td>2200 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Висота</td>
+                        <td>980 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Глибина</td>
+                        <td>1400 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Вага</td>
+                        <td>689 кг</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pp-video main30-block">
+            <h2 class="pp-h2"><span>Відео</span><span>Захват для сіна, сінажу, гілок, компосту - А.ТОМ 5000</span></h2>
+            <div class="pp-video-block">
+                <a class="video-item" href="https://www.youtube.com/watch?v=wHuSxbiQnvg" data-fancybox="pp-video"><img src="https://img.youtube.com/vi/wHuSxbiQnvg/maxresdefault.jpg" alt="Захват для сіна, сінажу, гілок, компосту - А.ТОМ 5000" title="Захват для сіна, сінажу, гілок, компосту - А.ТОМ 5000">
+                    <i class="mdi mdi-play-circle-outline"></i>
+                </a>
+                <a class="video-item" href="https://www.youtube.com/watch?v=wHuSxbiQnvg" data-fancybox="pp-video"><img src="https://img.youtube.com/vi/wHuSxbiQnvg/maxresdefault.jpg" alt="Захват для сіна, сінажу, гілок, компосту - А.ТОМ 5000" title="Захват для сіна, сінажу, гілок, компосту - А.ТОМ 5000">
+                    <i class="mdi mdi-play-circle-outline"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="p-desc" class="container">
+        <div class="main-block description-info">
+            <div class="description-title">Опис моделі</div>
+            <div>
+                Тут опис 
+            </div>
+        </div>
+        <div class="main-block description-info">
+            <div class="description-title">Додаткова інформація</div>
+            <div>
+                Тут опис
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="advantage-product-block main-block">
+            <div class="apb-item">
+                <img src="https://pack-trade.com/images/advantages/delivery.svg" alt="Доставка по всій Україні" title="Доставка по всій Україні">
+                <div class="apb-title">Доставка по всій Україні</div>
+                <p class="apb-description">Відправляємо як власним транспортом, так і зручним для Вас перевізником</p>
+            </div>
+            <div class="apb-item">
+                <img src="https://pack-trade.com/images/advantages/2004.svg" alt="Працюємо з 2004" title="Працюємо з 2004">
+                <div class="apb-title">Працюємо з 2004</div>
+                <p class="apb-description">За більш ніж 19 років ми стали надійним партнером, відомим виробником, а головне — професіоналами.</p>
+            </div>
+            <div class="apb-item">
+                <img src="https://pack-trade.com/images/advantages/vlasne vurobnustvo.svg" alt="Власне виробництво" title="Власне виробництво">
+                <div class="apb-title">Власне виробництво</div>
+                <p class="apb-description">Контролюємо всі етапи виготовлення і виробляємо навісне обладнання будь-якої складності</p>
+            </div>
+            <div class="apb-item">
+                <img src="https://pack-trade.com/images/advantages/derzhkompens25.svg" alt="Державна компенсація" title="Державна компенсація">
+                <div class="apb-title">Державна компенсація</div>
+                <p class="apb-description">Отримайте 25% вартості обладнання</p>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- Similar Products -->
+    <section class="container">
+        <div class="pl-title">Схожі товари</div>
+        <div class="products-list-slider">
+            <div class="pp-arow-next"></div>
+            <div class="pp-arow-prev"></div>
+            <div class="pp-last-views-products">
+                <div class="pl-item">
+                    <div class="top-product flex-block">
+                        <i class="mdi mdi-fire"></i>
+                        <i class="mdi mdi-video-outline"></i>
+                        <i class="mdi mdi-percent-outline"></i>
+                    </div>
+                    <a class="pl-img" href="#">
+                        <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    </a>
+                    <div class="product-number">№123123</div>
+                    <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач  </div>
+                    <div class="price-block">
+                        <div class="old-price">
+                            <span>3 794 400</span>
+                            <span>-126480</span>
+                        </div>
+                        <div class="price">
+                            <span>3 667 920 грн</span>
+                            <span>89 900 €</span>
+                        </div>
+                    </div>
+                    <div class="status-product-av">В наявності</div>
+                    <div class="pl-buttons flex-block">
+                        <div class="pl-addcart"><i class="mdi mdi-cart-outline"></i><span>В кошик</span></div>
+                        <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                    </div>
+                </div>
+                <div class="pl-item">
+                    <a class="pl-img" href="#">
+                        <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    </a>
+                    <div class="product-number">№123123</div>
+                    <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м </div>
+                    <div class="price-block">
+                        <div class="old-price">
+                            
+                        </div>
+                        <div class="price">
+                            <span>3 667 920 грн</span>
+                            <span>89 900 €</span>
+                        </div>
+                    </div>
+                    <div class="status-product-underorder">Під замовлення</div>
+                    <div class="pl-buttons flex-block">
+                        <div class="pl-cons consultation-button"><i class="mdi mdi-tooltip-text-outline"></i><span>Замовити</span></div>
+                        <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                    </div>
+                </div>
+
+                <div class="pl-item">
+                    <a class="pl-img" href="#">
+                        <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    </a>
+                    <div class="product-number">№123123</div>
+                    <div class="pl-item-title">Навантажувач </div>
+                    <div class="price-block">
+                        <div class="old-price">
+                            
+                        </div>
+                        <div class="price">
+                            <span>3 667 920 грн</span>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="status-product-sales">Немає в наявності</div>
+                    <div class="pl-buttons flex-block">
+                        <div class="pl-cons consultation-button"><i class="mdi mdi-tooltip-text-outline"></i><span>Замовити</span></div>
+                        <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                    </div>
+                </div>
+
+                <div class="pl-item">
+                    <a class="pl-img" href="#">
+                        <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    </a>
+                    <div class="product-number">№123123</div>
+                    <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
+                    <div class="price-block">
+                        <div class="old-price">
+                            
+                        </div>
+                        <div class="price">
+                            <span>Ціну уточнюйте</span>
+                        
+                        </div>
+                    </div>
+                
+                    <div class="status-product-sales">Очікується</div>
+                    <div class="pl-buttons flex-block">
+                        <div class="pl-cons consultation-button"><i class="mdi mdi-tooltip-text-outline"></i><span>Замовити</span></div>
+                        <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                    </div>
+                </div>
+                <div class="pl-item">
+                    <a class="pl-img" href="#">
+                        <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    </a>
+                    <div class="product-number">№123123</div>
+                    <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
+                    <div class="price-block">
+                        <div class="old-price">
+                            
+                        </div>
+                        <div class="price">
+                            <span>Ціну уточнюйте</span>
+                        
+                        </div>
+                    </div>
+                
+                    <div class="status-product-sales">Очікується</div>
+                    <div class="pl-buttons flex-block">
+                        <div class="pl-cons consultation-button"><i class="mdi mdi-tooltip-text-outline"></i><span>Замовити</span></div>
+                        <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                    </div>
+                </div>
+                <div class="pl-item">
+                    <a class="pl-img" href="#">
+                        <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                    </a>
+                    <div class="product-number">№123123</div>
+                    <div class="pl-item-title">Навантажувач Навантажувач Навантажувач Навантажувач Навантажувач м  </div>
+                    <div class="price-block">
+                        <div class="old-price">
+                            
+                        </div>
+                        <div class="price">
+                            <span>Ціну уточнюйте</span>
+                        
+                        </div>
+                    </div>
+                
+                    <div class="status-product-sales">Очікується</div>
+                    <div class="pl-buttons flex-block">
+                        <div class="pl-cons consultation-button"><i class="mdi mdi-tooltip-text-outline"></i><span>Замовити</span></div>
+                        <div class="pl-addfavorite"><i class="mdi mdi-heart-outline"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- View Products -->
     <section class="container">
         <div class="pl-title">Переглянуті товари</div>
@@ -1371,62 +1320,9 @@
             </div>
         </div>
     </section>
-    <!-- Link List -->
-    <section class="container">
-        <div class="main-block">
-            <div class="pop-cl-title">Популярні категорії</div>
-            <div class="scroll-block">
-                <a class="pop-cl-item" href="#">Категорія</a>
-                <a class="pop-cl-item" href="#">Категорія</a>
-                <a class="pop-cl-item" href="#">Категорія</a>
-                <a class="pop-cl-item" href="#">Категорія</a>
-                <a class="pop-cl-item" href="#">Категорія</a>
-                <a class="pop-cl-item" href="#">Категорія</a>
-                <a class="pop-cl-item" href="#">Категорія</a>
-                <a class="pop-cl-item" href="#">Категорія</a>
-            </div>
-        </div>
-    </section>
-    <!-- Seo Block -->
-    <section class="container">
-        <div class="seo-block main-block">
-            <h2>H2 seo text</h2>
-            <div class="seo-text">
-                seo text
-            </div>
-        </div>
-    </section>
-    <!-- FAQ -->
-    <section class="container">
-        <div class="faq-block main-block" itemscope="" itemtype="https://schema.org/FAQPage">
-            <h2 class="faq-block__title">Телескопічні навантажувачі: поширені питання</h2>
-            <div class="faq-block__item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                <h3 class="faq-block__question" itemprop="name">🧯 Які бренди телескопічних навантажувачів зараз найбільш популярні?</h3>
-                <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <div class="faq-block__answer" itemprop="text">
-                        <p>JCB та Manitou – виробники «телескопів», що перевірені вітчизняним та зарубіжним досвідом експлуатації. На сьогодні ця техніка є найбільш оптимальною у співвідношенні ціни та якості, при цьому може використовуватись у багатьох сферах.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="faq-block__item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                <h3 class="faq-block__question" itemprop="name">🧯 Які бренди телескопічних навантажувачів зараз найбільш популярні?</h3>
-                <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <div class="faq-block__answer" itemprop="text">
-                        <p>JCB та Manitou – виробники «телескопів», що перевірені вітчизняним та зарубіжним досвідом експлуатації. На сьогодні ця техніка є найбільш оптимальною у співвідношенні ціни та якості, при цьому може використовуватись у багатьох сферах.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="faq-block__item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                <h3 class="faq-block__question" itemprop="name">🧯 Які бренди телескопічних навантажувачів зараз найбільш популярні?</h3>
-                <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <div class="faq-block__answer" itemprop="text">
-                        <p>JCB та Manitou – виробники «телескопів», що перевірені вітчизняним та зарубіжним досвідом експлуатації. На сьогодні ця техніка є найбільш оптимальною у співвідношенні ціни та якості, при цьому може використовуватись у багатьох сферах.</p>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </section>
+   
+
+
 </main>
 
 <footer>
@@ -1505,8 +1401,9 @@
 </footer>
 
 <script src="js/jquery-3.7.0.min.js"></script>
+<script src="js/fancybox.umd.js"></script>
 <script src="js/slick.min.js"></script>
-<script src="js/product-list.js"></script>
+<script src="js/product-page.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

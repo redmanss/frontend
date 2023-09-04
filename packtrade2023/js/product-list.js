@@ -50,5 +50,17 @@ $('.filter-name').click(function(){
     $(this).next().slideToggle(200)
     $(this).find('.mdi').toggleClass('mdi-rotate-180')
 });
+
+$('.show-all-filter').click(function(){
+    $(this).parent().find('.checkbox-list').show()
+    $(this).removeClass('inline-block')
+    $(this).parents('.filter-list').find('.hide-all-filter').addClass('inline-block')
+})
+$('.hide-all-filter').click(function(){
+    $(this).parent().find('.checkbox-list:nth-child(n+5)').hide()
+    $(this).removeClass('inline-block')
+    $(this).parents('.filter-list').find('.show-all-filter').addClass('inline-block')
+})
 //
+
 })
