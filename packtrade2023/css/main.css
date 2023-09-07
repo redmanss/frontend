@@ -127,9 +127,12 @@ input, textarea {
 .basket-amount input {
     border-color: var(--color-white);
 }
-textarea:focus, .login-modal input:focus, .basket-amount input:focus, .consultation-block input:focus, .range-filter input:focus, .call-back-block input:focus {
+textarea:focus, .login-modal input:focus, .basket-amount input:focus, .consultation-block input:focus, .range-filter input:focus, .call-back-block input:focus, .pp-content form input:focus, .parts-search input:focus {
     border-color: var(--color-maincolor);
 }
+/* .h-search-block input:focus {
+    border-color: var(--color-black);
+} */
 .has-error input, .has-error textarea {
     border-color: var(--color-sale);
     background-color: var(--color-salebg)
@@ -160,7 +163,7 @@ a {
     color: var(--color-black);
     text-decoration: none;
 }
-img, input, textarea, .home-slider-block img, .home-slider-block video, form, .form-group, .modal-body, .dynamic-search-block, .dsb-item-info, .cmi-name-block, .consultation-block button, .mm-menu, .mm-main-sub, .sb-info div, .svg-point:before, .tpp-block, .call-back-block button, .main-block {
+img, input, textarea, .home-slider-block img, .home-slider-block video, form, .form-group, .modal-body, .dynamic-search-block, .dsb-item-info, .cmi-name-block, .consultation-block button, .mm-menu, .mm-main-sub, .sb-info div, .svg-point:before, .tpp-block, .call-back-block button, .main-block, .pp-content {
     width: 100%;
 }
 body {
@@ -169,7 +172,7 @@ body {
     color: var(--color-black);
     background-color: var(--color-mainbg);
 }
-.block-body, .hsb-main, .hsb-sub, .pl-img, .dsb-item-img, .cmi-img, .blog-item-img, .direction-title, .direction-desc, .hsb-main, .hsb-sub, .blog-title, .blog-description, .iai-img, .pl-item-title, .notification-block, .pp-img-block a:first-child, .bp-img-block-grid a:first-child, .mpl-item, .mpl-item-title, .mp-item {
+.block-body, .hsb-main, .hsb-sub, .pl-img, .dsb-item-img, .cmi-img, .blog-item-img, .direction-title, .direction-desc, .hsb-main, .hsb-sub, .blog-title, .blog-description, .iai-img, .pl-item-title, .notification-block, .pp-img-block a:first-child, .bp-img-block-grid a:first-child, .mpl-item, .mpl-item-title, .mp-item, .wmb-img {
     overflow: hidden;
 }
 .none {
@@ -181,22 +184,22 @@ body {
     padding: 0 20px;
     margin: 0 auto;
 }
-.drop-lang-header, .drop-sub-menu, .modal-body, .consultation-block label, .mm-main-sub-item, .back-mob-menu-modal, .new-products .pl-item, .sales-leader .pl-item, .index-show-more, .pp-arow-next, .pp-arow-prev, .open-filter, .mob-menu-filter-title, .close-mob-filter-modal, .hide-all-filter, .show-all-filter, .tpp-block, .call-back-block label {
+.drop-lang-header, .drop-sub-menu, .modal-body, .consultation-block label, .mm-main-sub-item, .back-mob-menu-modal, .new-products .pl-item, .sales-leader .pl-item, .index-show-more, .pp-arow-next, .pp-arow-prev, .open-filter, .mob-menu-filter-title, .close-mob-filter-modal, .hide-all-filter, .show-all-filter, .tpp-block, .call-back-block label, .hli-detail, .change-password-block, .profile-main-info-block {
     display: none;
 }
 .blog-button, .pop-cl-item, .filter-show, .pp-status, .pp-sub-info-item span, .wb-button span, .pp-download-item, .brand-filter a {
     display: inline-block;
 }
-.video-item:after, .index-video:after, .footer-menu-item, .hbb-brand-item, .home-slider-block a, .home-slider-block a:after, .footer-logo, .pl-img, .login-modal label, .pc-all-products, .sales-leader .pl-item:nth-child(-n+12), .new-products .pl-item:nth-child(-n+12), .checkmark, .review-block a, .svg-point:before, .mm-logo, .brand-list a, .cp-address a, .mpl-item:after {
+.video-item:after, .index-video:after, .footer-menu-item, .hbb-brand-item, .home-slider-block a, .home-slider-block a:after, .footer-logo, .pl-img, .login-modal label, .pc-all-products, .sales-leader .pl-item:nth-child(-n+12), .new-products .pl-item:nth-child(-n+12), .checkmark, .review-block a, .svg-point:before, .mm-logo, .brand-list a, .cp-address a, .mpl-item:after, .pps-item, .pp-content label {
     display: block;
 }
 .flex-block, .checkbox label, .tpb-item {
     display: flex;
 }
-.direction-block, .blog-block, .video-block, .index-advantages-block, .footer-block, .sb-content, .product-list, .direction-block-main, .direction-category-grid, .products-list-grid, .product-page-grid, .pp-charvideo, .download-modal-grid, .contacts-page, .blog-page-list, .blog-page, .media-page-list, .media-page {
+.direction-block, .blog-block, .video-block, .index-advantages-block, .footer-block, .sb-content, .product-list, .direction-block-main, .direction-category-grid, .products-list-grid, .product-page-grid, .pp-charvideo, .download-modal-grid, .contacts-page, .blog-page-list, .blog-page, .media-page-list, .media-page, .grid-block {
     display: grid;
 }
-.more-button, .footer-info a, .modal-body form, .pagination-show-more-leave, .basket-del, .basket-amount, .basket-add, .cart-return, .cart-accept, .successful-button, .show-more-button, .sft-reset-filter, .mob-menu-modal .account-button, .mob-menu-modal .account-button i, .inline-block, .pp-addfavorite i, .pp-callback i, .pp-paymant-item i, .pp-price-product .price span {
+.more-button, .footer-info a, .modal-body form, .pagination-show-more-leave, .basket-del, .basket-amount, .basket-add, .cart-return, .cart-accept, .successful-button, .show-more-button, .sft-reset-filter, .mob-menu-modal .account-button, .mob-menu-modal .account-button i, .inline-block, .pp-addfavorite i, .pp-callback i, .pp-paymant-item i, .pp-price-product .price span, .pps-item i, .pps-item span {
     display: inline-block;
 }
 .dsb-result-category {
@@ -205,13 +208,13 @@ body {
 .top-header {
     justify-content: flex-end;
 }
-.main-menu, .hbb-tb, .warehouse-block {
+.main-menu, .hbb-tb, .warehouse-block, .hli-info {
     justify-content: space-between;
 }
 .index-button-block, .db-img, .h-start-search, .chanel-review-block, .review-star-block, .pagination-pages, .open-filter, .filter-buttons {
     justify-content: center;
 }
-.main-menu, .top-header, .footer-social, .right-menu, .hbb-tb, .sb-info, .ocb-item, .subscribe-channel form, .pl-buttons, .h-start-search, .dsb-result-item, .checkbox label, .cart-modal-item, .mm-main-item, .mmms-item, .mmms-title, .mob-menu-modal .account-button, .notification-block, .pagination-pages, .open-filter, .range-filter, .pp-sub-buttons-block, .warehouse-block, .tpb-item, .wmb-item {
+.main-menu, .top-header, .footer-social, .right-menu, .hbb-tb, .sb-info, .ocb-item, .subscribe-channel form, .pl-buttons, .h-start-search, .dsb-result-item, .checkbox label, .cart-modal-item, .mm-main-item, .mmms-item, .mmms-title, .mob-menu-modal .account-button, .notification-block, .pagination-pages, .open-filter, .range-filter, .pp-sub-buttons-block, .warehouse-block, .tpb-item, .wmb-item, .hli-info {
     align-items: center;
 }
 .db-img {
@@ -220,7 +223,7 @@ body {
 .products-list {
     align-items: flex-start;
 }
-.main-title, .blog-button, .index-advantages-item, .index-title-block, .blog-block, .direction-item, .corp, .pl-buttons, .pl-cons, .product-block, .modal-body, .dynamic-search-block, .n-modal-item-quantity, .basket-amount input, .hsb-button, .chanel-review-block, .direction-item-main, .direction-category, .products-list-page, .tpb-text-block, .brand-filter, .blog-item {
+.main-title, .blog-button, .index-advantages-item, .index-title-block, .blog-block, .direction-item, .corp, .pl-buttons, .pl-cons, .product-block, .modal-body, .dynamic-search-block, .n-modal-item-quantity, .basket-amount input, .hsb-button, .chanel-review-block, .direction-item-main, .direction-category, .products-list-page, .tpb-text-block, .brand-filter, .blog-item, .pp-content .login-tab-block, .list-button, .wmb-item .price-block {
     text-align: center;
 }
 .blog-title, .blog-description, .pl-title, .dsb-result-item, .ds-title, .login-modal label, .cmi-name-block, .direction-category h2, .filter, .sort-block, .wmb-name {
@@ -232,19 +235,19 @@ body {
 .pc-all-products {
     text-decoration: underline;
 }
-.mob-menu i, .mob-menu span, .account-button i, .account-button span, .pl-addcart i, .pl-addcart span, .index-show-more i, .index-show-more span, .modal-body form, .dsb-result-category i, .dsb-result-category span, .pl-cons i, .show-more-button i, .show-more-button span, .svg-point, .pp-addfavorite i, .pp-addfavorite span, .pp-callback i, .pp-callback span, .wb-button i, .wb-button span, .pp-paymant-item i, .pp-paymant-item span, .pp-download-item i, .pp-download-item span {
+.mob-menu i, .mob-menu span, .account-button i, .account-button span, .pl-addcart i, .pl-addcart span, .index-show-more i, .index-show-more span, .modal-body form, .dsb-result-category i, .dsb-result-category span, .pl-cons i, .show-more-button i, .show-more-button span, .svg-point, .pp-addfavorite i, .pp-addfavorite span, .pp-callback i, .pp-callback span, .wb-button i, .wb-button span, .pp-paymant-item i, .pp-paymant-item span, .pp-download-item i, .pp-download-item span, .pps-item i, .pps-item span, .parts-search-button i, .parts-search-button span {
     vertical-align: middle;
 }
 .basket-del, .basket-amount, .basket-add {
     vertical-align: top;
 }
-.main-menu, .index-video, .video-item, .mob-menu, .iai-img, .video, .footer-social a, .lang-block, .cpmi-social-block a, #open-product-favorites, #open-product-cart, .h-search-tap, .home-slider-block a, .sub-menu-block, .subscribe-channel form, .top-product i, .pl-img, .products-list-slider, .modal-body form, .dsb-item-img, .cart-modal-item, .basket-del, .basket-add, .modal-body-block, .cmi-img, .mmms-item, .mmms-title, .mm-main-item, .blog-item-img, .mob-menu-modal .account-button i, .pop-brands, .filter-name, .svg-point, .prev-page, .next-page, .filter-show, .pp-addfavorite i, .pp-callback i, .pp-img-block a, .bp-img-block-grid a, .mpl-item, .mp-item {
+.main-menu, .index-video, .video-item, .mob-menu, .iai-img, .video, .footer-social a, .lang-block, .cpmi-social-block a, #open-product-favorites, #open-product-cart, .h-search-tap, .home-slider-block a, .sub-menu-block, .subscribe-channel form, .top-product i, .pl-img, .products-list-slider, .modal-body form, .dsb-item-img, .cart-modal-item, .basket-del, .basket-add, .modal-body-block, .cmi-img, .mmms-item, .mmms-title, .mm-main-item, .blog-item-img, .mob-menu-modal .account-button i, .pop-brands, .filter-name, .svg-point, .prev-page, .next-page, .filter-show, .pp-addfavorite i, .pp-callback i, .pp-img-block a, .bp-img-block-grid a, .mpl-item, .mp-item, .wmb-img, .parts-search form {
     position: relative;
 }
 .modal-body, .tpp-block {
     position: fixed;
 }
-.index-title-block, .video-item:after, .video-item i, .iai-img img, .index-video:after, .footer-social img, .cpmi-social-block img, #open-product-favorites i, #open-product-cart i, #open-product-favorites span, #open-product-cart span, #favorites-number, #basket-number, .h-search-tap i, .slick-prev, .slick-next, .slick-prev:after, .slick-next:after, .hsb-button, .home-slider-block a:after, .hsb-main video, .hsb-sub img, .hsb-main img, .subscribe-block label, .top-product i:before, .pl-img img, .h-start-search, .dsb-item-img img, .basket-del:before, .basket-add:before, .item-close, .basket-add:after, .cmi-img img, .item-close:before, .modal-close, .mmms-item i, .mmms-title i, .mm-main-item i, .back-mob-menu-modal, .close-mob-menu-modal, .mdi-close::before, .back-mob-menu-modal:before, .mm-menu, .mm-main-sub, .blog-item-img img, .mob-menu-modal .account-button i:before, .filter-name i, .svg-point svg, .next-page i, .prev-page i, .filter-show i, .pp-addfavorite i:before, .pp-callback i:before, .pp-img-block img, .bp-img-block-grid img, .mpl-item-title, .mpl-item:after, .mpl-item img, .mp-item img {
+.index-title-block, .video-item:after, .video-item i, .iai-img img, .index-video:after, .footer-social img, .cpmi-social-block img, #open-product-favorites i, #open-product-cart i, #open-product-favorites span, #open-product-cart span, #favorites-number, #basket-number, .h-search-tap i, .slick-prev, .slick-next, .slick-prev:after, .slick-next:after, .hsb-button, .home-slider-block a:after, .hsb-main video, .hsb-sub img, .hsb-main img, .subscribe-block label, .top-product i:before, .pl-img img, .h-start-search, .dsb-item-img img, .basket-del:before, .basket-add:before, .item-close, .basket-add:after, .cmi-img img, .item-close:before, .modal-close, .mmms-item i, .mmms-title i, .mm-main-item i, .back-mob-menu-modal, .close-mob-menu-modal, .mdi-close::before, .back-mob-menu-modal:before, .mm-menu, .mm-main-sub, .blog-item-img img, .mob-menu-modal .account-button i:before, .filter-name i, .svg-point svg, .next-page i, .prev-page i, .filter-show i, .pp-addfavorite i:before, .pp-callback i:before, .pp-img-block img, .bp-img-block-grid img, .mpl-item-title, .mpl-item:after, .mpl-item img, .mp-item img, .wmb-img img, .parts-search-button {
     position: absolute;
 }
 .video-item i, .index-title-block, .slick-prev, .slick-next, .top-product, .go-top, .close-mob-menu-modal, .hsb-button, .item-close, .mpl-item-title {
@@ -262,16 +265,19 @@ body {
 .notification-block {
     z-index: 7;
 }
-.lang-button, .mob-menu, .main-button, #open-product-favorites, #open-product-cart, .account-button, .h-search-tap, .slick-prev, .slick-next, .sub-menu-button, button, .pl-item-title, .pl-addcart, .pl-addfavorite, .pl-cons, .index-show-more, .h-start-search, .h-start-search i, .modal-close, .pagination-show-more-leave, .login-tab-block div, .checkbox label, input[type="checkbox"], .basket-del, .basket-add, .item-close, .mm-main-item, .show-more-button, .filter-name, .cbx, .filter-show, .sft-reset-filter, .show-all-filter, .hide-all-filter, .pp-addfavorite, .pp-callback, .wb-button, .pp-download-item, .list-button, .download-modal-item {
+.lang-button, .mob-menu, .main-button, #open-product-favorites, #open-product-cart, .account-button, .h-search-tap, .slick-prev, .slick-next, .sub-menu-button, button, .pl-item-title, .pl-addcart, .pl-addfavorite, .pl-cons, .index-show-more, .h-start-search, .h-start-search i, .modal-close, .pagination-show-more-leave, .login-tab-block div, .checkbox label, input[type="checkbox"], .basket-del, .basket-add, .item-close, .mm-main-item, .show-more-button, .filter-name, .cbx, .filter-show, .sft-reset-filter, .show-all-filter, .hide-all-filter, .pp-addfavorite, .pp-callback, .wb-button, .pp-download-item, .list-button, .download-modal-item, .profile-main-info, .change-password, .parts-search-button {
     cursor: pointer;
 }
 .video-item:after, .index-video:after, .slick-prev:after, .slick-next:after, .home-slider-block a:after, .basket-del:before, .basket-add:before, .basket-add:after, .svg-point:before, .mpl-item:after {
     content: "";
 }
-.direction-item, .blog-item, .video-item, .video-item:after, .blog-button, .seo-block, .right-menu a, .main-button, .more-button, .lang-button, .footer-menu-item, img, .mob-menu, .account-button, .hbb-brand-list, .slick-prev, .slick-next, .hbb-brand-item, .hsb-sub a:after, .hsb-main, .hsb-sub, .main-block, .pop-cl-item, .sub-menu-button, .footer-phone, .footer-email, .index-show-more, .pl-addcart, .pl-addfavorite, .pl-cons, .hbb-tb a, .ocb-item, .modal-body form, input, textarea, .h-start-search, .dynamic-search-block, .dsb-item-img, .pagination-show-more-leave, .dsb-result-item-category, .modal-body-block, .mmms-item, .mmms-title, .pc-all-products, .hsb-main a, .notification-block, .direction-item-main, .show-more-button, .sort-block, .filter-name, .checkbox-list, .open-filter, .sidebar, .pp-img-block, .pp-main-info, .pp-sub-info-block, .warehouse-block, .wb-button, .pp-download-item, .pp-callback, .pp-addfavorite, .main30-block, .download-modal-item, .mpl-item:after, .mpl-item {
+.direction-item, .blog-item, .video-item, .video-item:after, .blog-button, .seo-block, .right-menu a, .main-button, .more-button, .lang-button, .footer-menu-item, img, .mob-menu, .account-button, .hbb-brand-list, .slick-prev, .slick-next, .hbb-brand-item, .hsb-sub a:after, .hsb-main, .hsb-sub, .main-block, .pop-cl-item, .sub-menu-button, .footer-phone, .footer-email, .index-show-more, .pl-addcart, .pl-addfavorite, .pl-cons, .hbb-tb a, .modal-body form, input, textarea, .h-start-search, .dynamic-search-block, .dsb-item-img, .pagination-show-more-leave, .dsb-result-item-category, .modal-body-block, .mmms-item, .mmms-title, .pc-all-products, .hsb-main a, .notification-block, .direction-item-main, .show-more-button, .sort-block, .filter-name, .checkbox-list, .open-filter, .sidebar, .pp-img-block, .pp-main-info, .pp-sub-info-block, .warehouse-block, .wb-button, .pp-download-item, .pp-callback, .pp-addfavorite, .main30-block, .download-modal-item, .mpl-item:after, .mpl-item, .pps-item, .pp-sidebar, .history-list-item, .parts-search-button {
     border-radius: 20px;
 }
-.pagination-pages a, .active-page, .pp-img-block img, .pp-active-brand, .list-button, .wmb-amount, .brand-filter a, .bp-img-block-grid img, .pp-img-block a, .bp-img-block-grid a {
+.ocb-item {
+    border-radius: 50px;
+}
+.pagination-pages a, .active-page, .pp-img-block img, .pp-active-brand, .list-button, .wmb-amount, .brand-filter a, .bp-img-block-grid img, .pp-img-block a, .bp-img-block-grid a, .wmb-img img {
     border-radius: 10px;
 }
 .hsb-main img, .direction-item img, footer img, .basket-amount input, .mm-main-item img, .direction-item-main img, .footer-social img {
@@ -280,7 +286,7 @@ body {
 .footer-social a, .top-product i, .item-close, .mob-menu-modal .account-button i, .svg-point:before, .pp-addfavorite i, .pp-callback i, #basket-number, #favorites-number, .seo-block ul li:before, .description-info ul li:before, .seo-block ul li:after, .description-info ul li:after, #open-product-favorites, #open-product-cart, .h-search-tap, .iai-img, .back-mob-menu-modal, .close-mob-menu-modal, .modal-close, .go-top, .checkmark {
     border-radius: 50%;
 }
-.index-title-block, .video-item i, .iai-img img, .footer-social img, .cpmi-social-block img, #open-product-favorites i, #open-product-cart i, #open-product-favorites span, #open-product-cart span, .h-search-tap i, .top-product i:before, .pl-img img, .dsb-item-img img, .basket-del:before, .basket-add:before, .basket-add:after, .cmi-img img, .item-close:before, .mdi-close::before, .back-mob-menu-modal:before, .blog-item-img img, .mob-menu-modal .account-button i:before, .svg-point svg, .next-page i, .prev-page i, .pp-addfavorite i:before, .pp-callback i:before, .pp-img-block img, .bp-img-block-grid img, .mpl-item img, .mp-item img {
+.index-title-block, .video-item i, .iai-img img, .footer-social img, .cpmi-social-block img, #open-product-favorites i, #open-product-cart i, #open-product-favorites span, #open-product-cart span, .h-search-tap i, .top-product i:before, .pl-img img, .dsb-item-img img, .basket-del:before, .basket-add:before, .basket-add:after, .cmi-img img, .item-close:before, .mdi-close::before, .back-mob-menu-modal:before, .blog-item-img img, .mob-menu-modal .account-button i:before, .svg-point svg, .next-page i, .prev-page i, .pp-addfavorite i:before, .pp-callback i:before, .pp-img-block img, .bp-img-block-grid img, .mpl-item img, .mp-item img, .wmb-img img {
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%,-50%);
@@ -311,7 +317,7 @@ body {
     height: 100%;
     object-fit: cover;
 }
-.pl-img img, .dsb-item-img img, .cmi-img img, .blog-item-img img, .pp-img-block img, .bp-img-block-grid img, .mpl-item img, .mp-item img {
+.pl-img img, .dsb-item-img img, .cmi-img img, .blog-item-img img, .pp-img-block img, .bp-img-block-grid img, .mpl-item img, .mp-item img, .wmb-img img {
     height: 100%;
     max-width: 100%;
     object-fit: cover;
@@ -322,7 +328,7 @@ body {
 .direction-block, .blog-block, .video-block, .index-advantages-block, .product-list, .direction-block-main, .direction-category-grid, .products-list-grid, .blog-page-list, .media-page-list, .media-page {
     grid-gap: 10px;
 }
-.product-page-grid, .pp-charvideo, .contacts-page {
+.product-page-grid, .pp-charvideo, .contacts-page, .pp-content form {
     grid-gap: 15px;
 }
 .blog-page {
@@ -346,7 +352,7 @@ body {
 .blog-block, .media-page-list {
     grid-template-columns: repeat(3,1fr);
 }
-.sb-content, .pp-charvideo, .contacts-page {
+.sb-content, .pp-charvideo, .contacts-page, .pp-content form {
     grid-template-columns: repeat(2,1fr);
 }
 .product-page-grid {
@@ -570,7 +576,13 @@ header {
     -o-transform: translate(-50%,-50%) rotate(135deg);
     transform: translate(-50%,-50%) rotate(135deg);
 }
-
+.rotate180 {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
 .pop-brands .slick-prev, .pop-brands .slick-next {
     background-color: rgba(0,0,0,.05);
     width: 45px;
@@ -1029,7 +1041,7 @@ footer {
     right: 0;
     background: linear-gradient(90deg,hsla(0,0%,100%,0) 0, var(--color-mainbg));
 }
-.bread-crumbs h1 {
+.bread-crumbs h1, .profile-page h1 {
     font: 900 24px "Roboto", sans-serif;
 }
 .crumbs-scroll {
@@ -1507,7 +1519,7 @@ table td {
     padding: 20px 60px 20px 35px;
     font-size: 18px;
     background-color: var(--color-white);
-    border: none;
+    border-color: var(--color-white);
 }
 .h-search-block input::placeholder {
     color: var(--color-black);
@@ -1516,7 +1528,7 @@ table td {
     top: 0;
     right: 0;
     height: 100%;
-    width: 60px;
+    width: 80px;
 }
 .h-start-search i {
     font-size: 20px;
@@ -1566,7 +1578,7 @@ table td {
 .dsb-result-item-category {
     padding: 10px 20px;
 }
-.dsb-result-category i {
+.dsb-result-category i, .parts-search-button i {
     margin-right: 5px;
     font-size: 18px;
 }
@@ -1602,8 +1614,11 @@ table td {
     width: 100%;
     border-radius: 10px 10px 0 0;
 }
-.login-for-manager, .login-for-client {
+.login-for-manager, .login-for-client, .profile-main-info, .change-password {
     border-bottom: 2px solid var(--color-lowgray);
+}
+.pp-content .login-tab-block div {
+    padding: 15px;
 }
 .login-active {
     background-color: var(--color-bgmaincolor);
@@ -1725,7 +1740,7 @@ input[type="checkbox"] {
     border-radius: 0;
     font-size: 16px;
 }
-.cart-return {
+.cart-return, .reset-button {
     background-color: var(--color-mainbg);
     color: var(--color-black);
 }
@@ -1760,7 +1775,7 @@ input[type="checkbox"] {
     font-weight: 500;
 }
 .mob-menu-modal .account-button {
-    padding: 20px 30px;
+    padding: 20px;
     margin: 25px 0 10px;
 }
 .mob-menu-modal .account-button i {
@@ -1920,7 +1935,7 @@ input[type="checkbox"] {
 .category-show-more {
     margin: 30px 0 0;
 }
-.sidebar {
+.sidebar, .pp-sidebar {
     flex: none;
     width: 320px;
     margin-right: 10px;
@@ -2340,10 +2355,10 @@ input[type="checkbox"] {
 .description-info table {
     margin: 50px 0;
 }
-.pp-img-block, .bp-sidebar {
+.pp-img-block, .bp-sidebar, .pp-sidebar {
     float: right;
 }
-.pp-img-block-grid, .bp-sidebat-sticky {
+.pp-img-block-grid, .bp-sidebat-sticky, .pps-sticky {
     position: sticky;
     top: 0;
     right: 0;
@@ -2372,6 +2387,8 @@ input[type="checkbox"] {
     padding: 10px 15px;
     flex: none;
     font-weight: 700;
+    max-width: 120px;
+    width: 100%;
 }
 .wmb-addtocard {
     color: var(--color-white);
@@ -2492,4 +2509,111 @@ input[type="checkbox"] {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+}
+.pp-sidebar {
+    padding: 15px;
+    background-color: var(--color-white);
+    margin: 15px 15px 15px 0;
+}
+.pps-item {
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.pps-sticky .pps-item:first-child{
+    margin-top: 15px;
+}
+.pps-item i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+.active-pps-item {
+    color: var(--color-maincolor);
+    background-color: var(--color-bgmaincolor);
+}
+.pp-content label {
+    margin-bottom: 10px;
+    font: 500 14px "Roboto",sans-serif;
+}
+.pp-content .form-group:last-child {
+    margin-top: 40px;
+    grid-column: 1/3;
+}
+.pp-content .reset-button {
+    margin-left: 20px;
+}
+.profile-page h1 {
+    margin: 40px 20px;
+}
+.pp-content .products-list-grid {
+    margin-bottom: 15px;
+}
+.history-list-item {
+    padding: 20px;
+    background-color: var(--color-white);
+    margin-top: 10px;
+}
+.pp-content {
+    margin-bottom: 15px;
+}
+.wmb-img {
+    flex: none;
+    height: 53px;
+    width: 80px;
+    margin-right: 10px;
+}
+.hli-inv span:first-child{
+    margin-right: 10px;
+    font: 600 16px "Roboto",sans-serif;
+}
+.hli-sum {
+    margin-top: 10px;
+    font: 600 16px "Roboto",sans-serif;
+}
+.hli-info .pp-status {
+    margin: 10px 0 0;
+}
+.hli-arrow {
+    font-size: 30px;
+}
+.wmb-prise {
+    flex: none;
+}
+.mm-profile-menu .pps-item {
+    padding: 10px 20px;
+    margin-bottom: 0;
+}
+.mm-profile-menu .pps-item:last-child {
+    margin-bottom: 20px;
+}
+.not-available, .sales {
+    opacity: .5;
+}
+.wmb-item .price-block {
+    flex: none;
+}
+.wmb-item .old-price {
+    margin-bottom: 5px;
+}
+.wmb-item .price-block {
+    width: 160px;
+    margin: 0 15px;
+}
+.parts-search input {
+    /* border: 2px solid var(--color-maincolor);
+    background-color: var(--color-bgmaincolor); */
+    padding: 20px 40px;
+    border-radius: 50px;
+}
+.parts-search input::placeholder {
+    color: var(--color-black);
+}
+.parts-search .h-start-search {
+    width: 80px;
+    border-radius: 50px;
+}
+.parts-search-button {
+    background-color: var(--color-lowgray2);
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
 }

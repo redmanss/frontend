@@ -73,6 +73,9 @@
     
 }
 @media (max-width: 1200px) {
+    .pp-sidebar {
+        width: 250px;
+    }
     .bp-img-block-grid a:first-child {
         height: 360px;
     }
@@ -157,6 +160,15 @@
     }
 }
 @media (max-width: 1023px) {
+    .parts-search-page .wmb-img {
+        display: none;
+    }
+    .wmb-item .price-block {
+        width: 130px;
+    }
+    .pp-sidebar {
+        display: none;
+    }
     .mpl-item {
         height: 300px;
     }
@@ -425,6 +437,69 @@
     }
 }
 @media (max-width: 767px) {
+    .parts-search-page .wmb-img {
+        display: block;
+        margin: 0;
+        width: 100%;
+        height: 170px;
+    }
+    .parts-search-page .price-block {
+        width: auto;
+        text-align: left;
+        margin: 20px 0;
+    }
+    .parts-search-page .price {
+        font-size: 16px;
+    }
+    .parts-search-page .wmb-name {
+        display: block;
+        font-size: 14px;
+        margin: 15px 0;
+    }
+    .parts-search-page .wmb-item {
+        display: block;
+    }
+    .parts-search-page .n-modal-item-quantity {
+        margin: 0;
+    }
+    .pp-content .login-tab-block div {
+        padding: 10px;
+    }
+    .hli-info, .hli-sum {
+        font-size: 12px;
+    }
+    .hli-arrow {
+        font-size: 24px;
+    }
+    .hli-inv span:first-child {
+        font-size: 14px;
+        margin: 0 0 10px;
+    }
+    .hli-inv span {
+        display: block;
+    }
+    .wmb-prise {
+        font-size: 12px;
+    }
+    .wmb-img {
+        display: none;
+    }
+    .pp-content button {
+        width: 100%;
+    }
+    .pp-content .reset-button {
+        margin: 10px 0 0;
+    }
+    .pp-content .form-group:last-child {
+        grid-column: 1/2;
+    }
+    .pp-content form {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .profile-page h1 {
+        margin: 20px;
+        font-size: 18px;
+    }
     .mp-item {
         height: 200px;
     }
@@ -857,6 +932,7 @@
     .price, .seo-block div, .dsb-result-category i, .dsb-item-price .price span:first-child, .description-info {
         font-size: 14px;
     }
+
     .pl-addcart span, .pl-cons span {
         display: none;
     }
