@@ -73,6 +73,22 @@
     
 }
 @media (max-width: 1200px) {
+    .placeing-order-block button, .placeing-order-block .order-composition {
+        width: 100%;
+    }
+    .placeing-order-block .main-block, .placeing-order-block .order-composition {
+        margin: 0 0 15px;
+    }
+    .placeing-order-page h1 {
+        margin: 40px 0;
+        text-align: center;
+    }
+    .placeing-order-block {
+        grid-gap: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
     .pp-sidebar {
         width: 250px;
     }
@@ -160,6 +176,9 @@
     }
 }
 @media (max-width: 1023px) {
+    .order-composition {
+        padding: 25px;
+    }
     .parts-search-page .wmb-img {
         display: none;
     }
@@ -437,6 +456,29 @@
     }
 }
 @media (max-width: 767px) {
+    .osp-button {
+        display: block;
+        text-align: center;
+    }
+    .order-successful-page h2, .order-successful-page h1, .osp-sum div:last-child {
+        font-size: 20px;
+    }
+    .order-composition {
+        padding: 20px;
+    }
+    .placeing-order-page h1 {
+        margin: 30px 0;
+        font-size: 24px;
+    }
+    .oc-sum-price {
+        font-size: 24px;
+    }
+    .cm-button-block div {
+        display: block;
+    }
+    .cm-politik {
+        margin: 10px 0 0;
+    }
     .parts-search-page .wmb-img {
         display: block;
         margin: 0;

@@ -1,4 +1,4 @@
-.consultation-button, .lang-button, .right-menu a, .mob-menu, .direction-item, .blog-item, .video-item:after, .product-button, .footer-social a, .footer-menu-item, .blog-button, .mm-main-item, .mm-sub a, .close-mob-menu-modal, .close-consultation, .ncb-send, .drop-lang-header a, .sort-block div, .bread-crumbs a, .pl-item, .ivb-item, #open-product-favorites, #open-product-cart, .h-search-tap, .account-button, .sub-menu-button, .footer-phone, .footer-email, .hbb-tb a, .slick-prev, .slick-next, .pp-arow-next, .pp-arow-prev, .hbb-brand-item img, .pl-cons, .pl-addcart, .pl-addfavorite, .index-show-more, .pop-cl-item, .subscribe-channel button, .ocb-item, .pagination-show-more-leave, .dsb-result-item-category, .modal-close, .h-start-search, input, textarea, button, .item-close, .basket-del, .basket-add, .cart-accept, .main-button, .back-mob-menu-modal, .mmms-item, .mmms-title, .go-top, .direction-item-main, .show-more-button, .svg-point svg, .pagination-pages a, .checkbox-list, .filter-name:hover, .open-filter, .filter-show, .selected-filter-block div, .sft-reset-filter, .show-all-filter, .hide-all-filter, .wb-button, .pp-download-item, .pp-active-brand, .download-modal-item, .brand-filter a, .brand-list a, .mpl-item:hover, .pps-item, .reset-button, .parts-search-button {
+.consultation-button, .lang-button, .right-menu a, .mob-menu, .direction-item, .blog-item, .video-item:after, .product-button, .footer-social a, .footer-menu-item, .blog-button, .mm-main-item, .mm-sub a, .close-mob-menu-modal, .close-consultation, .ncb-send, .drop-lang-header a, .sort-block div, .bread-crumbs a, .pl-item, .ivb-item, #open-product-favorites, #open-product-cart, .h-search-tap, .account-button, .sub-menu-button, .footer-phone, .footer-email, .hbb-tb a, .slick-prev, .slick-next, .pp-arow-next, .pp-arow-prev, .hbb-brand-item img, .pl-cons, .pl-addcart, .pl-addfavorite, .index-show-more, .pop-cl-item, .subscribe-channel button, .ocb-item, .pagination-show-more-leave, .dsb-result-item-category, .modal-close, .h-start-search, input, textarea, button, .item-close, .basket-del, .basket-add, .cart-accept, .main-button, .back-mob-menu-modal, .mmms-item, .mmms-title, .go-top, .direction-item-main, .show-more-button, .svg-point svg, .pagination-pages a, .checkbox-list, .filter-name:hover, .open-filter, .filter-show, .selected-filter-block div, .sft-reset-filter, .show-all-filter, .hide-all-filter, .wb-button, .pp-download-item, .pp-active-brand, .download-modal-item, .brand-filter a, .brand-list a, .mpl-item:hover, .pps-item, .reset-button, .parts-search-button, .cm-accept, .cm-politik {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
@@ -12,7 +12,7 @@
     color: var(--color-maincolor);
     text-decoration: underline;
 }
-.sft-reset-filter:hover {
+.sft-reset-filter:hover, .cm-accept:hover, .cm-politik:hover {
     opacity: .7;
 }
 .parts-search-button:hover {
@@ -47,7 +47,7 @@
     color: var(--color-maincolor);
     border-color: var(--color-maincolor);
 }
-.login-in:hover, .cart-accept:hover, .subscribe-channel button:hover, .consultation-block button:hover, .successful-button:hover, .range-button:hover, .call-back-block button:hover, .proffile-button-save:hover {
+.login-in:hover, .cart-accept:hover, .subscribe-channel button:hover, .consultation-block button:hover, .successful-button:hover, .range-button:hover, .call-back-block button:hover, .proffile-button-save:hover, .osp-button:hover {
     background-color: var(--color-bgbutton);
     border-color: transparent;
 }

@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/png" href="favicon.png" sizes="96x96">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <title>SEO title</title>
+    <meta name="description" content="SEO description">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="OG title">
+    <meta property="og:site_name" content="OG sitename">
+    <meta property="og:description" content="OG description">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:width" content="300">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="top-header flex-block">
+            <a class="phone-header phone-conversion" href="tel:380674114410">+38 (067) 411-44-10</a>
+            <div class="lang-block">
+                <div class="lang-button flex-block"><p>ua</p><i class="mdi mdi-chevron-down"></i></div>
+                <div class="drop-lang-header">
+                    <a href="#">ru</a>
+                    <a href="#">eng</a>
+                </div>
+            </div>
+            <div class="h-search-tap">
+                <i class="mdi mdi-magnify"></i>
+            </div>
+        </div>
+        <div class="main-menu flex-block">
+            <img class="header-logo" src="img/packlogo1.svg" alt="Логотип PACK-TRADE" title="Логотип PACK-TRADE">       
+            <div class="right-menu flex-block">
+                <div class="mob-menu"><i class="mdi mdi-text"></i><span>Каталог</span></div>
+                <a href="#" class="sale-head m-head">Акції</a>
+                <a href="#" class="m-head">Бренди</a>
+                <a href="#" class="m-head">Контакти</a>               
+                <div class="sub-menu-block m-head">
+                    <div class="sub-menu-button flex-block"><p>Ще</p><i class="mdi mdi-chevron-down"></i></div>
+                    <div class="drop-sub-menu">
+                        <a href="#">Очікуєтья на складі</a>
+                        <a href="#">Блог</a>
+                        <a href="#">Медіа</a>
+                        <a href="#">Про нас</a>
+                    </div>
+                </div>
+                <div id="open-product-favorites">
+                    <i class="mdi mdi-heart-outline"></i>
+                    <div id="favorites-number"><span>0</span></div>
+                </div>
+                <div id="open-product-cart">
+                    <i class="mdi mdi-cart-outline"></i>
+                    <div id="basket-number"><span>99</span></div>
+                </div>
+                <div class="n-login account-button">
+                    <i class="mdi mdi-account-outline"></i>
+                    <span>Вхід</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- GO TOP -->
+    <div class="go-top"><div>вгору</div></div>
+    <!-- Notification -->
+    <div class="notification-block flex-block">
+        <div class="nb-bar"></div>
+        <i class="mdi mdi-check-all"></i>
+        <div>Товар доданий до кошику</div>
+    </div>
+    <!-- Success Modal -->
+    <div class="modal-body msg-successful">
+        <div class="modal-body-block">
+            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+            </svg>
+            <div class="success-title">Дякуємо!</div>
+            <div class="success-sub">Ваше повідомлення відправлено</div>
+            <div class="successful-button main-button">Закрити</div>
+            <div class="chanel-review-block flex-block">
+                <div class="review-block">
+                    <div class="review-title">Залиште відгук!</div>
+                    <div class="review-star-block">
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                    </div>
+                    <a class="main-button" href="https://g.page/r/CXDLEBKpf97gEB0/review" target="_blank">Оцінити</a>
+                </div>
+                <div class="official-channel-block">
+                    <div class="ocb-title">Підписуйтесь на канали!</div>
+                    <div class="ocb-item-block flex-block">
+                        <a href="https://t.me/packtrade_official" class="ocb-item flex-block" target="_blank">
+                            <img src="img/telegram-channel.svg" alt="Pack-Trade Telegram" title="Pack-Trade Telegram">
+                            <p>Telegram</p>
+                        </a>
+                        <a href="https://invite.viber.com/?g2=AQB1qeZJ%2FCcpsU5a0gE5d3PmoGXGVcT9GU7UUIOMxgTPthPE%2FkMbkrZeQaw2x5eA&amp;lang=ru" class="ocb-item flex-block" target="_blank">
+                            <img src="img/viber-channel.svg" alt="Pack-Trade Viber" title="Pack-Trade Viber">
+                            <p>Viber</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- Modal -->
+    <!-- CART -->
+    <div class="modal-body cart-modal">
+        <div class="modal-body-block">
+            <div class="modal-title">Мій кошик</div>
+            <i class="mdi mdi-close modal-close close-cart-modal"></i>
+
+            <div class="cart-modal-item flex-block">
+                <i class="mdi mdi-trash-can-outline item-close"></i>
+                <div class="cmi-img">
+                    <img src="media/no-img.jpg">
+                </div>
+                <div class="cmi-name-block">
+                    <a href="#" class="cmi-title"> Візок гідравлічний колеса поліуретан 2 т Niuli CBY JС-20</a>
+                    <div class="cmi-number">
+                        <span>Код:</span>
+                        <span>№3809 </span>
+                    </div>
+                    <div class="cmi-price-block">
+                        <span class="cmi-old-price"> 10 100.04, грн</span>
+                        <span class="cmi-price"> 10 100.04 грн</span>
+                    </div>
+                </div>
+                <div class="n-modal-item-quantity">
+                    <span class="basket-del"></span>
+                    <span class="basket-amount">
+                        <label>
+                            <input class="quantity-num" type="number" value="1" data-basketvalue="1" data-id="3809">
+                        </label>
+                    </span>
+                    <span class="basket-add"></span>
+                    <div class="basket-availability">Доступно: 1130шт.</div>
+                </div>
+                <div class="cmi-sum-price">1 525 025 грн</div>
+            </div>
+            <div class="cart-modal-item flex-block">
+                <i class="mdi mdi-trash-can-outline item-close"></i>
+                <div class="cmi-img">
+                    <img src="media/no-img.jpg">
+                </div>
+                <div class="cmi-name-block">
+                    <a href="#" class="cmi-title"> Візок гідравлічний колеса поліуретан 2 т Niuli CBY JС-20</a>
+                    <div class="cmi-number">
+                        <span>Код:</span>
+                        <span>№3809 </span>
+                    </div>
+                    <div class="cmi-price-block">
+                        <span class="cmi-price"> 10 100.04 грн</span>
+                    </div>
+                </div>
+                <div class="n-modal-item-quantity">
+                    <span class="basket-del"></span>
+                    <span class="basket-amount">
+                        <label>
+                            <input class="quantity-num" type="number" value="1" data-basketvalue="1" data-id="3809">
+                        </label>
+                    </span>
+                    <span class="basket-add"></span>
+                    <div class="basket-availability">Доступно: 1130шт.</div>
+                </div>
+                <div class="cmi-sum-price">1 525 025 грн</div>
+            </div>
+            <div class="cart-modal-item flex-block">
+                <i class="mdi mdi-trash-can-outline item-close"></i>
+                <div class="cmi-img">
+                    <img src="media/no-img.jpg">
+                </div>
+                <div class="cmi-name-block">
+                    <a href="#" class="cmi-title"> Візок гідравлічний колеса поліуретан 2 т Niuli CBY JС-20</a>
+                    <div class="cmi-number">
+                        <span>Код:</span>
+                        <span>№3809 </span>
+                    </div>
+                    <div class="cmi-price-block">
+                        <span class="cmi-price"> 10 100.04 грн</span>
+                    </div>
+                </div>
+                <div class="n-modal-item-quantity">
+                    <span class="basket-del"></span>
+                    <span class="basket-amount">
+                        <label>
+                            <input class="quantity-num" type="number" value="1" data-basketvalue="1" data-id="3809">
+                        </label>
+                    </span>
+                    <span class="basket-add"></span>
+                    <div class="basket-availability">Доступно: 1130шт.</div>
+                </div>
+                <div class="cmi-sum-price">1 525 025 грн</div>
+            </div>
+            <div class="cart-modal-item flex-block">
+                <i class="mdi mdi-trash-can-outline item-close"></i>
+                <div class="cmi-img">
+                    <img src="media/no-img.jpg">
+                </div>
+                <div class="cmi-name-block">
+                    <a href="#" class="cmi-title"> Візок гідравлічний колеса поліуретан 2 т Niuli CBY JС-20</a>
+                    <div class="cmi-number">
+                        <span>Код:</span>
+                        <span>№3809 </span>
+                    </div>
+                    <div class="cmi-price-block">
+                        <span class="cmi-price"> 10 100.04 грн</span>
+                    </div>
+                </div>
+                <div class="n-modal-item-quantity">
+                    <span class="basket-del"></span>
+                    <span class="basket-amount">
+                        <label>
+                            <input class="quantity-num" type="number" value="1" data-basketvalue="1" data-id="3809">
+                        </label>
+                    </span>
+                    <span class="basket-add"></span>
+                    <div class="basket-availability">Доступно: 1130шт.</div>
+                </div>
+                <div class="cmi-sum-price">1 525 025 грн</div>
+            </div>
+            <div class="cart-modal-item flex-block">
+                <i class="mdi mdi-trash-can-outline item-close"></i>
+                <div class="cmi-img">
+                    <img src="media/no-img.jpg">
+                </div>
+                <div class="cmi-name-block">
+                    <a href="#" class="cmi-title"> Візок гідравлічний колеса поліуретан 2 т Niuli CBY JС-20</a>
+                    <div class="cmi-number">
+                        <span>Код:</span>
+                        <span>№3809 </span>
+                    </div>
+                    <div class="cmi-price-block">
+                        <span class="cmi-price"> 10 100.04 грн</span>
+                    </div>
+                </div>
+                <div class="n-modal-item-quantity">
+                    <span class="basket-del"></span>
+                    <span class="basket-amount">
+                        <label>
+                            <input class="quantity-num" type="number" value="1" data-basketvalue="1" data-id="3809">
+                        </label>
+                    </span>
+                    <span class="basket-add"></span>
+                    <div class="basket-availability">Доступно: 1130шт.</div>
+                </div>
+                <div class="cmi-sum-price">1 525 025 грн</div>
+            </div>
+
+            <div class="cart-p">До сплати:</div>
+            <div class="cart-sum-price">1 525 025 грн</div>
+            <div class="cart-buttons-block">
+                <div class="cart-return main-button">Продовжити покупки</div>
+                <a class="cart-accept main-button" href="#">Оформити замовлення</a>
+            </div>
+        </div>
+    </div>
+    <!-- Login -->
+    <div class="modal-body login-modal">
+        <div class="modal-body-block">
+            <i class="mdi mdi-close modal-close close-login-modal"></i>
+            <div class="modal-title">Вхід</div>
+            <div class="login-tab-block flex-block">
+                <div class="login-for-client login-active">Вхід для клієнтів</div>
+                <div class="login-for-manager">Вхід для менеджерів</div>
+            </div>
+            <form id="login-form-user">
+                <input type="hidden" name="_csrf-frontend" value="zjzm0LEvuUUyxWztIL3Snzlcbp2j7wrJLLHr6-yaDaiaTtPihX_2NH2mFIpkiP-oTSknqsmAMv5WwrTbmftcxA=="><div class="form-group field-loginform-username required">
+                <label class="control-label" for="loginform-username">Логін</label>
+                <input type="text" id="loginform-username" class="form-control" name="LoginForm[username]" maxlength="200" aria-required="true"><p class="help-block help-block-error"></p></div><div class="form-group field-loginform-password required">
+                <label class="control-label" for="loginform-password">Пароль</label>
+                <input type="password" id="loginform-password" class="form-control" name="LoginForm[password]" aria-required="true"><p class="help-block help-block-error"></p></div><div class="form-group field-loginform-rememberme"><div class="checkbox">
+                <label for="loginform-rememberme">
+                <input type="hidden" name="LoginForm[rememberMe]" value="0"><input type="checkbox" id="loginform-rememberme" name="LoginForm[rememberMe]" value="1" checked="">
+                Запам'ятати мене
+                </label><p class="help-block help-block-error"></p></div></div>
+                <div class="form-group">
+                <button type="submit" class="login-in">Вхід</button>
+                <button type="submit" class="reg-button">Зареєструватися</button>
+            </div>
+            </form>
+            <form id="login-form-manager" style="display: none;">
+                <input type="hidden" name="_csrf-frontend"><div class="form-group field-managerphone-phone required">
+                <label class="control-label" for="managerphone-phone">Телефон</label>
+                <input type="tel" id="managerphone-phone" class="form-control" name="ManagerPhone[phone]" placeholder="+38(___)___-__-__" aria-required="true"><p class="help-block help-block-error"></p></div><div class="form-group">
+                <button type="submit" class="login-in">Вхід</button></div>
+            </form>
+        </div>
+    </div>
+    <!-- Search -->
+    <div class="modal-body h-search-block">
+        <i class="mdi mdi-close modal-close h-close-search"></i>
+        <div class="parts-search-button">
+            <i class="mdi mdi-magnify"></i>
+            <span>Каталог запчастин</span></div>
+        <form action="#">
+            <input type="text" class="who" placeholder="Пошук товарів" name="q" autocomplete="off" data-search="">
+            <div class="h-start-search flex-block">
+                <i class="mdi mdi-magnify"></i>
+            </div>
+        </form>
+        <div class="dynamic-search-block">
+            <div class="ds-title">Товари:</div>
+            <div class="dsb-result-products">
+                <a href="#" class="dsb-result-item flex-block">
+                    <div class="dsb-item-img">
+                        <img src="https://atom-attachments.com/images/Products/82/280/kartinka_p6SOfc.jpg" alt="Ківш для Біг Бегів - А.ТОМ 1 м³" title="Ківш для Біг Бегів - А.ТОМ 1 м³" width="auto" height="auto">
+                    </div>
+                    <div class="dsb-item-info">
+                        <div class="dsb-item-name">Ківш для Біг Бегів - А.ТОМ 1 м³</div>
+                        <div class="dsb-id">№225</div>
+                        <span class="dsb-status">В наявності</span>
+                        <div class="price-block dsb-item-price">
+                            <div class="old-price">
+                                <span>3 794 400</span>
+                                <span>-126480</span>
+                            </div>
+                            <div class="price">
+                                <span>3 667 920 грн</span>
+                                <span>89 900 €</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="dsb-result-item flex-block">
+                    <div class="dsb-item-img">
+                        <img src="https://atom-attachments.com/images/Products/82/280/kartinka_p6SOfc.jpg" alt="Ківш для Біг Бегів - А.ТОМ 1 м³" title="Ківш для Біг Бегів - А.ТОМ 1 м³" width="auto" height="auto">
+                    </div>
+                    <div class="dsb-item-info">
+                        <div class="dsb-item-name">Ківш для Біг Бегів - А.ТОМ 1 м³</div>
+                        <div class="dsb-id">№225</div>
+                        <span class="dsb-status status-product-sales">Немає в наявності</span>
+                        <div class="price-block dsb-item-price">
+
+                            <div class="price">
+                                <span>3 667 920 грн</span>
+                                <span>89 900 €</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="dsb-result-item flex-block">
+                    <div class="dsb-item-img">
+                        <img src="https://atom-attachments.com/images/Products/82/280/kartinka_p6SOfc.jpg" alt="Ківш для Біг Бегів - А.ТОМ 1 м³" title="Ківш для Біг Бегів - А.ТОМ 1 м³" width="auto" height="auto">
+                    </div>
+                    <div class="dsb-item-info">
+                        <div class="dsb-item-name">Ківш для Біг Бегів - А.ТОМ 1 м³</div>
+                        <div class="dsb-id">№225 </div>
+                        <span class="dsb-status status-product-sales">Очікується</span>
+                        <div class="price-block dsb-item-price">
+                            <div class="price">
+                                <span>3 667 920 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="dsb-result-item flex-block">
+                    <div class="dsb-item-img">
+                        <img src="https://atom-attachments.com/images/Products/82/280/kartinka_p6SOfc.jpg" alt="Ківш для Біг Бегів - А.ТОМ 1 м³" title="Ківш для Біг Бегів - А.ТОМ 1 м³" width="auto" height="auto">
+                    </div>
+                    <div class="dsb-item-info">
+                        <div class="dsb-item-name">Ківш для Біг Бегів - А.ТОМ 1 м³</div>
+                        <div class="dsb-id">№225 </div>
+                        <span class="dsb-status status-product-underorder">Під замовлення</span>
+                        <div class="price-block dsb-item-price">
+                            <div class="price">
+                                <span>Ціну уточнюйте</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="pagination-show-more-leave show-more-search"><i class="mdi mdi-refresh"></i><div id="show_btn">Показати ще 30 товарів</div></div>
+            </div>
+            <div class="ds-title">Категорії:</div>
+            <div class="dsb-result-category flex-block">
+                <a href="#" class="dsb-result-item-category"><i class="mdi mdi-folder-outline"></i><span>Для телескопічних навантажувачів</span></a>
+                <a href="#" class="dsb-result-item-category"><i class="mdi mdi-folder-outline"></i><span>Для телескопічних навантажувачів</span></a>
+                <a href="#" class="dsb-result-item-category"><i class="mdi mdi-folder-outline"></i><span>Для телескопічних навантажувачів</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- consultation -->
+    <div class="modal-body consultation-block">
+        <div class="modal-body-block">
+            <i class="mdi mdi-close modal-close close-consultation"></i>
+            <div class="modal-title">Зворотній зв'язок</div>
+            <form id="form-p-send-manager" action="/../manager/send-message/" method="post">
+                <input type="hidden" name="_csrf-frontend" value="xPIVGrSel1kxwk1x90PfHY6KkKlpYguZwdq1ZqmXFnyulkps_u7gDAe0Jje_DLBR6MTFyh0hOvyImPkn9tYjPQ==">
+                <div class="form-group field-contactmanagerform-username required">
+                    <label class="control-label" for="contactmanagerform-username">Ім'я</label>
+                    <input type="text" id="contactmanagerform-username" class="form-control" name="ContactManagerForm[userName]" placeholder="Ваше ім'я" aria-required="true">
+                    <p class="help-block help-block-error"></p>
+                </div>
+                <div class="form-group field-contactmanagerform-useremail required">
+                    <label class="control-label" for="contactmanagerform-useremail">Email</label>
+                    <input type="text" id="contactmanagerform-useremail" class="form-control" name="ContactManagerForm[userEmail]" placeholder="Ваш email" aria-required="true">
+                    <p class="help-block help-block-error"></p>
+                </div>
+                <div class="form-group field-contactmanagerform-userphone required">
+                    <label class="control-label" for="contactmanagerform-userphone">Телефон</label>
+                    <input type="tel" id="contactmanagerform-userphone" class="form-control" name="ContactManagerForm[userPhone]" placeholder="+38(___)___-__-__" aria-required="true">
+                    <p class="help-block help-block-error"></p>
+                </div>
+                <div class="form-group field-contactmanagerform-usermessage required">
+                    <label class="control-label" for="contactmanagerform-usermessage">Повідомлення</label>
+                    <textarea id="contactmanagerform-usermessage" class="form-control" name="ContactManagerForm[userMessage]" placeholder="Ваше повідомлення менеджеру..." aria-required="true"></textarea>
+                    <p class="help-block help-block-error"></p>
+                </div>
+                <div class="form-group field-contactmanagerform-pagemessage required">
+                    <input type="hidden" id="contactmanagerform-pagemessage" class="form-control" name="ContactManagerForm[pageMessage]" value="https://pack-trade.com/nproduct/telezhka_gidravlicheskaya_2_5_tonny_model_cby_as-25_kolesa_poliuretan-niuli/" readonly="">
+                    <p class="help-block help-block-error"></p>
+                </div>
+                <div class="form-group field-contactmanagerform-gclid_field">
+                    <input type="hidden" id="contactmanagerform-gclid_field" class="form-control" name="ContactManagerForm[gclid_field]" readonly="" value="Cj0KCQjw_r6hBhDdARIsAMIDhV-nbif9WbHD2o2jNu_D1p4nycPZvDgGna2zjcIinfStljY2Gb97kmwaAuW3EALw_wcB">
+                    <p class="help-block help-block-error"></p>
+                </div>                
+                <button type="submit" class="main-button">Відправити повідомлення</button>
+            </form>
+        </div>
+    </div>
+    <!-- menu -->
+    <div class="mob-menu-modal">
+        <div class="mob-menu-block">
+            <i class="back-mob-menu-modal mdi mdi-arrow-left-top"></i>
+            <i class="close-mob-menu-modal mdi mdi-close"></i>
+            <div class="mm-menu">
+                <img class="mm-logo" src="img/packlogo1.svg">
+                <div class="n-login account-button flex-block">
+                    <i class="mdi mdi-account-outline"></i>
+                    <span>Вхід до профілю</span>
+                </div>
+                <div class="mm-main">
+                    <div class="mm-main-item flex-block">
+                        <img src="media/upakovka.svg" alt="SEO" title="SEO">
+                        <span>Пакувальне обладнання</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </div>
+                    <div class="mm-main-item flex-block">
+                        <img src="media/robot.svg" alt="SEO" title="SEO">
+                        <span>Пакувальні матеріали та інструмент</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </div>
+                    <div class="mm-main-item flex-block">
+                        <img src="media/n1-sklad.svg" alt="SEO" title="SEO">
+                        <span>Складська техніка та приміщення</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </div>
+                    <div class="mm-main-item flex-block">
+                        <img src="media/1specteh.svg" alt="SEO" title="SEO">
+                        <span>Спецтехніка і Агротехніка</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </div>
+                    <div class="mm-main-item flex-block">
+                        <img src="media/avto-ta-prisep.svg" alt="SEO" title="SEO">
+                        <span>Автомобільні причепи</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </div>
+                    <div class="mm-main-item flex-block">
+                        <img src="media/navoz.svg" alt="SEO" title="SEO">
+                        <span>Переробка та внесення гною. Шлангові системи</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </div>
+                    <div class="mm-main-item flex-block">
+                        <img src="media/navisne.svg" alt="SEO" title="SEO">
+                        <span>Навісне обладнання та комплектуючі</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </div>
+                    <div class="mm-main-item flex-block">
+                        <img src="media/orenda2.svg" alt="SEO" title="SEO">
+                        <span>Оренда техніки</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </div>
+                    <div class="mm-main-item flex-block">
+                        <img src="media/service.svg" alt="SEO" title="SEO">
+                        <span>Сервіс та ремонт</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </div>
+                    <div class="mm-main-item flex-block">
+                        <img src="media/parts.svg" alt="SEO" title="SEO">
+                        <span>Запчастини, інструмент, склад</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </div>
+                    <div class="mm-main-item flex-block">
+                        <img src="media/tires.svg" alt="SEO" title="SEO">
+                        <span>Шини, гусениці</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="mm-sub">
+                    <a href="#">Очікується на PACK-TRADE</a>
+                    <a href="#">Акції</a>
+                    <a href="#">Бренди</a>
+                    <a href="#">Контакти</a>
+                    <a href="#">Блог</a>
+                    <a href="#">Медіа</a>
+                    <a href="#">Про нас</a>
+                    <a href="#">Оплата і доставка</a>
+                    <a href="#">Вакансії</a>
+                    <a href="#">Договір оферти</a>
+                    <a href="#">Умови повернення товару</a>
+                    <a href="#">Політика конфіденційності</a>
+                </div>
+            </div>
+            <div class="mm-main-sub">
+                <div class="mm-main-sub-item">
+                    <a href="#" class="mmms-title flex-block"><span>Обладнання Robopac</span><i class="mdi mdi-arrow-right-thin"></i></a>
+                    <a href="#" class="mmms-item flex-block">
+                        <span>Палетайзер, палетопакувальник, палетообмотувач</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </a>
+                    <a href="#" class="mmms-item flex-block pc-all-products">
+                        <span>Вся продукція</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </a>
+                    <a href="#" class="mmms-title flex-block"><span>Обладнання Robopac</span><i class="mdi mdi-arrow-right-thin"></i></a>
+                    <a href="#" class="mmms-item flex-block">
+                        <span>Палетайзер, палетопакувальник, палетообмотувач</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </a>
+                    <a href="#" class="mmms-item flex-block">
+                        <span>Палетайзер, палетопакувальник, палетообмотувач</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </a>
+                    <a href="#" class="mmms-item flex-block">
+                        <span>Палетайзер, палетопакувальник, палетообмотувач</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </a>
+                    <a href="#" class="mmms-item flex-block">
+                        <span>Палетайзер, палетопакувальник, палетообмотувач</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </a>
+                    <a href="#" class="mmms-item flex-block">
+                        <span>Палетайзер, палетопакувальник, палетообмотувач</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </a>
+                    <a href="#" class="mmms-item flex-block">
+                        <span>Палетайзер, палетопакувальник, палетообмотувач</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </a>
+                    <a href="#" class="mmms-item flex-block">
+                        <span>Палетайзер, палетопакувальник, палетообмотувач</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </a>
+                    <a href="#" class="mmms-item flex-block">
+                        <span>Палетайзер, палетопакувальник, палетообмотувач</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </a>
+                    <a href="#" class="mmms-item flex-block pc-all-products">
+                        <span>Вся продукція</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="mm-main-sub-item">
+                    <a href="#" class="mmms-title flex-block"><span>Обладнання Robopac</span><i class="mdi mdi-arrow-right-thin"></i></a>
+                    <a href="#" class="mmms-item flex-block">
+                        <span>Палетайзер, палетопакувальник, палетообмотувач</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </a>
+                    <a href="#" class="mmms-item flex-block">
+                        <span>Палетайзер, палетопакувальник, палетообмотувач</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </a>
+                    <a href="#" class="mmms-item flex-block pc-all-products">
+                        <span>Вся продукція</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </a>
+
+                </div>
+                <div class="mm-main-sub-item">
+                    <a href="#" class="mmms-title flex-block"><span>Обладнання Robopac</span><i class="mdi mdi-arrow-right-thin"></i></a>
+                    <a href="#" class="mmms-item flex-block">
+                        <span>Палетайзер, палетопакувальник, палетообмотувач</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </a>
+                    <a href="#" class="mmms-item flex-block">
+                        <span>Палетайзер, палетопакувальник, палетообмотувач</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </a>
+                    <a href="#" class="mmms-item flex-block">
+                        <span>Палетайзер, палетопакувальник, палетообмотувач</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </a>
+                    <a href="#" class="mmms-item flex-block pc-all-products">
+                        <span>Вся продукція</span>
+                        <i class="mdi mdi-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="container order-successful-page">
+        <div class="osp-review">
+            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"></circle>
+                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"></path>
+            </svg>
+            <div class="success-title">Дякуємо!</div>
+            <div class="success-sub">Ваше замовлення успішно оформлене.</div>
+            <div class="chanel-review-block flex-block">
+                <div class="review-block">
+                    <div class="review-title">Залиште відгук!</div>
+                    <div class="review-star-block">
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                    </div>
+                    <a class="main-button" href="https://g.page/r/CXDLEBKpf97gEB0/review" target="_blank">Оцінити</a>
+                </div>
+                <div class="official-channel-block">
+                    <div class="ocb-title">Підписуйтесь на канали!</div>
+                    <div class="ocb-item-block flex-block">
+                        <a href="https://t.me/packtrade_official" class="ocb-item flex-block" target="_blank">
+                            <img src="img/telegram-channel.svg" alt="Pack-Trade Telegram" title="Pack-Trade Telegram">
+                            <p>Telegram</p>
+                        </a>
+                        <a href="https://invite.viber.com/?g2=AQB1qeZJ%2FCcpsU5a0gE5d3PmoGXGVcT9GU7UUIOMxgTPthPE%2FkMbkrZeQaw2x5eA&amp;lang=ru" class="ocb-item flex-block" target="_blank">
+                            <img src="img/viber-channel.svg" alt="Pack-Trade Viber" title="Pack-Trade Viber">
+                            <p>Viber</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-block">
+            <h1 class="osp-number"><span>Номер замовлення:</span><span>6236</span></h1>
+            <div class="osp-scroll-block">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Ваше прізвище</td>
+                            <td>Тест</td>
+                        </tr>
+                        <tr>
+                            <td>Ваше Ім'я</td>
+                            <td>Тест</td>
+                        </tr>
+                        <tr>
+                            <td>Телефон</td>
+                            <td>+38(096)446-26-31</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Доставка</td>
+                            <td>Нова Пошта,</td>
+                        </tr>
+                        <tr>
+                            <td>Оплата</td>
+                            <td>
+                                <div>Банківський переказ на рахунок компанії (як для юридичних, так і для фізичних осіб)</div>
+                                <div id="bezhroshova">
+                                    <div>Фізична особа-підприємець Томчук Андрій Михайлович</div>
+                                    <div><span>Юридична адреса:</span> вул. Чуднівська, 2, с. Висока Піч, Житомирський р-н, Житомирська обл.,12424</div>
+                                    <div><span>Місце здійснення господарської діяльності, поштова адреса:</span> вул. Коростишівська, 45, м. Житомир, Житомирська область, 10007</div>
+                                    <div><span>ЄДРПОУ:</span> 3041324133</div>
+                                    <div><span>Платник ПДВ</span>
+                                        <p>1.Р/р UA043802810000000260091042401, Банк: АТ Банк інвестицій та заощаджень МФО: 380281</p>
+                                        <p>2.Р/р UA023117440000026000055901992, Банк: ЖРУ ПАТ КБ «Приватбанк» МФО 311744</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Примітки</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h2>Склад замовлення</h2>
+            <div class="osp-scroll-block">
+                <table class="osp-products-block">
+                    <tbody>
+                        <tr>
+                            <td>Найменування</td>
+                            <td>Клькість</td>
+                            <td>Сума</td>
+                        </tr>
+                        <tr>
+                            <td>Екскаватор навантажувач JCB 3CX Sitemaster Plus 2021 р. 81 кВт. 588 м/г., № 3505 L</td>
+                            <td>1</td>
+                            <td>3 522 640,00 грн</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="osp-sum">
+                <div>Всього до сплати:</div>
+                <div>3 522 640,00 грн</div>
+            </div>
+            <a href="/" class="osp-button main-button">Повернутись на головну</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="subscribe-block">
+        <div class="container sb-content">
+            <div class="sb-info flex-block">
+                <div>
+                    <div>Твоя персоналізована розсилка!</div>
+                    <p>Найвигідніші ціни, круті акції і персональні пропозиції в твоїй розсилці</p>
+                </div>
+            </div>
+            <div class="subscribe-channel">
+                <form id="save-email" class="flex-block" action="/../manager/send-email-validate/" method="post">
+                    <input type="hidden" name="_csrf-frontend" value="QzOtX111iOp2rSSVDqbuRmxXlV3Io7l6TRRCSRH9O-Y7bJhuOjTdizfmUOU46YgZOzjEF-XP7jgUIXNwc6lxiA=="><div class="form-group field-emailform-email required">
+                    <label class="control-label" for="emailform-email">Ваш E-mail</label>
+                    <input type="text" id="emailform-email" class="form-control" name="EmailForm[email]" aria-required="true"><p class="help-block help-block-error"></p></div>
+                    <button type="submit">Відправити</button>
+                </form>
+                <div class="official-channel-block">
+                    <div class="ocb-title">Офіційні канали</div>
+                    <div class="ocb-item-block flex-block">
+                        <a href="https://t.me/packtrade_official" class="ocb-item flex-block">
+                            <img src="img/telegram-channel.svg" alt="Pack-Trade Telegram" title="Pack-Trade Telegram">
+                            <p>Telegram</p>
+                        </a>
+                        <a href="https://invite.viber.com/?g2=AQB1qeZJ%2FCcpsU5a0gE5d3PmoGXGVcT9GU7UUIOMxgTPthPE%2FkMbkrZeQaw2x5eA&amp;lang=ru" class="ocb-item flex-block">
+                            <img src="img/viber-channel.svg" alt="Pack-Trade Viber" title="Pack-Trade Viber">
+                            <p>Viber</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container footer-block">
+        <div class="footer-info">
+            <img class="footer-logo" src="img/packlogo1.svg" alt="Логотип PACK-TRADE" title="Логотип PACK-TRADE">
+            <div class="fi-title">Телефон:</div>
+            <a href="tel:+380674114410" class="phone-conversion footer-phone">
+                <div>+38 (067) 411-44-10</div>
+                <p>9:00 - 18:00</p>
+            </a>
+            <div class="fi-title">Email:</div>
+            <a class="footer-email" href="mailto:info@pack-trade.com">info@pack-trade.com</a>
+            <div class="fi-title">Ми в соціальних мережах:</div>
+            <div class="footer-social flex-block">
+                <a href="#"><img src="img/viber.svg" alt="PACK-TRADE Viber" title="PACK-TRADE Viber"></a>
+                <a href="#"><img src="img/telegram.svg" alt="PACK-TRADE Telegram" title="PACK-TRADE Telegram"></a>
+                <a href="#"><img src="img/facebook.svg" alt="PACK-TRADE Facebook" title="PACK-TRADE Facebook"></a>
+                <a href="#"><img src="img/insta.svg" alt="PACK-TRADE Instagram" title="PACK-TRADE Instagram"></a>
+                <a href="#"><img src="img/you.svg" alt="PACK-TRADE Youtube" title="PACK-TRADE Youtube"></a>
+            </div>
+        </div>
+        <div class="footer-menu">
+            <div class="fm-title">PACK-TRADE</div>
+            <a href="#" class="footer-menu-item"><span>Контакти</span></a>
+            <a href="#" class="footer-menu-item"><span>Про компанію</span></a>
+            <a href="#" class="footer-menu-item"><span>Вакансії</span></a>
+            <a href="#" class="footer-menu-item"><span>Блог</span></a>
+            <a href="#" class="footer-menu-item"><span>Медіа</span></a>
+        </div>
+        <div class="footer-menu">
+            <div class="fm-title">Клієнтам</div>
+            <a href="#" class="footer-menu-item"><span>Оплата і Доставка</span></a>
+            <a href="#" class="footer-menu-item"><span>Договір оферти</span></a>
+            <a href="#" class="footer-menu-item"><span>Умови повернення товару</span></a>
+            <a href="#" class="footer-menu-item"><span>Політика конфіденційності</span></a>
+        </div>
+        <div class="footer-menu">
+            <div class="fm-title">Корисні посилання</div>
+            <a href="#" class="footer-menu-item"><span>Пальці для спецтехніки та навісного обладнання</span></a>
+            <a href="#" class="footer-menu-item"><span>Підбір, викуп і доставка будь-якої техніки з Європи «під ключ»</span></a>
+        </div>
+    </div>
+    <div class="corp">© 2004-2023 "PACK-TRADE". Всі права захищені</div>
+</footer>
+
+<script src="js/jquery-3.7.0.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
