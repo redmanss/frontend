@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/png" href="favicon.png" sizes="96x96">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <title>SEO title</title>
+    <meta name="description" content="SEO description">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="OG title">
+    <meta property="og:site_name" content="OG sitename">
+    <meta property="og:description" content="OG description">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:width" content="300">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="top-header flex-block">
+                <a class="phone-header" href="tel:380960000000">+38 (096) 000-00-00</a>
+                <div class="lang-block">
+                    <div class="lang-button flex-block"><p>Укр</p><i class="mdi mdi-chevron-down"></i></div>
+                    <div class="drop-lang-header">
+                        <a href="#">Рус</a>
+                        <a href="#">Eng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-menu flex-block">
+                <img class="header-logo" src="img/mil-black.svg" alt="Логотип The Miller" title="Логотип The Miller">       
+                <div class="right-menu flex-block">
+                    <a href="#">Каталог</a>
+                    <a href="#">Відгуки</a>
+                    <a href="#">Контакти</a>
+                    <a href="#">Блог</a>
+                    <a href="#">Про нас</a>
+                    <div class="mob-cart-button">
+                        <i class="mdi mdi-cart-variant"></i>
+                        <div class="mcb-count"><span>0</span></div>
+                    </div>
+                    <div class="mob-menu"><i class="mdi mdi-menu"></i></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal -->
+        <!-- menu -->
+        <div class="mob-menu-modal">
+            <div class="mob-menu-block">
+                <img src="img/mil-black.svg" alt="SEO" title="SEO">
+                <div class="mob-menu-block-title"></div>
+                <i class="close-mob-menu-modal mdi mdi-close"></i>
+                <div class="mm-menu">
+                    <div class="mm-main">
+                        <a href="#" class="mm-main-item flex-block">Млини комерційні</a>
+                        <a href="#" class="mm-main-item flex-block">Млини побутові</a>
+                        <a href="#" class="mm-main-item flex-block">Інструменти та комплектуючі</a>
+                        <a href="#" class="mm-main-item flex-block">Органічні інгредієнти</a>
+                    </div>
+                    <div class="mm-sub">
+                        <a href="#"><i class="mdi mdi-chat-question-outline"></i>Часті питання (FAQ)</a>
+                        <a href="#"><i class="mdi mdi-account-cash-outline"></i>Дилерам</a>
+                        <a href="#"><i class="mdi mdi-file-document-check-outline"></i>Гарантія</a>
+                        <a href="#"><i class="mdi mdi-eye-check-outline"></i>Відгуки</a>
+                        <a href="#"><i class="mdi mdi-email-outline"></i>Контакти</a>
+                        <a href="#"><i class="mdi mdi-note-text-outline"></i>Блог</a>
+                        <a href="#"><i class="mdi mdi-account-group-outline"></i>Про нас</a>
+                        <a href="#"><i class="mdi mdi-cash-marker"></i>Оплата і Доставка</a>
+                        <a href="#"><i class="mdi mdi-file-document-outline"></i>Договір оферти</a>
+                        <a href="#"><i class="mdi mdi-file-document-outline"></i>Умови повернення товару</a>
+                        <a href="#"><i class="mdi mdi-file-document-outline"></i>Політика конфіденційності</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- consultation -->
+        <div class="n-consultation-block">
+            <div class="ncb-container">
+                <i class="mdi mdi-close close-consultation"></i>
+                <form id="form-p-send-manager" action="/../manager/send-message/" method="post">
+                    <input type="hidden" name="_csrf-frontend" value="xPIVGrSel1kxwk1x90PfHY6KkKlpYguZwdq1ZqmXFnyulkps_u7gDAe0Jje_DLBR6MTFyh0hOvyImPkn9tYjPQ==">
+                    <div class="form-group field-contactmanagerform-username required">
+                        <label class="control-label" for="contactmanagerform-username">Ім'я</label>
+                        <input type="text" id="contactmanagerform-username" class="form-control" name="ContactManagerForm[userName]" placeholder="Ваше ім'я" aria-required="true">
+                        <p class="help-block help-block-error"></p>
+                    </div>
+                    <div class="form-group field-contactmanagerform-useremail required">
+                        <label class="control-label" for="contactmanagerform-useremail">Email</label>
+                        <input type="text" id="contactmanagerform-useremail" class="form-control" name="ContactManagerForm[userEmail]" placeholder="Ваш email" aria-required="true">
+                        <p class="help-block help-block-error"></p>
+                    </div>
+                    <div class="form-group field-contactmanagerform-userphone required">
+                        <label class="control-label" for="contactmanagerform-userphone">Телефон</label>
+                        <input type="tel" id="contactmanagerform-userphone" class="form-control" name="ContactManagerForm[userPhone]" placeholder="+38(___)___-__-__" aria-required="true">
+                        <p class="help-block help-block-error"></p>
+                    </div>
+                    <div class="form-group field-contactmanagerform-usermessage required">
+                        <label class="control-label" for="contactmanagerform-usermessage">Повідомлення</label>
+                        <textarea id="contactmanagerform-usermessage" class="form-control" name="ContactManagerForm[userMessage]" placeholder="Ваше повідомлення менеджеру..." aria-required="true"></textarea>
+                        <p class="help-block help-block-error"></p>
+                    </div>
+                    <div class="form-group field-contactmanagerform-pagemessage required">
+                        <input type="hidden" id="contactmanagerform-pagemessage" class="form-control" name="ContactManagerForm[pageMessage]" value="https://pack-trade.com/nproduct/telezhka_gidravlicheskaya_2_5_tonny_model_cby_as-25_kolesa_poliuretan-niuli/" readonly="">
+                        <p class="help-block help-block-error"></p>
+                    </div>
+                    <div class="form-group field-contactmanagerform-gclid_field">
+                        <input type="hidden" id="contactmanagerform-gclid_field" class="form-control" name="ContactManagerForm[gclid_field]" readonly="" value="Cj0KCQjw_r6hBhDdARIsAMIDhV-nbif9WbHD2o2jNu_D1p4nycPZvDgGna2zjcIinfStljY2Gb97kmwaAuW3EALw_wcB">
+                        <p class="help-block help-block-error"></p>
+                    </div>                
+                    <button type="submit" class="main-button ncb-send">Відправити повідомлення</button>
+                </form>
+            </div>
+        </div>
+        <!-- cart modal -->
+        <div class="modal-block cart-modal">
+            <div class="modal-container">
+                <i class="mdi mdi-close close-block close-cart"></i>
+                <div class="modal-title">Кошик</div>
+                <div class="cart-block">
+                    <div class="cart-item flex-block">
+                        <div class="cart-img-block">
+                            <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                        </div>
+                        <div class="cart-info-block flex-block">
+                            <div class="cart-name-block">
+                                <a href="#" class="cart-name">Млин домашній ручний на кам'яних жорнах H15 Млин домашній ручний на кам'яних жорнах H15</a>
+                                <div class="cart-id">Код товара: 123123</div>
+                                <div class="cart-delete"><i class="mdi mdi-delete-outline"></i>Видалити</div>
+                            </div>
+                            <div class="cart-count-price-block">
+                                <div class="cart-price-block">
+                                    <div class="cpb-old-price">7 000 грн</div>
+                                    <div class="cpb-price">5 000 грн</div>
+                                </div>
+                                <div class="cart-count-block">
+                                    <div class="ccb-del"><i class="mdi mdi-minus-circle-outline"></i></div>
+                                    <div class="ccb-count">
+                                        <label><input placeholder="1"></label>
+                                    </div>
+                                    <div class="ccb-add"><i class="mdi mdi-plus-circle-outline"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item flex-block">
+                        <div class="cart-img-block">
+                            <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                        </div>
+                        <div class="cart-info-block flex-block">
+                            <div class="cart-name-block">
+                                <a href="#" class="cart-name">Млин домашній ручний на кам'яних жорнах H15</a>
+                                <div class="cart-id">Код товара: 123123</div>
+                                <div class="cart-delete"><i class="mdi mdi-delete-outline"></i>Видалити</div>
+                            </div>
+                            <div class="cart-count-price-block">
+                                <div class="cart-price-block">
+                                    <div class="cpb-old-price"></div>
+                                    <div class="cpb-price">2 000 грн</div>
+                                </div>
+                                <div class="cart-count-block">
+                                    <div class="ccb-del"><i class="mdi mdi-minus-circle-outline"></i></div>
+                                    <div class="ccb-count">
+                                        <label><input placeholder="1"></label>
+                                    </div>
+                                    <div class="ccb-add"><i class="mdi mdi-plus-circle-outline"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-sum-block">
+                    <div>Разом до сплати:</div>
+                    <div class="cart-sum">7 000 грн</div>
+                </div>
+                <div class="cart-buttons-block">
+                    <div class="main-buttom continue-order">Продовжити покупки</div>
+                    <div class="main-buttom complete-order">Оформити замовлення</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<main>
+    <div class="container bread-crumbs">
+            <h1>Договір публічної оферти</h1>
+            <div class="crumbs-scroll">
+                <ul itemscope="" itemtype="https://schema.org/BreadcrumbList">
+                    <li>
+                        <a class="home-crumbs" href="#" title="ATOM">
+                            <i class="mdi mdi-home"></i>
+                        </a>
+                    </li>
+                    <span class="bread-slash">/</span>
+                    <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                        <a href="#" itemprop="item">
+                            <span itemprop="name">Жорнові млини</span>
+                        </a>
+                        <meta itemprop="position" content="1">
+                    </li>
+                    <span class="bread-slash">/</span>
+                    <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                        <a href="#" class="active-bread" itemprop="item">
+                            <span itemprop="name">Жорновий млин D-30</span>
+                        </a>
+                        <meta itemprop="position" content="2">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    <div class="container">
+        <div class="text-page">
+            <h3>1. Загальні положення</h3>
+
+            <p>1.1. Ця оферта є офіційною пропозицією ФОП Павлюк Дмитро Петрович, далі за текстом &mdash; &laquo;Продавець&raquo;, укласти Договір купівлі-продажу товарів дистанційним способом, тобто через Інтернет-магазин, далі за текстом &mdash; &laquo;Договір&raquo;, і розміщує Публічну оферту (пропозицію) на інтернет-сайті Продавця&nbsp; https://the-miller.com/ (далі &mdash; &laquo;Інтернет-сайт&raquo;).<br />
+            1.2. Моментом повного і безумовного прийняття Покупцем пропозиції Продавця (акцептом) укласти електронний договір купівлі-продажу товарів вважається факт оплати Покупцем замовлення на умовах цього Договору у строки та за цінами, вказаними на Інтернет-сайті Продавця.<br />
+            1.3. Укладаючи Договір (тобто акцептуючи умови цієї Пропозиції шляхом оформлення Замовлення), Покупець підтверджує:<br />
+            - Покупець цілком і повністю ознайомлений і згоден з умовами цієї пропозиції (оферти);<br />
+            - Покупець надає дозвіл на збір, обробку та передачу персональних даних на умовах, визначених цим Договором, при цьому дозвіл на обробку таких даних діє протягом усього терміну дії Договору, а також не обмежується в часі після закінчення його дії. Укладенням цього Договору Покупець підтверджує, що він повідомлений (без додаткового повідомлення) про права та обов&rsquo;язки, визначені Законом України &laquo;Про захист персональних даних&raquo;, що включає в себе цілі збору таких даних, а також про те, що персональні дані Покупця передаються Продавцю з метою можливості виконання умов цього Договору, можливості проведення взаєморозрахунків, отримання відповідних рахунків за Товар та інших документів, що стосуються цього Договору. Покупець також погоджується з тим, що Продавець має право надавати доступ та передавати його персональні дані третім особам без будь-яких додаткових повідомлень Покупця, не змінюючи при цьому зміст та мету обробки таких даних. Обсяг прав Покупця як суб&#39;єкта персональних даних відповідно до Закону України &laquo;Про захист персональних даних&raquo; йому відомий і зрозумілий.</p>
+            
+            <h3>2. Поняття і визначення</h3>
+            
+            <p>2.1. У цій оферті, якщо контекст не вимагає іншого, наведені нижче терміни мають таке значення:<br />
+            &laquo;Товар&raquo; &mdash; моделі обладнання, інструменти, аксесуари, продукти харчування;<br />
+            &laquo;Інтернет-магазин&raquo; &mdash; відповідно до Закону України &laquo;Про електронну комерцію&raquo;, засіб для подання або реалізації товару, роботи або послуги шляхом здійснення електронної угоди.<br />
+            &laquo;Продавець&raquo; &mdash; компанія, яка реалізує товари, представлені на Інтернет-сайті.<br />
+            &laquo;Покупець&raquo; &mdash; фізична особа, що уклала з Продавцем Договір на умовах, викладених нижче.<br />
+            &laquo;Замовлення&raquo; &mdash; вибір окремих позицій з переліку товарів, зазначених Покупцем при розміщенні замовлення і проведенні оплати.</p>
+            
+            <h3>3. Предмет договору</h3>
+            
+            <p>3.1. Продавець зобов&rsquo;язується передати у власність Покупця Товар, а Покупець зобов&rsquo;язується оплатити й прийняти Товар на умовах цього Договору.<br />
+            Цей Договір регулює купівлю-продаж товарів у Інтернет-магазині, в тому числі:<br />
+            - добровільний вибір Покупцем товарів у Інтернет-магазині;<br />
+            - самостійне оформлення Покупцем замовлення в Інтернет-магазині;<br />
+            - оплата Покупцем замовлення, оформленого в Інтернет-магазині;<br />
+            - обробка і доставка замовлення Покупцеві у власність на умовах цього Договору.</p>
+            
+            <h3>4. Порядок оформлення замовлення</h3>
+            
+            <p>4.1 Покупець оформлює Замовлення на Сайті самостійно шляхом додавання обраних Товарів до віртуального кошика і натискаючи кнопку &laquo;Оформити замовлення&raquo;.<br />
+            4.2 Покупець може оформити запит на придбання та доставку Товару, який є в наявності та представлений на Сайті. Продавець встановлює мінімальну суму замовлення Товару та зазначає її при здійсненні замовлення Покупцем.<br />
+            4.3. За відсутності товару на складі Менеджер компанії зобов&#39;язаний поставити Покупця до відома (за телефоном, через електронну пошту або інший спосіб комунікації).<br />
+            4.4. За відсутності товару Покупець має право замінити його товаром аналогічної моделі, відмовитися від цього товару, анулювати замовлення.</p>
+            
+            <h3>5. Порядок оплати замовлення</h3>
+            
+            <p>5.1 Ціна Товару зазначається в національній валюті та включає всі передбачені українським Законодавством податки.<br />
+            5.2. Ціна Товару зазначається на Сайті. У разі неправильного зазначення ціни замовленого Товару Продавець інформує про це Покупця для підтвердження Замовлення зі скоригованою ціною або анулювання Замовлення.<br />
+            5.3. Ціна Товару на Сайті може бути змінена Продавцем в односторонньому порядку. При цьому ціна на замовлений Покупцем Товар зміні не підлягає.<br />
+            5.4. Оплата Товару здійснюється Покупцем згідно з умовами, вказаними на сторінці Інтернет-магазину&nbsp;<a href="https://the-miller.com/"><span>https://the-miller.com/</span></a>.<br />
+            5.5. Продавець має право надавати знижки на Товари. Види знижок, порядок і умови їх нарахування, можуть бути змінені Продавцем в односторонньому порядку.</p>
+            
+            <h3>6. Умови доставки замовлення</h3>
+            
+            <p>6.1. Доставка товарів, придбаних в Інтернет-магазині, здійснюється до складів транспортних компаній, де і здійснюється видача замовлень.<br />
+            6.2. Разом із замовленням Покупцеві надаються документи згідно з Законодавством України.<br />
+            6.3. Вартість послуги транспортних компаній &laquo;Отримання зворотного платежу&raquo; у випадку оплати Товару післяплатою Покупець оплачує додатково, згідно з тарифами транспортних компаній.</p>
+            
+            <h3>7. Права та обов&#39;язки сторін</h3>
+            
+            <p>7.1. Продавець має право:<br />
+            - в односторонньому порядку припинити надання послуг за цим договором у разі порушення Покупцем умов цього договору.<br />
+            7.2. Покупець зобов&#39;язаний:<br />
+            - своєчасно оплатити та отримати замовлення на умовах цього договору.<br />
+            7.3. Покупець має право:<br />
+            - оформити замовлення в Інтернет-магазині;<br />
+            - оформити електронний договір;<br />
+            - вимагати від Продавця виконання умов цього Договору.</p>
+            
+            <h3>8. Відповідальність сторін</h3>
+            
+            <p>8.1. Сторони несуть відповідальність за невиконання або неналежне виконання умов цього договору в порядку, передбаченому цим договором та чинним Законодавством України.<br />
+            8.2. Продавець не несе відповідальності за:<br />
+            - змінений виробником зовнішній вигляд Товару;<br />
+            - за зміст і правдивість інформації, наданої Покупцем при оформленні замовлення;<br />
+            - за затримку і перебої в наданні Послуг (обробки замовлення та доставки товару), які відбуваються з причин, що не залежать від Продавця;<br />
+            8.3. У разі настання обставин непереборної сили сторони звільняються від виконання умов цього договору. Під обставинами непереборної сили для цілей цього договору розуміються події, що мають надзвичайний, непередбачений характер, які виключають або об&#39;єктивно заважають виконанню цього договору, настання яких Сторони не могли передбачити й запобігти розумними способами.<br />
+            8.4. Сторони прикладають максимум зусиль для вирішення будь-яких розбіжностей виключно шляхом переговорів.<br />
+            8.5. Продавець не несе будь-якої відповідальності за шкоду, заподіяну Покупцеві внаслідок неналежного використання Товарів, використання їх не за цільовим призначення, які замовлені Покупцем на сайті&nbsp;<a href="https://the-miller.com/"><span>https://the-miller.com/</span></a>&nbsp;і придбані у Продавця.<br />
+            8.6. Продавець не несе відповідальності за неналежне, несвоєчасне виконання Замовлень і своїх зобов&#39;язань в разі надання Покупцем недостовірної, неповної та/або помилкової інформації.</p>
+            
+            <h3>9. Інші умови</h3>
+            
+            <p>9.1. Інтернет-магазин залишає за собою право в односторонньому порядку вносити зміни до цього договору за умови попередньої публікації його на сайті&nbsp;<a href="https://the-miller.com/"><span>https://the-miller.com/</span></a>.<br />
+            9.2. Інтернет-магазин створений для організації дистанційного способу продажу товарів через Інтернет.<br />
+            9.3. Покупець несе відповідальність за правдивість інформації, зазначеної при оформленні замовлення. При здійсненні акцепту (оформленні замовлення та подальшої оплати товару) Покупець надає Продавцю свою беззастережну згоду на збір, обробку, зберігання, використання своїх персональних даних в розумінні ЗУ &laquo;Про захист персональних даних&raquo;. Інформація, яку надає Покупець, є конфіденційною. Інтернет-магазин використовує інформацію про Покупця на умовах викладених на сторінці <a href="https://the-miller.com/uk/page/privacy_policy">Політика конфіденційності</a><br />
+            9.4. Оплата Покупцем оформленого в Інтернет-магазині замовлення означає повну згоду Покупця з умовами договору купівлі-продажу (публічної оферти).<br />
+            9.5. Фактичною датою електронної угоди між сторонами є дата прийняття умов відповідно до ст. 11 Закону України &laquo;Про електронну комерцію&raquo;.<br />
+            9.6. Використання ресурсу Інтернет-магазину для попереднього перегляду товару, а також для оформлення замовлення для Покупця є безкоштовним.</p>
+            
+            <h3>10. Порядок повернення товару належної якості</h3>
+            
+            <p>10.1. Порядок Повернення товару в Інтернет-магазин проводиться згідно із Законом &laquo;<a href="https://zakon.rada.gov.ua/laws/show/1023-12"><span>Про захист прав споживачів</span></a>&raquo;</p>
+            
+            <h3>11. Термін дії договору</h3>
+            
+            <p>11.1.Електронний договір вважається укладеним з моменту одержання особою, яка направила пропозицію укласти такий договір, відповіді про прийняття цієї пропозиції в порядку, визначеному ч. 6 статті 11 Закону України &laquo;Про електронну комерцію&raquo;.<br />
+            11.2. До закінчення терміну дії цей Договір може бути розірваний за взаємною згодою сторін до моменту фактичної доставки товару шляхом повернення грошових коштів.<br />
+            11.3. Сторони мають право розірвати цей договір в односторонньому порядку в разі невиконання однією зі сторін умов цього Договору та у випадках, передбачених чинним Законодавством України.</p>
+            
+        </div>
+    </div>
+</main>
+
+
+<footer class="container footer-block">
+    <div class="footer-info">
+        <img class="footer-logo" src="img/mil-black.svg" alt="Логотип The Miller" title="Логотип The Miller">
+        <div class="fotter-about">короткий текст про компанію короткий текст про компанію короткий текст про компанію короткий текст про компанію короткий текст про компанію короткий текст про компанію короткий текст про компанію короткий текст про компанію короткий текст про компанію короткий текст про компанію короткий текст про компанію короткий текст про компанію короткий текст про компанію </div>
+        <div class="footer-social flex-block">
+            <a href="#"><img src="img/insta.svg" alt="SEO" title="SEO"></a>
+            <a href="#"><img src="img/you.svg" alt="SEO" title="SEO"></a>
+        </div>
+    </div>
+    <div class="footer-menu">
+        <div class="fm-title">Меню</div>
+        <a href="#" class="footer-menu-item"><span>Каталог</span></a>
+        <a href="#" class="footer-menu-item"><span>Відгуки</span></a>
+        <a href="#" class="footer-menu-item"><span>Контакти</span></a>
+        <a href="#" class="footer-menu-item"><span>Блог</span></a>
+        <a href="#" class="footer-menu-item"><span>Медіа</span></a>
+        <a href="#" class="footer-menu-item"><span>Про нас</span></a>
+    </div>
+    <div class="footer-sub-menu">
+        <div class="fm-title">Корисні посилання</div>
+        <a href="#" class="footer-menu-item"><span>Часті питання (FAQ)</span></a>
+        <a href="#" class="footer-menu-item"><span>Дилерам</span></a>
+        <a href="#" class="footer-menu-item"><span>Гарантія</span></a>
+        <a href="#" class="footer-menu-item"><span>Оплата і доставка</span></a>
+        <a href="#" class="footer-menu-item"><span>Договір оферти</span></a>
+        <a href="#" class="footer-menu-item"><span>Умови повернення товару</span></a>
+        <a href="#" class="footer-menu-item"><span>Політика конфіденційності</span></a>
+    </div>
+    <div class="corp">© The Miller. Всі права захищені.</div>
+</footer>
+
+<script src="js/jquery-3.6.4.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -349,8 +349,36 @@ body {
 .map {
     margin-top: 20px;
 }
-.seo-block h1, .seo-block h2, .text-page h2, .text-page h3 {
+.seo-block h1, .seo-block h2, .text-page h3 {
     font: 900 18px "Roboto", sans-serif;
+}
+.text-page h2 {
+    font: 900 24px "Roboto", sans-serif;
+}
+.text-page h2, .text-page h3 {
+    margin: 25px 0 15px;
+}
+.text-page ul, .text-page ol {
+    margin: 30px 0 40px 40px;
+}
+.text-page li {
+    margin-bottom: 10px;
+}
+.text-page ol {
+    list-style: decimal;
+}
+.text-page ul {
+    list-style: disc;
+}
+.text-page {
+    line-height: 20px;
+}
+.text-page p {
+    margin-bottom: 10px;
+}
+.text-page a {
+    color: var(--color-maincolor);
+    text-decoration: underline;
 }
 .footer-logo {
     max-width: 300px;
@@ -915,14 +943,6 @@ table td:last-child {
     font-weight: 600;
     text-align: right;
 }
-/* table tr:first-child td {
-    background-color: #fcf6f2;
-    color: #bc7a40;
-    font: 600 14px "Roboto",sans-serif !important;
-    border: none;
-    border-radius: 10px;
-    text-align: left;
-} */
 table td {
     border-bottom: 1px dashed #e4e4e7;
     color: #2d3239;
@@ -1174,7 +1194,6 @@ strong {
     margin-top: 30px;
     background-color: var(--color-lowgray);
     font-size: 14px;
-    /* color: var(--color-maincolor); */
 }
 .youtub-button i {
     margin-left: 5px;
