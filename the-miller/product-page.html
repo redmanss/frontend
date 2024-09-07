@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="favicon.png" sizes="96x96">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
@@ -25,8 +26,8 @@
 </head>
 <body>
 
-    <header>
-        <div class="container main-header">
+    <header class="main-header">
+        <div class="container">
             <div class="top-header flex-block">
                 <a class="phone-header" href="tel:380960000000">+38 (096) 000-00-00</a>
                 <div class="lang-block">
@@ -221,69 +222,129 @@
 
     <div class="container product-page">
         <div class="pp-img-cont flex-block">
-            <div class="pp-img-block">
-                <a href="media/no-img.jpg" data-fancybox="pp-img" class="pp-img-item"><img src="media/no-img.jpg" alt="SEO" title="SEO"></a>
-                <a href="media/no-img.jpg" data-fancybox="pp-img" class="pp-img-item"><img src="media/no-img.jpg" alt="SEO" title="SEO"></a>
-                <a href="media/no-img.jpg" data-fancybox="pp-img" class="pp-img-item"><img src="media/no-img.jpg" alt="SEO" title="SEO"></a>
-                <a href="media/no-img.jpg" data-fancybox="pp-img" class="pp-img-item"><img src="media/no-img.jpg" alt="SEO" title="SEO"></a>
-                <a href="media/no-img.jpg" data-fancybox="pp-img" class="pp-img-item"><img src="media/no-img.jpg" alt="SEO" title="SEO"></a>
-                <a href="media/no-img.jpg" data-fancybox="pp-img" class="pp-img-item"><img src="media/no-img.jpg" alt="SEO" title="SEO"></a>
-                <a href="media/no-img.jpg" data-fancybox="pp-img" class="pp-img-item"><img src="media/no-img.jpg" alt="SEO" title="SEO"></a>
-                <a href="media/no-img.jpg" data-fancybox="pp-img" class="pp-img-item"><img src="media/no-img.jpg" alt="SEO" title="SEO"></a>
-                <a href="media/no-img.jpg" data-fancybox="pp-img" class="pp-img-item"><img src="media/no-img.jpg" alt="SEO" title="SEO"></a>
+            <div class="pp-img-block-main">
+                <div class="sticky-block">
+                    <div class="pp-img-block">
+                        <a href="media/no-img.jpg" data-fancybox="pp-img" class="pp-img-item"><img src="media/no-img.jpg" alt="SEO" title="SEO"></a>
+                        <a href="media/no-img.jpg" data-fancybox="pp-img" class="pp-img-item"><img src="media/no-img.jpg" alt="SEO" title="SEO"></a>
+                        <a href="media/no-img.jpg" data-fancybox="pp-img" class="pp-img-item"><img src="media/no-img.jpg" alt="SEO" title="SEO"></a>
+                        <a href="media/no-img.jpg" data-fancybox="pp-img" class="pp-img-item"><img src="media/no-img.jpg" alt="SEO" title="SEO"></a>
+                        <a href="media/no-img.jpg" data-fancybox="pp-img" class="pp-img-item"><img src="media/no-img.jpg" alt="SEO" title="SEO"></a>
+                        <a href="media/no-img.jpg" data-fancybox="pp-img" class="pp-img-item"><img src="media/no-img.jpg" alt="SEO" title="SEO"></a>
+                    </div>
+                </div>
             </div>
             <div class="pp-main-info">
-                <div class="pp-status-block">
-                    <div class="pp-status pp-available"><i class="mdi mdi-check-circle-outline"></i><span>В наявності</span></div>
-                </div>
-                <div class="pp-kod">Код: 83</div>
-                <div class="pp-price-product">
-                    <div class="pp-old-price">69 000 грн</div>
-                    <div class="pp-price">59 000 грн</div>
-                </div>
-                <div class="pp-buttons-block flex-block">
-                    <div class="main-buttom pp-buy-button"><i class="mdi mdi-cart-variant"></i>Замовити</div>
-                    <div class="main-buttom consultation-button">Консультація</div>
-                </div>           
-                <div class="pp-decription">
-                    <div class="pp-desc-title">Опис:</div>
-                    <p>A small-sized stone mill of up to 45 kg hourly capacity, able to satisfy the needs of a family, small bakery, and a coffee house in whole-grain flour. The advantage of this model is its lightweight and small dimensions.</p>
-                </div>
-                <div class="pp-iconchar">
-                    <img >
-                    <div class="pp-iconchar-title">характеристика
-                        
+                <div class="sticky-block">
+                    <div class="pp-status-block">
+                        <div class="pp-status pp-available"><i class="mdi mdi-check-circle-outline"></i><span>В наявності</span></div>
+                    </div>
+                    <div class="pp-kod">Код: 83</div>
+                    <div class="pp-price-product">
+                        <div class="pp-old-price">69 000 грн</div>
+                        <div class="pp-price">59 000 грн</div>
+                    </div>
+                    <div class="pp-buttons-block flex-block">
+                        <div class="main-buttom pp-buy-button"><i class="mdi mdi-cart-variant"></i>Замовити</div>
+                        <div class="main-buttom consultation-button">Консультація</div>
+                    </div>           
+                    <div class="pp-decription">
+                        <div class="pp-desc-title">Опис:</div>
+                        <p>A small-sized stone mill of up to 45 kg hourly capacity, able to satisfy the needs of a family, small bakery, and a coffee house in whole-grain flour. The advantage of this model is its lightweight and small dimensions. A small-sized stone mill of up to 45 kg hourly capacity, able to satisfy the needs of a family, small bakery, and a coffee house in whole-grain flour. The advantage of this model is its lightweight and small dimensions. A small-sized stone mill of up to 45 kg hourly capacity, able to satisfy the needs of a family, small bakery, and a coffee house in whole-grain flour. The advantage of this model is its lightweight and small dimensions.</p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="pp-iconchar">
+            <div class="pp-iconchar-title">Види культур для помелу</div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="pp-iconbar-item swiper-slide">
+                        <img src="img/whear.svg">
+                        <div class="pp-iconchar-item-title">Пшениця</div>
+                    </div>
+                    <div class="pp-iconbar-item swiper-slide">
+                        <img src="img/whear.svg">
+                        <div class="pp-iconchar-item-title">Пшениця</div>
+                    </div>
+                    <div class="pp-iconbar-item swiper-slide">
+                        <img src="img/whear.svg">
+                        <div class="pp-iconchar-item-title">Пшениця</div>
+                    </div>
+                    <div class="pp-iconbar-item swiper-slide">
+                        <img src="img/whear.svg">
+                        <div class="pp-iconchar-item-title">Пшениця</div>
+                    </div>
+                    <div class="pp-iconbar-item swiper-slide">
+                        <img src="img/whear.svg">
+                        <div class="pp-iconchar-item-title">Пшениця</div>
+                    </div>
+                    <div class="pp-iconbar-item swiper-slide">
+                        <img src="img/whear.svg">
+                        <div class="pp-iconchar-item-title">Пшениця</div>
+                    </div>
+                    <div class="pp-iconbar-item swiper-slide">
+                        <img src="img/whear.svg">
+                        <div class="pp-iconchar-item-title">Пшениця</div>
+                    </div>
+                    <div class="pp-iconbar-item swiper-slide">
+                        <img src="img/whear.svg">
+                        <div class="pp-iconchar-item-title">Пшениця</div>
+                    </div>
+                    <div class="pp-iconbar-item swiper-slide">
+                        <img src="img/whear.svg">
+                        <div class="pp-iconchar-item-title">Пшениця</div>
+                    </div>
+                    <div class="pp-iconbar-item swiper-slide">
+                        <img src="img/whear.svg">
+                        <div class="pp-iconchar-item-title">Пшениця</div>
+                    </div>
+                    <div class="pp-iconbar-item swiper-slide">
+                        <img src="img/whear.svg">
+                        <div class="pp-iconchar-item-title">Пшениця</div>
+                    </div>
+                    <div class="pp-iconbar-item swiper-slide">
+                        <img src="img/whear.svg">
+                        <div class="pp-iconchar-item-title">Пшениця</div>
+                    </div>
+                </div>
+                <div class="slider-button-prev pp-char-prev"><i class="mdi mdi-chevron-left"></i></div>
+                <div class="slider-button-next pp-char-next"><i class="mdi mdi-chevron-right"></i></div>
+            </div>
+        </div>
         <div class="pp-tv-block">
             <div class="pp-table">
-                <h2 class="pp-h2">Основні характеристики</h2>
-                <div>
-                    <table><tbody><tr><td>Hourly capacity</td><td>&nbsp;to 45 kg</td></tr><tr><td>Hopper capacity</td><td>28 L</td></tr><tr><td>Millstone diameter</td><td>300 mm / 11.81″</td></tr><tr><td>Millstone material</td><td>solid hard-type granite stone</td></tr><tr><td>Body material</td><td>alder &amp; walnut wood</td></tr><tr><td>External dimension</td><td>W 590 / D 798 / H 1155 mm</td></tr><tr><td>Weight</td><td>100 kg</td></tr><tr><td>Engine</td><td>1.5 kW / 3 Ph / from 220 V / 50 Hz</td></tr></tbody></table>
-                    <p><span style="font-size:16px"><strong>The mill is equipped with:</strong></span></p>
-                    <ul><li>An emergency shutdown system in the case of&nbsp;grain absence;</li><li>A frequency converter: allows to work from 220 V, regulate the millstone rotation speed, decrease power usage and increase service life;</li><li>Mechanical regulation of the grain discharge;</li><li>A regulator of the millstone height;</li><li>A moisture ventilation hole.</li></ul>
-                    <p><span style="font-size:16px"><strong>Additionally:</strong></span></p>
-                    <ul><li>Possibility to install a&nbsp;sifting machine.</li></ul>
+                <div class="sticky-block">
+                    <h2 class="pp-h2">Основна інформація</h2>
+                    <div>
+                        <table><tbody><tr><td>Hourly capacity</td><td>&nbsp;to 45 kg</td></tr><tr><td>Hopper capacity</td><td>28 L</td></tr><tr><td>Millstone diameter</td><td>300 mm / 11.81″</td></tr><tr><td>Millstone material</td><td>solid hard-type granite stone</td></tr><tr><td>Body material</td><td>alder &amp; walnut wood</td></tr><tr><td>External dimension</td><td>W 590 / D 798 / H 1155 mm</td></tr><tr><td>Weight</td><td>100 kg</td></tr><tr><td>Engine</td><td>1.5 kW / 3 Ph / from 220 V / 50 Hz</td></tr></tbody></table>
+                        <p><span style="font-size:16px"><strong>Переваги:</strong></span></p>
+                        <ul><li>An emergency shutdown system in the case of&nbsp;grain absence;</li><li>A frequency converter: allows to work from 220 V, regulate the millstone rotation speed, decrease power usage and increase service life;</li><li>Mechanical regulation of the grain discharge;</li><li>A regulator of the millstone height;</li><li>A moisture ventilation hole.</li></ul>
+                        <p><span style="font-size:16px"><strong>Additionally:</strong></span></p>
+                        <ul><li>Possibility to install a&nbsp;sifting machine.</li></ul>
+                    </div>
                 </div>
+                
             </div>
             <div class="pp-video">
-                <h2 class="pp-h2">Відео</h2>
-                <div class="pp-video-block">
-                    <a class="ivb-item" href="https://www.youtube.com/watch?v=GQR7NdzUF38" data-fancybox="pp-video">
-                        <img src="https://img.youtube.com/vi/GQR7NdzUF38/maxresdefault.jpg" alt="Ківш на навантажувач - A.TOM Evolution 1,0 м³ ніж Hardox (каталожний номер 4.057)" title="Ківш на навантажувач - A.TOM Evolution 1,0 м³ ніж Hardox (каталожний номер 4.057)">
-                            <i class="mdi mdi-play-circle-outline"></i>
-                    </a>
-                    <a class="ivb-item" href="https://www.youtube.com/watch?v=GQR7NdzUF38" data-fancybox="pp-video">
-                        <img src="https://img.youtube.com/vi/GQR7NdzUF38/maxresdefault.jpg" alt="Ківш на навантажувач - A.TOM Evolution 1,0 м³ ніж Hardox (каталожний номер 4.057)" title="Ківш на навантажувач - A.TOM Evolution 1,0 м³ ніж Hardox (каталожний номер 4.057)">
-                            <i class="mdi mdi-play-circle-outline"></i>
-                    </a>
-                    <a class="ivb-item" href="https://www.youtube.com/watch?v=GQR7NdzUF38" data-fancybox="pp-video">
-                        <img src="https://img.youtube.com/vi/GQR7NdzUF38/maxresdefault.jpg" alt="Ківш на навантажувач - A.TOM Evolution 1,0 м³ ніж Hardox (каталожний номер 4.057)" title="Ківш на навантажувач - A.TOM Evolution 1,0 м³ ніж Hardox (каталожний номер 4.057)">
-                            <i class="mdi mdi-play-circle-outline"></i>
-                    </a>
+                <div class="sticky-block">
+                    <h2 class="pp-h2">Відеоогляди та відгуки</h2>
+                    <div class="pp-video-block">
+                        <a class="ivb-item" href="https://www.youtube.com/watch?v=GQR7NdzUF38" data-fancybox="pp-video">
+                            <img src="https://img.youtube.com/vi/GQR7NdzUF38/maxresdefault.jpg" alt="Ківш на навантажувач - A.TOM Evolution 1,0 м³ ніж Hardox (каталожний номер 4.057)" title="Ківш на навантажувач - A.TOM Evolution 1,0 м³ ніж Hardox (каталожний номер 4.057)">
+                                <i class="mdi mdi-play-circle-outline"></i>
+                        </a>
+                        <a class="ivb-item" href="https://www.youtube.com/watch?v=GQR7NdzUF38" data-fancybox="pp-video">
+                            <img src="https://img.youtube.com/vi/GQR7NdzUF38/maxresdefault.jpg" alt="Ківш на навантажувач - A.TOM Evolution 1,0 м³ ніж Hardox (каталожний номер 4.057)" title="Ківш на навантажувач - A.TOM Evolution 1,0 м³ ніж Hardox (каталожний номер 4.057)">
+                                <i class="mdi mdi-play-circle-outline"></i>
+                        </a>
+                        <a class="ivb-item" href="https://www.youtube.com/watch?v=GQR7NdzUF38" data-fancybox="pp-video">
+                            <img src="https://img.youtube.com/vi/GQR7NdzUF38/maxresdefault.jpg" alt="Ківш на навантажувач - A.TOM Evolution 1,0 м³ ніж Hardox (каталожний номер 4.057)" title="Ківш на навантажувач - A.TOM Evolution 1,0 м³ ніж Hardox (каталожний номер 4.057)">
+                                <i class="mdi mdi-play-circle-outline"></i>
+                        </a>
+                    </div>
                 </div>
+                
             </div>
         </div>
         <div class="advantage-product-block">
@@ -349,6 +410,7 @@
 
 <script src="js/jquery-3.6.4.min.js"></script>
 <script src="js/fancybox.umd.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/product-page.js"></script>
 
