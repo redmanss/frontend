@@ -190,7 +190,7 @@ body {
 .main-menu, .index-video, .direction-item, .video-item, .mob-menu, .iai-img, .video, .footer-social a, .lang-block, .cpmi-social-block a, .mob-cart-button, .blog-item, .cart-img-block, .ccb-add, .ccb-del {
     position: relative;
 }
-.index-title-block, .direction-item img, .direction-item:after, .direction-title, .video-item:after, .video-item i, .mob-menu i, .iai-img img, .index-video:after, .footer-social img, .cpmi-social-block img, .mob-cart-button i, .mcb-count, .index, .mcb-count span, .index-email, .cart-img-block img, .ccb-add i, .ccb-del i, .slider-button-prev i, .slider-button-next i {
+.index-title-block, .direction-item img, .direction-item:after, .direction-title, .video-item:after, .video-item i, .mob-menu i, .iai-img img, .index-video:after, .footer-social img, .cpmi-social-block img, .mob-cart-button i, .mcb-count, .index, .mcb-count span, .index-email, .cart-img-block img, .ccb-add i, .ccb-del i, .slider-button-prev i, .slider-button-next i, .pl-item-addtocard i {
     position: absolute;
 }
 .direction-title, .video-item i, .index-title-block, .index, .index-email {
@@ -211,7 +211,7 @@ body {
 .direction-item, .direction-item img, .direction-item:after, .blog-item, .blog-item img, .video-item, .video-item img, .video-item:after, .blog-button, .seo-block, .right-menu a, .main-buttom, .more-button, .lang-button, .footer-menu-item, .footer-social a, img, .cart-img-block, .cpmi-social-block a, .text-page, .map {
     border-radius: 20px;
 }
-.index-title-block, .direction-item img, .video-item i, .mob-menu i, .iai-img img, .footer-social img, .cpmi-social-block img, .mob-cart-button i, .mcb-count span, .cart-img-block img, .ccb-add i, .ccb-del i, .slider-button-prev i, .slider-button-next i  {
+.index-title-block, .direction-item img, .video-item i, .mob-menu i, .iai-img img, .footer-social img, .cpmi-social-block img, .mob-cart-button i, .mcb-count span, .cart-img-block img, .ccb-add i, .ccb-del i, .slider-button-prev i, .slider-button-next i, .pl-item-addtocard i  {
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%,-50%);
@@ -228,7 +228,7 @@ body {
     -o-transform: translate(-50%,0);
     transform: translate(-50%,0);
 }
-.none {
+.successful-container {
     top: 50%;
     -webkit-transform: translate(0,-50%);
     -moz-transform: translate(0,-50%);
@@ -245,7 +245,7 @@ body {
 .block-prefer {
     grid-gap: 50px;
 }
-.footer-block {
+.footer-block, .order-page {
     grid-gap: 100px;
 }
 .direction-block, .video-block, .index-advantages-block, .block-prefer {
@@ -253,6 +253,9 @@ body {
 }
 .blog-block, .footer-block {
     grid-template-columns: repeat(3,1fr);
+}
+.order-page {
+    grid-template-columns: repeat(2,1fr);
 }
 /* .video-block .video-item:first-child {
     grid-column: 1/3;
@@ -1367,4 +1370,37 @@ strong {
 }
 .slider-button-prev i, .slider-button-next i {
     font-size: 28px;
+}
+.pl-item-addtocard {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-bgmaincolor);
+    color: var(--color-maincolor);
+    cursor: pointer;
+}
+.pl-item-addtocard-in {
+    background-color: var(--color-maincolor);
+    color: var(--color-white);
+}
+.pl-item-addtocard i {
+    font-size: 16px;
+}
+.pp-buy-button-in {
+    background-color: rgba(179, 125, 74, .2);
+    color: var(--color-maincolor);
+}
+.successful-title {
+    font: 700 24px "Roboto", sans-serif;
+}
+.successful-desc {
+    font-size: 16px;
+    margin: 30px 0;
+}
+.close-successful-block {
+    background-color: var(--color-maincolor);
+    color: var(--color-white);
 }

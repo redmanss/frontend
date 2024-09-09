@@ -1,4 +1,4 @@
-.consultation-button, .lang-button, .right-menu a, .mob-menu, .direction-item, .blog-item, .video-item, .product-button, .footer-social a, .footer-menu-item, .blog-button, .mm-main-item, .mm-sub a, .close-mob-menu-modal, .close-consultation, .ncb-send, .drop-lang-header a, .sort-block div, .bread-crumbs a, .pl-item, .ivb-item, .mob-cart-button, .index-email, .youtub-button, #form-p-send-manager input, #form-p-send-manager textarea, .close-block, .ccb-add, .ccb-del, .ccb-count input, .cart-delete, .complete-order, .continue-order, .blog-filter-item, .pp-buy-button, .slider-button-prev, .slider-button-next {
+.consultation-button, .lang-button, .right-menu a, .mob-menu, .direction-item, .blog-item, .video-item, .product-button, .footer-social a, .footer-menu-item, .blog-button, .mm-main-item, .mm-sub a, .close-mob-menu-modal, .close-consultation, .ncb-send, .drop-lang-header a, .sort-block div, .bread-crumbs a, .pl-item, .ivb-item, .mob-cart-button, .index-email, .youtub-button, #form-p-send-manager input, #form-p-send-manager textarea, .close-block, .ccb-add, .ccb-del, .ccb-count input, .cart-delete, .complete-order, .continue-order, .blog-filter-item, .pp-buy-button, .slider-button-prev, .slider-button-next, .pl-item-addtocard, .close-successful-block {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
@@ -25,7 +25,7 @@
 .cart-delete:hover {
     background-color: rgba(0, 0, 0, .1);
 }
-.mob-menu:hover, .index-email:hover {
+.mob-menu:hover, .index-email:hover, .pl-item-addtocard:hover {
     opacity: .8;
 }
 .consultation-button:hover {
@@ -65,10 +65,13 @@
     background-color: #d89c66;
     border-color: #d89c66;
 }
-.ncb-send:hover {
+.ncb-send:hover, .close-successful-block:hover {
     background-color: #d89c66;
     color: var(--color-white);
 }
 .slider-button-prev:hover, .slider-button-next:hover {
     background-color: rgba(0, 0, 0, 0.1);
+}
+.pp-buy-button-in:hover {
+    color: var(--color-white);
 }

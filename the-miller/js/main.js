@@ -50,4 +50,8 @@ $('.close-cart').on('click', function(){
     $('.cart-modal').hide()
     $('body').removeClass('block-body')
 })
+// close successful
+$('.close-successful-block').on('click', function() {
+    $('.successful-block').hide()
+})
   })
