@@ -1,0 +1,28 @@
+.slider-button-prev, .slider-button-next, .language-block, .header-menu a, .header-mob-menu, .index-email, .main-button, .footer-menu a, .mm-main-item, .mm-sub a, .close-mob-menu-modal {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.slider-button-prev:hover, .slider-button-next:hover {
+    background-color: rgba(255,255,255, 0.8);
+}
+.index .language-block:hover, .index .header-menu a:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+.index .header-mob-menu:hover {
+    background-color: rgba(255, 255, 255, .4);
+}
+.index-email:hover {
+    background-color: rgba(0, 0, 0, .4);
+}
+.index-blog-button:hover {
+    background-color: var(--color-gray80);
+}
+.footer-menu a:hover, .mm-main-item:hover, .mm-sub a:hover, .close-mob-menu-modal:hover {
+    background-color: var(--color-gray93);
+}
+.language-block-drop a:hover {
+    text-decoration: underline;
+}
