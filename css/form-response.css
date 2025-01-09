@@ -104,8 +104,7 @@ input, textarea, button {
 body {
     overflow-x: hidden;
     font: 400 16px "Roboto", sans-serif;
-    color: var(--color-black);
-    background-color: var(--color-mainbg);
+    color: #000;
     line-height: 22px;
 }
 img, input, textarea, .opi-data {
@@ -119,25 +118,27 @@ img, input, textarea, .opi-data {
 }
 /* end common */
 .form-response-logo {
-    text-align: center;
-    padding: 50px 20px;
+    /* text-align: center; */
+    margin-top: 20px;
 }
 .form-response-title {
-    text-align: center;
-    font: 700 24px "Roboto", sans-serif;
-    margin-bottom: 30px;
+    /* text-align: center; */
+    font: 700 60px "Roboto", sans-serif;
+    margin: 30px 0;
+    line-height: 60px;
 }
 .form-response-logo img {
-    max-width: 300px;
+    max-width: 100px;
 }
 .form-response-block {
-    max-width: 600px;
+    max-width: 700px;
 }
 .form-response-title-desc {
     margin-bottom: 20px;
+    font-weight: 300;
 }
 .form-response-form {
-    padding: 20px 0 100px;
+    padding: 20px 0 150px;
 }
 .form-response-form input, .form-response-form textarea {
     border-radius: 10px;
@@ -146,10 +147,10 @@ img, input, textarea, .opi-data {
     min-height: 200px;
 }
 .form-response-form .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 .form-response-form label {
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 5px;
 }
 .form-response-form button {
@@ -209,4 +210,9 @@ img, input, textarea, .opi-data {
 .close-successful-block {
     background-color: #34c38f;
     color: #fff;
+}
+.dynamic-textarea {
+    padding: 10px 30px 30px;
+    border-radius: 10px;
+    background-color: #fafafa;
 }
