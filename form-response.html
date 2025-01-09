@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/png" href="favicon.png" sizes="96x96">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/form-response-animate.css">
+    <link rel="stylesheet" href="css/form-response.css">
+    <link rel="stylesheet" href="css/form-response-adaptive.css">
+    <title>SEO title</title>
+    <meta name="description" content="SEO description">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="OG title">
+    <meta property="og:site_name" content="OG sitename">
+    <meta property="og:description" content="OG description">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:width" content="300">
+</head>
+<body>
+
+<header>
+    <!-- successful modal -->
+    <div class="modal-block successful-block">
+        <div class="modal-container successful-container">
+            <div class="successful-title">Дякуюємо!</div>
+            <div class="successful-desc">Ваш відгук про наш БПАК успішно надіслано</div>
+            <div class="main-button close-successful-block">Закрити</div>
+        </div>
+     </div>
+
+    <div class="form-response-logo">
+        <img src="img/sa_dark.svg" alt="Sparrow Avia Logo" title="Sparrow Avia Logo">
+    </div>
+    
+</header>
+
+<main>
+    <div class="container form-response-block">
+        <div class="form-response-title">Форма зворотнього зв'язку для БПАК</div>
+        <div class="form-response-title-desc">Ваш зворотний зв’язок буде передано напряму виробникам БПЛА. Будь ласка, надайте максимально детальну інформацію та, за можливості, запропонуйте, як саме ви хотіли б покращити виріб.</div>
+        <div class="form-response-title-desc">Примітка: за можливості, не вказуйте географічні назви, які можуть допомогти ідентифікувати вашу локацію.</div>
+        <form class="form-response-form">
+            <div class="form-group">
+                <label class="control-label">Серійний номер борту</label>
+                <input type="text"  class="form-control">
+                <div class="help-block"></div>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Загальна оцінка борту</label>
+                <select class="form-select custom-select-search" name="state">
+                    <option>10</option>
+                    <option>9</option>
+                    <option>8</option>
+                    <option>7</option>
+                    <option>6</option>
+                    <option>5</option>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Чи хотіли б ви й надалі використовувати цей БПЛА?</label>
+                <select class="form-select custom-select-search" name="state">
+                    <option>Так</option>
+                    <option>Так, але за умов доопрацювання виробником</option>
+                    <option>Ні</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Чи допрацьовували ви борт перед використанням у бойових умовах?</label>
+                <select class="form-select custom-select-search" name="state">
+                    <option>Ні, використовували з коробки</option>
+                    <option>Так, вносили мінімальні зміни</option>
+                    <option>Так, вносили значні зміни</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Список недоліків та побажань</label>
+                <textarea class="form-control" placeholder="Конструктивні зауваження та побажання для покращення" maxlength="500"></textarea>
+            </div>
+            <div class="form-group">
+                <label class="control-label" >Контакт для зв'язку</label>
+                <input type="text" class="form-control" placeholder="Telegram @username">
+                <div class="help-block"></div>
+            </div>
+            <button>Відправити</button>
+        </form>
+    </div>
+
+</main>
+
+<footer>
+
+</footer>
+
+<script src="js/jquery-3.6.4.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/form-response.js"></script>
+
+</body>
+</html>
