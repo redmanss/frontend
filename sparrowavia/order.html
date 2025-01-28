@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/png" href="favicon.png" sizes="96x96">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <title>SEO title</title>
+    <meta name="description" content="SEO description">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="OG title">
+    <meta property="og:site_name" content="OG sitename">
+    <meta property="og:description" content="OG description">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:width" content="300">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <!-- <div class="top-header flex-block">
+                <a class="phone-header" href="tel:380960000000">+38 (096) 000-00-00</a>
+                <div class="lang-block">
+                    <div class="lang-button flex-block"><p>Укр</p><i class="mdi mdi-chevron-down"></i></div>
+                    <div class="drop-lang-header">
+                        <a href="#">Рус</a>
+                        <a href="#">Eng</a>
+                    </div>
+                </div>
+            </div> -->
+            <div class="main-menu flex-block">
+                <img class="header-logo" src="img/mil-black.svg" alt="Логотип The Miller" title="Логотип The Miller">       
+                <!-- <div class="right-menu flex-block">
+                    <a href="#">Каталог</a>
+                    <a href="#">Відгуки</a>
+                    <a href="#">Контакти</a>
+                    <a href="#">Блог</a>
+                    <a href="#">Про нас</a>
+                    <div class="mob-cart-button">
+                        <i class="mdi mdi-cart-variant"></i>
+                        <div class="mcb-count"><span>0</span></div>
+                    </div>
+                    <div class="mob-menu"><i class="mdi mdi-menu"></i></div>
+                </div> -->
+            </div>
+        </div>
+        
+        <!-- Modal -->
+        <!-- menu -->
+        <div class="mob-menu-modal">
+            <div class="mob-menu-block">
+                <img src="img/mil-black.svg" alt="SEO" title="SEO">
+                <div class="mob-menu-block-title"></div>
+                <i class="close-mob-menu-modal mdi mdi-close"></i>
+                <div class="mm-menu">
+                    <div class="mm-main">
+                        <a href="#" class="mm-main-item flex-block">Млини комерційні</a>
+                        <a href="#" class="mm-main-item flex-block">Млини побутові</a>
+                        <a href="#" class="mm-main-item flex-block">Інструменти та комплектуючі</a>
+                        <a href="#" class="mm-main-item flex-block">Органічні інгредієнти</a>
+                    </div>
+                    <div class="mm-sub">
+                        <a href="#"><i class="mdi mdi-chat-question-outline"></i>Часті питання (FAQ)</a>
+                        <a href="#"><i class="mdi mdi-account-cash-outline"></i>Дилерам</a>
+                        <a href="#"><i class="mdi mdi-file-document-check-outline"></i>Гарантія</a>
+                        <a href="#"><i class="mdi mdi-eye-check-outline"></i>Відгуки</a>
+                        <a href="#"><i class="mdi mdi-email-outline"></i>Контакти</a>
+                        <a href="#"><i class="mdi mdi-note-text-outline"></i>Блог</a>
+                        <a href="#"><i class="mdi mdi-account-group-outline"></i>Про нас</a>
+                        <a href="#"><i class="mdi mdi-cash-marker"></i>Оплата і Доставка</a>
+                        <a href="#"><i class="mdi mdi-file-document-outline"></i>Договір оферти</a>
+                        <a href="#"><i class="mdi mdi-file-document-outline"></i>Умови повернення товару</a>
+                        <a href="#"><i class="mdi mdi-file-document-outline"></i>Політика конфіденційності</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- consultation -->
+        <div class="n-consultation-block">
+            <div class="ncb-container">
+                <i class="mdi mdi-close close-consultation"></i>
+                <form id="form-p-send-manager" action="/../manager/send-message/" method="post">
+                    <input type="hidden" name="_csrf-frontend" value="xPIVGrSel1kxwk1x90PfHY6KkKlpYguZwdq1ZqmXFnyulkps_u7gDAe0Jje_DLBR6MTFyh0hOvyImPkn9tYjPQ==">
+                    <div class="form-group field-contactmanagerform-username required">
+                        <label class="control-label" for="contactmanagerform-username">Ім'я</label>
+                        <input type="text" id="contactmanagerform-username" class="form-control" name="ContactManagerForm[userName]" placeholder="Ваше ім'я" aria-required="true">
+                        <p class="help-block help-block-error"></p>
+                    </div>
+                    <div class="form-group field-contactmanagerform-useremail required">
+                        <label class="control-label" for="contactmanagerform-useremail">Email</label>
+                        <input type="text" id="contactmanagerform-useremail" class="form-control" name="ContactManagerForm[userEmail]" placeholder="Ваш email" aria-required="true">
+                        <p class="help-block help-block-error"></p>
+                    </div>
+                    <div class="form-group field-contactmanagerform-userphone required">
+                        <label class="control-label" for="contactmanagerform-userphone">Телефон</label>
+                        <input type="tel" id="contactmanagerform-userphone" class="form-control" name="ContactManagerForm[userPhone]" placeholder="+38(___)___-__-__" aria-required="true">
+                        <p class="help-block help-block-error"></p>
+                    </div>
+                    <div class="form-group field-contactmanagerform-usermessage required">
+                        <label class="control-label" for="contactmanagerform-usermessage">Повідомлення</label>
+                        <textarea id="contactmanagerform-usermessage" class="form-control" name="ContactManagerForm[userMessage]" placeholder="Ваше повідомлення менеджеру..." aria-required="true"></textarea>
+                        <p class="help-block help-block-error"></p>
+                    </div>
+                    <div class="form-group field-contactmanagerform-pagemessage required">
+                        <input type="hidden" id="contactmanagerform-pagemessage" class="form-control" name="ContactManagerForm[pageMessage]" value="https://pack-trade.com/nproduct/telezhka_gidravlicheskaya_2_5_tonny_model_cby_as-25_kolesa_poliuretan-niuli/" readonly="">
+                        <p class="help-block help-block-error"></p>
+                    </div>
+                    <div class="form-group field-contactmanagerform-gclid_field">
+                        <input type="hidden" id="contactmanagerform-gclid_field" class="form-control" name="ContactManagerForm[gclid_field]" readonly="" value="Cj0KCQjw_r6hBhDdARIsAMIDhV-nbif9WbHD2o2jNu_D1p4nycPZvDgGna2zjcIinfStljY2Gb97kmwaAuW3EALw_wcB">
+                        <p class="help-block help-block-error"></p>
+                    </div>                
+                    <button type="submit" class="main-button ncb-send">Відправити повідомлення</button>
+                </form>
+            </div>
+        </div>
+        <!-- cart modal -->
+        <div class="modal-block cart-modal">
+            <div class="modal-container">
+                <i class="mdi mdi-close close-block close-cart"></i>
+                <div class="modal-title">Кошик</div>
+                <div class="cart-block">
+                    <div class="cart-item flex-block">
+                        <div class="cart-img-block">
+                            <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                        </div>
+                        <div class="cart-info-block flex-block">
+                            <div class="cart-name-block">
+                                <a href="#" class="cart-name">Млин домашній ручний на кам'яних жорнах H15 Млин домашній ручний на кам'яних жорнах H15</a>
+                                <div class="cart-id">Код товара: 123123</div>
+                                <div class="cart-delete"><i class="mdi mdi-delete-outline"></i>Видалити</div>
+                            </div>
+                            <div class="cart-count-price-block">
+                                <div class="cart-price-block">
+                                    <div class="cpb-old-price">7 000 грн</div>
+                                    <div class="cpb-price">5 000 грн</div>
+                                </div>
+                                <div class="cart-count-block">
+                                    <div class="ccb-del"><i class="mdi mdi-minus-circle-outline"></i></div>
+                                    <div class="ccb-count">
+                                        <label><input placeholder="1"></label>
+                                    </div>
+                                    <div class="ccb-add"><i class="mdi mdi-plus-circle-outline"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item flex-block">
+                        <div class="cart-img-block">
+                            <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                        </div>
+                        <div class="cart-info-block flex-block">
+                            <div class="cart-name-block">
+                                <a href="#" class="cart-name">Млин домашній ручний на кам'яних жорнах H15</a>
+                                <div class="cart-id">Код товара: 123123</div>
+                                <div class="cart-delete"><i class="mdi mdi-delete-outline"></i>Видалити</div>
+                            </div>
+                            <div class="cart-count-price-block">
+                                <div class="cart-price-block">
+                                    <div class="cpb-old-price"></div>
+                                    <div class="cpb-price">2 000 грн</div>
+                                </div>
+                                <div class="cart-count-block">
+                                    <div class="ccb-del"><i class="mdi mdi-minus-circle-outline"></i></div>
+                                    <div class="ccb-count">
+                                        <label><input placeholder="1"></label>
+                                    </div>
+                                    <div class="ccb-add"><i class="mdi mdi-plus-circle-outline"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-sum-block">
+                    <div>Разом до сплати:</div>
+                    <div class="cart-sum">7 000 грн</div>
+                </div>
+                <div class="cart-buttons-block">
+                    <div class="main-buttom continue-order">Продовжити покупки</div>
+                    <div class="main-buttom complete-order">Оформити замовлення</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<main>
+
+    <div class="container">
+        <h1 class="order-title">Оформлення замовлення</h1>
+        <div class="order-page grid-block">
+            <div class="order-page-form">
+                <div class="sticky-block">
+                    <form>
+                        <div class="form-group required">
+                            <label>Прізвище, ім'я, по батькові</label>
+                            <input type="text" placeholder="Ваше ПІБ">
+                            <div class="help-block"></div>
+                        </div>
+                        <div class="form-group required">
+                            <label>Номер телефону</label>
+                            <input type="text">
+                            <div class="help-block"></div>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="text">
+                            <div class="help-block"></div>
+                        </div>
+                        <div>Спосіб оплати</div>
+                        <div>Спосіб доставки</div>
+                        <div class="form-group">
+                            <label>Примітки</label>
+                            <textarea></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="order-page-info">
+                <div class="sticky-block">
+                    <h2 class="opi-title">Склад замовлення</h2>
+                    <div class="opi-item flex-block">
+                        <div class="cart-img-block">
+                            <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                        </div>
+                        <div class="opi-data">
+                            <a href="#" class="opid-title">nazva</a>
+                            <div class="opi-price-count flex-block">
+                                <div class="opi-price">1 234 грн</div>
+                                <div class="opi-count">2 шт</div>
+                                <div class="opi-sum">2 468 грн</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opi-item flex-block">
+                        <div class="cart-img-block">
+                            <img src="media/no-img.jpg" alt="SEO" title="SEO">
+                        </div>
+                        <div class="opi-data">
+                            <a href="#" class="opid-title">nazva</a>
+                            <div class="opi-price-count flex-block">
+                                <div class="opi-price">1 234 грн</div>
+                                <div class="opi-count">2 шт</div>
+                                <div class="opi-sum">2 468 грн</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="opi-sum-title">Разом до сплати</h2>
+                    <div class="order-page-sum">2 468 грн</div>
+                    <div class="order-page-confirm">Замовлення підтверджую</div>
+                    <div class="opi-ps">Підтверджуючи замовлення, я приймаю умови <a href="#">Публічної оферти</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<footer class="container footer-block">
+    <div class="footer-info">
+        <img class="footer-logo" src="img/mil-black.svg" alt="Логотип The Miller" title="Логотип The Miller">
+        <div class="fotter-about">короткий текст про компанію короткий текст про компанію короткий текст про компанію короткий текст про компанію короткий текст про компанію короткий текст про компанію короткий текст про компанію короткий текст про компанію короткий текст про компанію короткий текст про компанію короткий текст про компанію короткий текст про компанію короткий текст про компанію </div>
+        <div class="footer-social flex-block">
+            <a href="#"><img src="img/insta.svg" alt="SEO" title="SEO"></a>
+            <a href="#"><img src="img/you.svg" alt="SEO" title="SEO"></a>
+        </div>
+    </div>
+    <div class="footer-menu">
+        <div class="fm-title">Меню</div>
+        <a href="#" class="footer-menu-item"><span>Каталог</span></a>
+        <a href="#" class="footer-menu-item"><span>Відгуки</span></a>
+        <a href="#" class="footer-menu-item"><span>Контакти</span></a>
+        <a href="#" class="footer-menu-item"><span>Блог</span></a>
+        <a href="#" class="footer-menu-item"><span>Медіа</span></a>
+        <a href="#" class="footer-menu-item"><span>Про нас</span></a>
+    </div>
+    <div class="footer-sub-menu">
+        <div class="fm-title">Корисні посилання</div>
+        <a href="#" class="footer-menu-item"><span>Часті питання (FAQ)</span></a>
+        <a href="#" class="footer-menu-item"><span>Дилерам</span></a>
+        <a href="#" class="footer-menu-item"><span>Гарантія</span></a>
+        <a href="#" class="footer-menu-item"><span>Оплата і доставка</span></a>
+        <a href="#" class="footer-menu-item"><span>Договір оферти</span></a>
+        <a href="#" class="footer-menu-item"><span>Умови повернення товару</span></a>
+        <a href="#" class="footer-menu-item"><span>Політика конфіденційності</span></a>
+    </div>
+    <div class="corp">© The Miller. Всі права захищені.</div>
+</footer>
+
+<script src="js/jquery-3.6.4.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
