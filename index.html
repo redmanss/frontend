@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/png" href="favicon.png" sizes="96x96">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mdicon.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <title>SEO title</title>
+    <meta name="description" content="SEO description">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="OG title">
+    <meta property="og:site_name" content="OG sitename">
+    <meta property="og:description" content="OG description">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:width" content="300">
+</head>
+<body>
+
+<header>
+    <div class="main-header">
+        <div class="container d-flex main-header-block">
+            <div class="header-logo">
+                <img src="img/liso-wh.svg" alt="Логотип Sparrow Avia" title="Логотип Sparrow Avia">
+            </div>
+            <div class="header-menu-right d-flex">
+                <div class="header-menu">
+                    <a href="#training-bloc" class="anchor">Навчальні курси</a>
+                    <a href="#about-liso" class="anchor">Інфраструктура</a>
+                    <a href="#media-liso" class="anchor">Медіа</a>
+                    <a href="#faq" class="anchor">Часті питання (FAQ)</a>
+                    <a href="#callback-form" class="anchor">Контакти</a>
+                    <a href="#about" class="anchor">Про нас</a>
+                </div>
+                <div class="header-menu-button">
+                    <img src="img/burgersvg.svg" alt="Меню Sparrow Avia" title="Меню Sparrow Avia">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-videobg">
+        <div class="index-title-block">
+            <div class="index-title-desc">Громадське обʼєднання “ЛІСО“</div>
+            <h1 class="index-title">Ти не народжений воїном — ти ним стаєш</h1>
+            <div class="main-button-whbg callback-button">Записатись на навчальні курси</div>
+        </div>
+        <video class="index-video" autoplay="" loop="" muted="" playsinline="" poster="img/bg.jpg">
+            <source src="media/full_2.mp4">
+        </video>
+    </div>
+    
+
+    <!-- Modal -->
+    <!-- Modal menu -->
+    <div class="modal-body mob-menu-modal">
+        <div class="mob-menu-block">
+            <img src="img/liso-red.svg" alt="SEO" title="SEO">
+            <i class="close-modal-body close-mob-menu-modal mdi mdi-close"></i>
+            <div class="mm-menu">
+                <div class="mm-main">
+                    <a href="#training-bloc" class="mm-main-item d-flex anchor">Навчальні курси</a>
+                    <a href="#about-liso" class="mm-main-item d-flex anchor">Інфраструктура</a>
+                    <a href="#media-liso" class="mm-main-item d-flex anchor">Медіа</a>
+                </div>
+                <div class="mm-sub">
+                    <a href="#faq" class="anchor"><i class="mdi mdi-chat-question-outline"></i>Часті питання (FAQ)</a>
+                    <a href="#callback-form" class="anchor"><i class="mdi mdi-email-outline"></i>Контакти</a>
+                    <a href="#about" class="anchor"><i class="mdi mdi-account-group-outline"></i>Про нас</a>
+                    <a href="#"><i class="mdi mdi-file-document-outline"></i>Політика конфіденційності</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal CallBack -->
+    <div class="modal-body callback-modal">
+        <div class="modal-body-block">
+            <i class="mdi mdi-close close-modal-body close-callback-modal"></i>
+            <div class="modal-title">Запис на навчальні курси</div>
+            <form>
+                <div class="form-group">
+                    <label class="control-label">Ім'я *</label>
+                    <input type="tel" class="form-control">
+                    <p class="help-block help-block-error"></p>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Телефон *</label>
+                    <input type="tel" class="form-control" placeholder="+38(___)___-__-__">
+                    <p class="help-block help-block-error"></p>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Email</label>
+                    <input type="email" class="form-control" placeholder="email@email.com">
+                    <p class="help-block help-block-error"></p>
+                </div>
+                <div class="form-group">
+                    <label>Оберіть курс *</label>
+                    <select class="custom-select">
+                        <option>Курс 1</option>
+                        <option>Курс 1</option>
+                        <option>Курс 1</option>
+                        <option>Курс 1</option>
+                        <option>Курс 1</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Звідки про нас дізнались?</label>
+                    <select class="custom-select">
+                        <option>Звідки1</option>
+                        <option>Звідки1</option>
+                        <option>Звідки1</option>
+                        <option>Звідки1</option>
+
+                    </select>
+                </div>
+                <!-- <div class="form-group">
+                    <label class="control-label">Ваше повідомлення *</label>
+                    <textarea class="form-control"></textarea>
+                    <p class="help-block help-block-error"></p>
+                </div> -->
+                <div class="form-group">
+                    <button type="submit" class="main-button-whbg">Надіслати</button>          
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Modal Successful -->
+    <div class="modal-body successful-modal">
+        <div class="modal-body-block">
+            <div class="modal-title">Дякуємо</div>
+            <div class="success-animation">
+                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" /><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" /></svg>
+                </div>
+            <div class="successful-modal-title">Запит успішно відправлено</div>
+            <div class="successful-modal-desc">Очікуйте дзвінка нашого менеджера</div>
+            <div class="successful-button-action">
+                <button type="submit" class="main-button-whbg login-in">Закрити</button>          
+            </div>
+        </div>
+    </div>
+    <!-- Cookie-Modal -->
+    <div class="cookie-modal">
+        <div class="cm-block">
+            <div>Цей сайт використовує файли Cookies та сервіси збору технічної інформації для покращення якості обслуговування. Залишаючись на нашому Сайті, Ви автоматично погоджуєтеся з умовами використання Cookies.</div>
+            <div class="cm-button-block d-flex">
+                <div class="cm-accept main-button"><span>Погодитись</span></div>
+                <div class="cm-politik main-button"><span>Політика Cookies</span></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+
+
+    <div class="container training-block" id="training-bloc">
+
+        <h2 class="index-h2">Твій розвиток починається тут</h2>
+
+        <div class="d-grid catalog-block">
+            <div class="catalog-block-item">
+                <img src="img/no-img.jpg" alt="SEO" title="SEO">
+                <div class="catalog-block-title">Вогнева підготовка</div>
+            </div>
+            <div class="catalog-block-item">
+                <img src="img/no-img.jpg" alt="SEO" title="SEO">
+                <div class="catalog-block-title">Тактична медицина</div>
+            </div>
+            <div class="catalog-block-item">
+                <img src="img/no-img.jpg" alt="SEO" title="SEO">
+                <div class="catalog-block-title">Індивідуальна підготовка в умовах сучасної війни</div>
+            </div>
+            <div class="catalog-block-item">
+                <img src="img/no-img.jpg" alt="SEO" title="SEO">
+                <div class="catalog-block-title">Інженерна підготовка</div>
+            </div>
+            <div class="catalog-block-item">
+                <img src="img/no-img.jpg" alt="SEO" title="SEO">
+                <div class="catalog-block-title">Мінно-вибухова безпека</div>
+            </div>
+            <div class="catalog-block-item">
+                <img src="img/no-img.jpg" alt="SEO" title="SEO">
+                <div class="catalog-block-title">Подолання смуги перешкод</div>
+            </div>
+            <div class="catalog-block-item">
+                <img src="img/no-img.jpg" alt="SEO" title="SEO">
+                <div class="catalog-block-title">Топографія</div>
+            </div>
+            <div class="catalog-block-item">
+                <img src="img/no-img.jpg" alt="SEO" title="SEO">
+                <div class="catalog-block-title">Робота з гранатами</div>
+            </div>
+            <div class="catalog-block-item">
+                <img src="img/no-img.jpg" alt="SEO" title="SEO">
+                <div class="catalog-block-title">Штурмовий альпінізм</div>
+            </div>
+            <div class="catalog-block-item">
+                <img src="img/no-img.jpg" alt="SEO" title="SEO">
+                <div class="catalog-block-title">Kill House</div>
+            </div>
+            <div class="catalog-block-item">
+                <img src="img/no-img.jpg" alt="SEO" title="SEO">
+                <div class="catalog-block-title">Фізична та спеціальна підготовка</div>
+            </div>
+            <div class="catalog-block-item">
+                <img src="img/no-img.jpg" alt="SEO" title="SEO">
+                <div class="catalog-block-title">Аеророзвідка та FPV-дрони</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container about" id="about">
+        <div class="d-grid about-stats-block">
+            <div>
+                <div class="asb-title">Громадське обʼєднання “ЛІСО“</div>
+                <div class="asb-desc">
+                    <p>ГО “ЛІСО“ - це громадське обʼєднання, головною метою якого є сприяння захисту суверенітету й територіальної цілісності України. Наш багатофункціональний навчальний центр пропонує широкий спектр навчань, які допоможуть вам відточити бойові навички та підготуватися до реальних викликів.</p>
+                </div>
+            </div>
+            
+            <div class="d-grid asb-stats">
+                <div class="asb-stats-item">
+                    <div>
+                        <span class="counter" data-max="10">0</span>
+                        <span>га</span>
+                    </div>
+                    <div>Площа навчального центру</div>
+                </div>
+                <div class="asb-stats-item">
+                    <div>
+                        <span class="counter" data-max="10000">0</span>
+                        <span>+</span>
+                    </div>
+                    <div>Пройшло підготовку</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="about-liso" id="about-liso">
+        <div class="about-liso-block">
+            <h2 class="index-h2">Інфраструктура навчального центру</h2>
+            <div class="template-product-block">
+                <div class="tpb-item d-flex">
+                    <div class="tpb-text-block">
+                        <div class="tpb-title">Напіввідкритий 100-метровий тир</div>
+                        <div class="tpb-text">Ідеально підходить для відпрацювання стрільби на середніх
+                            дистанціях у контрольованих умовах.</div>
+                    </div>
+                    <div class="tpb-img">
+                        <img src="img/no-img.jpg" alt="SEO" title="SEO">
+                    </div>
+                </div>
+                <div class="tpb-item d-flex">
+                    <div class="tpb-text-block">
+                        <div class="tpb-title">Kill House</div>
+                        <div class="tpb-text">Спеціалізований навчальний простір для моделювання реальних бойових ситуацій у приміщеннях. Тут можна відпрацьовувати тактику зачистки, маневрування та дії у закритих просторах із використанням вогнепальної зброї.</div>
+                    </div>
+                    <div class="tpb-img">
+                        <img src="img/no-img.jpg" alt="SEO" title="SEO">
+                    </div>
+                </div>
+                <div class="tpb-item d-flex">
+                    <div class="tpb-text-block">
+                        <div class="tpb-title">Сучасний 50-метровий тир закритого типу</div>
+                        <div class="tpb-text">Місце для тренувань у комфортних умовах, а також магазин і майстерня з ремонту та обслуговування зброї.</div>
+                    </div>
+                    <div class="tpb-img">
+                        <img src="img/no-img.jpg" alt="SEO" title="SEO">
+                    </div>
+                </div>
+                <div class="tpb-item d-flex">
+                    <div class="tpb-text-block">
+                        <div class="tpb-title">Напіввідкритий 50-метровий тир</div>
+                        <div class="tpb-text">Розрахований на тренування швидкісної стрільби та виконання вправ на ближніх дистанціях.</div>
+                    </div>
+                    <div class="tpb-img">
+                        <img src="img/no-img.jpg" alt="SEO" title="SEO">
+                    </div>
+                </div>
+                <div class="tpb-item d-flex">
+                    <div class="tpb-text-block">
+                        <div class="tpb-title">Смуга перешкод стандарту НАТО, 500 м</div>
+                        <div class="tpb-text">Полігон обладнаний смугою перешкод стандарту НАТО довжиною 500м із 20 різноманітними перешкодами.</div>
+                    </div>
+                    <div class="tpb-img">
+                        <img src="img/no-img.jpg" alt="SEO" title="SEO">
+                    </div>
+                </div>
+                <div class="tpb-item d-flex">
+                    <div class="tpb-text-block">
+                        <div class="tpb-title">«Стінка»</div>
+                        <div class="tpb-text">Тренувальний об’єкт для відпрацювання штурмового альпінізму.</div>
+                    </div>
+                    <div class="tpb-img">
+                        <img src="img/no-img.jpg" alt="SEO" title="SEO">
+                    </div>
+                </div>
+                <div class="tpb-item d-flex">
+                    <div class="tpb-text-block">
+                        <div class="tpb-title">Тактичне поле з елементами фортифікаційних споруд та забудови</div>
+                        <div class="tpb-text">шось про тактичне поле</div>
+                    </div>
+                    <div class="tpb-img">
+                        <img src="img/no-img.jpg" alt="SEO" title="SEO">
+                    </div>
+                </div>
+                <div class="tpb-item d-flex">
+                    <div class="tpb-text-block">
+                        <div class="tpb-title">Просторі навчальні класи</div>
+                        <div class="tpb-text">Забезпечені необхідними меблями та обладнанням.</div>
+                    </div>
+                    <div class="tpb-img">
+                        <img src="img/no-img.jpg" alt="SEO" title="SEO">
+                    </div>
+                </div>
+                <div class="tpb-item d-flex">
+                    <div class="tpb-text-block">
+                        <div class="tpb-title">Спортивна зала</div>
+                        <div class="tpb-text">шось про залу</div>
+                    </div>
+                    <div class="tpb-img">
+                        <img src="img/no-img.jpg" alt="SEO" title="SEO">
+                    </div>
+                </div>
+                <div class="tpb-item d-flex">
+                    <div class="tpb-text-block">
+                        <div class="tpb-title">Медичний кабінет</div>
+                        <div class="tpb-text">шось про кабінет</div>
+                    </div>
+                    <div class="tpb-img">
+                        <img src="img/no-img.jpg" alt="SEO" title="SEO">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="callback-form-bg" id="callback-form">
+        <div class="callback-form-bg-overlay"></div>
+        <div class="callback-form">
+            <div class="d-grid callback-form-block container">
+                <div class="cf-contacts">
+                    <div class="cf-phone">
+                        <div>Відділ по роботі з клієнтами:</div>
+                        <a href="tel:+380974822049">+38 (097) 482-20-49</a>
+                    </div>
+                    <div class="cf-email">
+                        <div>Email:</div>
+                        <a href="mailto:marketing.department.liso@gmail.com">marketing.department.liso@gmail.com</a>
+                    </div>
+                    <div class="cf-social">
+                        <a href="https://www.instagram.com/training_centre_liso" target="_blank">
+                            <img src="img/inst.svg" alt="Instagram Liso" title="Instagram Liso">
+                        </a>
+                        <a href="https://www.facebook.com/people/%D0%9F%D1%80%D0%B8%D0%B2%D0%B0%D1%82%D0%BD%D0%B8%D0%B9-%D0%BF%D0%BE%D0%BB%D1%96%D0%B3%D0%BE%D0%BD-%D0%93%D0%9E-%D0%9B%D1%96%D0%A1%D0%9E/61568093526331/" target="_blank">
+                            <img src="img/face.svg" alt="Facebook Liso" title="Facebook Liso">
+                        </a>
+                    </div>
+                </div>
+                <div class="cf-form">
+                    <div class="cf-title">Зворотній зв’язок</div>
+                    <div class="cf-sub-title">Ваші питання, пропозиції або зауваження — і ми зв’яжемося з Вами 
+                        найближчим часом.</div>
+                    <form>
+                        <div class="form-group">
+                            <label></label>
+                            <input placeholder="Ім'я">
+                        </div>
+                        <div class="form-group">
+                            <label></label>
+                            <input placeholder="Номер телефону">
+                        </div>
+                        <div class="form-group">
+                            <label></label>
+                            <input placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label></label>
+                            <textarea placeholder="Повідомлення"></textarea>
+                        </div>
+                        <button class="main-button"><span>Відправити</span></button>
+                    </form>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+
+    <div class="faq-page" id="faq">
+        <div class="faq-page-block">
+            <h2>Поширенні запитання (FAQ)</h2>
+            <div class="faq-page-item">
+                <div class="fpi-title d-flex">
+                    <span>Запитання 1</span>
+                    <span class="faq-page-plus"></span>
+                </div>
+                <div class="fpi-answer" style="display: none;">Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 </div>
+            </div>
+            <div class="faq-page-item">
+                <div class="fpi-title d-flex">
+                    <span>Запитання 1</span>
+                    <span class="faq-page-plus"></span>
+                </div>
+                <div class="fpi-answer">Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 </div>
+            </div>
+            <div class="faq-page-item">
+                <div class="fpi-title d-flex">
+                    <span>Запитання 1</span>
+                    <span class="faq-page-plus"></span>
+                </div>
+                <div class="fpi-answer">Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 </div>
+            </div>
+            <div class="faq-page-item">
+                <div class="fpi-title d-flex">
+                    <span>Запитання 1</span>
+                    <span class="faq-page-plus"></span>
+                </div>
+                <div class="fpi-answer">Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 Відповідь 1 </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="media-liso" id="media-liso">
+        <h2 class="index-h2">Медіа</h2>
+        <div class="media-liso-block d-grid">
+            <a data-fancybox="media-liso" class="mlb-item" href="img/no-img.jpg">
+                <img src="img/no-img.jpg" alt="SEO" title="SEO">
+            </a>
+            <a data-fancybox="media-liso" class="mlb-item" href="img/no-img.jpg">
+                <img src="img/no-img.jpg" alt="SEO" title="SEO">
+            </a>
+            <a data-fancybox="media-liso" class="mlb-item" href="img/no-img.jpg">
+                <img src="img/no-img.jpg" alt="SEO" title="SEO">
+            </a>
+            <a data-fancybox="media-liso" class="mlb-item" href="img/no-img.jpg">
+                <img src="img/no-img.jpg" alt="SEO" title="SEO">
+            </a>
+            <a data-fancybox="media-liso" class="mlb-item" href="img/no-img.jpg">
+                <img src="img/no-img.jpg" alt="SEO" title="SEO">
+            </a>
+            <a data-fancybox="media-liso" class="mlb-item" href="img/no-img.jpg">
+                <img src="img/no-img.jpg" alt="SEO" title="SEO">
+            </a>
+            <a data-fancybox="media-liso" class="mlb-item" href="img/no-img.jpg">
+                <img src="img/no-img.jpg" alt="SEO" title="SEO">
+            </a>
+            
+        </div>
+    </div>
+
+    <!-- <div class="new-video">
+        <div class="container">
+            <div class="nv-title-block d-flex">
+                <div class="nv-title">Нові відео</div>
+                <a href="#?sub_confirmation=1" target="_blank" class="main-button all-video-button">Всі відео <i class="mdi mdi-chevron-right"></i></a>
+            </div>
+            <div class="nv-list d-grid">
+                <a data-fancybox="nvl-video" href="#" class="nvl-video-item" target="_blank">
+                    <img src="#" alt="#">
+                    <i class="mdi mdi-play-outline"></i>
+                </a>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="index-quote-block">
+        <div class="iqb-text">
+            <p></p>
+        </div>
+        <i class="mdi mdi-format-quote-close"></i>
+    </div> -->
+    
+</main>
+
+<footer>
+    <div class="container d-grid footer-block">
+        <div class="footer-item">
+            <img src="img/liso-wh.svg" class="footer-logo" alt="Логотип Sparrow Avia" title="Логотип Sparrow Avia">
+            <div class="footer-social">
+                <a href="https://www.instagram.com/training_centre_liso" target="_blank">
+                    <img src="img/inst.svg" alt="Instagram Liso" title="Instagram Liso">
+                </a>
+                <a href="https://www.facebook.com/people/%D0%9F%D1%80%D0%B8%D0%B2%D0%B0%D1%82%D0%BD%D0%B8%D0%B9-%D0%BF%D0%BE%D0%BB%D1%96%D0%B3%D0%BE%D0%BD-%D0%93%D0%9E-%D0%9B%D1%96%D0%A1%D0%9E/61568093526331/" target="_blank">
+                    <img src="img/face.svg" alt="Facebook Liso" title="Facebook Liso">
+                </a>
+            </div>
+        </div>
+        <div class="footer-item">
+            <div class="footer-title">Меню</div>
+                <a href="#training-bloc" class="anchor">Навчальні курси</a>
+                <a href="#about-liso" class="anchor">Інфраструктура</a>
+                <a href="#media-liso" class="anchor">Медіа</a>
+                <a href="#faq" class="anchor">Часті питання (FAQ)</a>
+                <a href="#callback-form" class="anchor">Контакти</a>
+                <a href="#about" class="anchor">Про нас</a>
+            </div>
+        <div class="footer-item">
+            <div class="footer-title">Корисні посилання</div>
+            <a href="#">Політика конфіденційності</a>
+        </div>
+        <div class="footer-item">
+            <div class="footer-phone">
+                <div>Відділ по роботі з клієнтами:</div>
+                <a href="tel:+380974822049">+38 (097) 482-20-49</a>
+            </div>
+            <div class="footer-email">
+                <div>Email:</div>
+                <a href="mailto:marketing.department.liso@gmail.com">marketing.department.liso@gmail.com</a>
+            </div>
+            <div class="main-button callback-button">Записатись на навчальні курси</div>
+        </div>
+    </div>
+    <div class="corp">
+        <div class="container">© 2025 Громадське обʼєднання “ЛІСО“. Всі права захищені.</div>
+    </div>
+</footer>
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/fancybox.umd.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+    Fancybox.bind("[data-fancybox]");
+    //-- counter
+    function animateNumber($el, start, end, duration) {
+      const startTime = performance.now();
+  
+      function update(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const value = Math.floor(progress * (end - start) + start);
+        $el.text(value.toLocaleString());
+  
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        }
+      }
+  
+      requestAnimationFrame(update);
+    }
+    $(document).ready(function () {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          const $el = $(entry.target);
+  
+          if (entry.isIntersecting && !$el.data('animated')) {
+            $el.data('animated', true);
+            const max = parseInt($el.data('max'), 10) || 0;
+            animateNumber($el, 0, max, 2000); // тривалість
+          }
+        });
+      }, {
+        threshold: 0.5 // показано хоча б 50% блоку
+      });
+      $('.counter').each(function () {
+        $(this).data('animated', false);
+        observer.observe(this);
+      });
+    });
+  </script>
+
+</body>
+</html>

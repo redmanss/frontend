@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <div id="product-data">
+      <h1 class="title">title</h1>
+      <div class="price">price</div>
+      <div class="description">desc</div>
+      <button id="generate-pdf">Згенерувати PDF</button>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      document.getElementById("generate-pdf").addEventListener("click", function () {
+        const title = document.querySelector(".title").textContent;
+        const price = document.querySelector(".price").textContent;
+        const description = document.querySelector(".description").textContent;
+    
+        const pdfWindow = window.open("/pdf.html", "_blank");
+        pdfWindow.__pdf_data__ = { title, price, description };
+      });
+    </script>
+  </body>
+</html>

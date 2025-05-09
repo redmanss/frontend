@@ -1,0 +1,54 @@
+.modal-body-block input, .cf-form input, .cf-form textarea, .modal-body-block textarea, .lang-button span, .cabinet-button, .dropdown-lang a, .header-menu a, .header-menu-button, .close-modal-body, .main-button, .main-button-whbg, .mm-main-item, .mm-sub a, .cf-social a, .nvl-video-item:after, .nvl-video-item i, .footer-item a, .idb-item svg, path, polygon, rect, line, polyline, ellipse, circle, .bread-crumbs a, .catalog-block-item img, .sort-block div, .pl-item img, .pl-item, .ivb-item:after, .ivb-item i, .hide-plus:before, .faq-page-plus:before, .fpi-title {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.lang-button span:last-child:hover, .cabinet-button:hover, .cf-phone a:hover, .cf-email a:hover, .pl-item-title:hover {
+    text-decoration: underline;
+}
+.dropdown-lang a:hover, .header-menu a:hover, .fpi-title:hover, .footer-item a:hover {
+    color: var(--color-mainaccentred);
+}
+.header-menu-button:hover, .main-button:hover, .main-button-whbg:hover, .cf-social a:hover, .nvl-video-item:hover:after, .footer-social a:hover, .ivb-item:hover:after, .fpi-title:hover .faq-page-plus::before, .fpi-title:hover .faq-page-plus::after {
+    background-color: var(--color-mainaccentred);
+}
+.nvl-video-item:hover i, .ivb-item:hover i {
+    font-size: 60px;
+}
+.close-modal-body:hover, .mm-main-item:hover, .mm-sub a:hover, .sort-block div:hover {
+    background-color: var(--color-mainaccentred);
+    color: var(--color-white) !important;
+}
+.bread-crumbs a:hover, .home-crumbs:hover i {
+    color: var(--color-mainaccentred) !important;
+}
+.idb-item:hover path, 
+.idb-item:hover polygon, 
+.idb-item:hover rect, 
+.idb-item:hover line, 
+.idb-item:hover polyline, 
+.idb-item:hover ellipse,
+.idb-item:hover circle,
+.idb-sub-item:hover path,
+.idb-sub-item:hover polygon,
+.idb-sub-item:hover rect,
+.idb-sub-item:hover line,
+.idb-sub-item:hover polyline,
+.idb-sub-item:hover ellipse,
+.idb-sub-item:hover circle {
+    stroke: var(--color-mainaccentred);
+}
+.catalog-block-item:hover img, .pl-item:hover img {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%) scale(1.1);
+    -moz-transform: translate(-50%,-50%) scale(1.1);
+    -ms-transform: translate(-50%,-50%) scale(1.1);
+    -o-transform: translate(-50%,-50%) scale(1.1);
+    transform: translate(-50%,-50%) scale(1.1);
+}
+.pl-item:hover {
+    box-shadow: 6px 6px 5px 0 rgb(0 0 0 / 10%);
+}
