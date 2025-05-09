@@ -286,7 +286,7 @@ strong {
 .main-button:after, .main-button:before, .main-button span:after, .main-button span:before, .nvl-video-item:after, .index-videobg:after, .catalog-block-item:after, .ivb-item:after, .faq-page-plus:after, .faq-page-plus:before {
     content: "";
 }
-.main-button, .main-button-whbg, .mob-menu-modal a, .catalog-block-item:after, .catalog-block-item, .asb-stats-item, .faq-page-item, .tpb-img img, .tpb-img, .modal-body-block input, .modal-body-block textarea, .modal-body-block select, .mlb-item, .mlb-item img {
+.main-button, .main-button-whbg, .mob-menu-modal a, .catalog-block-item:after, .catalog-block-item, .asb-stats-item, .faq-page-item, .tpb-img img, .tpb-img, .modal-body-block input, .modal-body-block textarea, .modal-body-block select, .mlb-item, .mlb-item img, .training-modal-img, .training-modal-img img {
     border-radius: 10px;
 }
 .cf-form, .cf-form input, .cf-form textarea, .modal-body-block, .about-stats-block {
@@ -326,7 +326,7 @@ strong {
 .product-list, .pp-video-block, .media-liso-block {
     grid-gap: 10px;
 }
-.index-direction-block, .idb-sub, .nv-list, .footer-block, .catalog-block, .pp-tv-block {
+.index-direction-block, .idb-sub, .nv-list, .footer-block, .catalog-block, .pp-tv-block, .training-modal-block {
     grid-gap: 20px;
 }
 .asb-stats {
@@ -350,7 +350,7 @@ strong {
 .index-direction-block {
     grid-template-columns: repeat(3,1fr);
 }
-.about-stats-block, .asb-stats, .callback-form-block, .pp-tv-block, .pp-video-block {
+.about-stats-block, .asb-stats, .callback-form-block, .pp-tv-block, .pp-video-block, .training-modal-block {
     grid-template-columns: repeat(2,1fr);
 }
 .nvl-video-item img, .catalog-block-item img, .pl-item-img img, .pp-img-block img, .tpb-img img, .mlb-item img {
@@ -1206,11 +1206,14 @@ table td:last-child {
     text-align: left !important;
     font-size: 14px !important;
 }
-.pp-table ul, .pp-table ol, .pp-add-info ul, .pp-add-info ol {
+.pp-table ul, .pp-table ol, .pp-add-info ul, .pp-add-info ol, .training-modal-text ul, .training-modal-text ol {
     margin: 40px 0 40px 40px;
     text-align: left !important;
 }
-.pp-table li, .pp-add-info li {
+.training-modal-text ul {
+    list-style-type: disc;
+}
+.pp-table li, .pp-add-info li, .training-modal-text li {
     position: relative;
     text-align: left !important;
     margin-bottom: 15px;
@@ -1460,4 +1463,17 @@ table td:last-child {
 }
 .cm-accept {
     margin-right: 10px;
+}
+.training-modal .modal-body-block {
+    max-width: 1200px;
+}
+.training-modal-text {
+    margin-bottom: 50px;
+    line-height: 18px;
+}
+.training-modal-text p {
+    margin-bottom: 30px;
+}
+.training-modal-block {
+    margin-top: 50px;
 }

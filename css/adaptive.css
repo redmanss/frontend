@@ -109,6 +109,9 @@
     }
 }
 @media (max-width: 1023px) {
+    .training-modal-block {
+        grid-template-columns: repeat(1, 1fr);
+    }
     .media-liso-block {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -194,6 +197,9 @@
     } */
 }
 @media (max-width: 767px) {
+    .training-modal-text ul, .training-modal-text ol {
+        margin: 40px 0 40px 14px;
+    }
     .mlb-item {
         height: 150px;
     }

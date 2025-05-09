@@ -67,4 +67,16 @@ $(document).ready(function() {
             left: -650
         })
       });
+    //---ModalAboutTraining
+    $('.catalog-block-item').click(function(){
+        $('.training-modal').show()
+        $('body').addClass('block-body')
+    })
+    $('.close-training-modal').click(function() {
+        $('.training-modal').hide()
+        $('body').removeClass('block-body')
+    })
+    $('.training-button').click(function() {
+        $('.training-modal').hide()
+    })
 })
